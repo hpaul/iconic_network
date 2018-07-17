@@ -1,3 +1,8 @@
+.DS_Store
 .idea
+__pycache__
+logs
 config.json
 iconic
+iconic.db
+nohup.out

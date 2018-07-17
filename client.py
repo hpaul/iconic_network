@@ -17,7 +17,7 @@ class ElsClient:
     # class variables
     __url_base = "https://api.elsevier.com/"    ## Base URL for later use
     __user_agent = "elsapy-v0.4.6"			        ## Helps track library use
-    __min_req_interval = 1                      ## Min. request interval in sec
+    __min_req_interval = 0.23                    ## Min. request interval in sec
     __ts_last_req = time.time()                 ## Tracker for throttling
 
     # constructors
