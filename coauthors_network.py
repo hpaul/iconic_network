@@ -24,7 +24,7 @@ con_file.close()
 # Initialize elsclient client
 client = ElsClient(config['apikey'])
 
-authors_list = Author.select().where({Author.docs_fetched: False})
+authors_list = Author.select().where(Author.docs_fetched == False)
 
 
 @db.atomic()
@@ -84,7 +84,7 @@ for author in authors_list:
                         collaboration = Collaboration()
                         collaboration.author = int(creator['authid'])
                         collaboration.co_author = int(coauth['authid'])
-                        collaboration.cited_by = article['citedby-count']
+                        collaboration.cited_by = article.get('citedby-count')
                         collaboration.year = article['prism:coverDate'].split('-')[0]
                         collaboration.keywords = article.get('authkeywords')
 
