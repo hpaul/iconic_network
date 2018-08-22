@@ -9,11 +9,21 @@ db = SqliteDatabase('./iconic.db', pragmas={
     'foreign_keys': 1,  # Enforce foreign-key constraints
 })
 
+# The initialisation
+network = SqliteDatabase('./network.db', pragmas={
+    'journal_mode': 'wal',
+    'cache_size': 10000,  # 10000 pages, or ~40MB
+    'foreign_keys': 1,  # Enforce foreign-key constraints
+})
 
 class BaseModel(Model):
     class Meta:
         database = db
 
+
+class BaseNetwork(Model):
+    class Meta:
+        database = network
 
 class Author(BaseModel):
     id = BigIntegerField(unique=True, index=True, primary_key=True)
@@ -29,26 +39,35 @@ class Author(BaseModel):
     cat = JSONField(null=True)
     country = JSONField(null=True)
     docs_fetched = BooleanField(default=False)
+    last_page = BigIntegerField(null=True,default=0)
 
 
 class Collaboration(BaseModel):
-    author = BigIntegerField(index=True)
-    co_author = BigIntegerField(index=True)
-    year = IntegerField(null=True)
+    abs_id = BigIntegerField(unique=True, index=True, primary_key=True)
+    authors = JSONField(null=True)
+    published = DateField(null=True)
     cited_by = IntegerField(null=True)
     keywords = JSONField(null=True)
     coll_count = IntegerField(null=True)
+    message = TextField(null=True)
+    saved = BooleanField(default=False)
 
 
-# Initialize database
-db.connect()
-db.create_tables([Author, Collaboration], )
-db.close()
+class AuthorDetails(BaseNetwork):
+    full_name = TextField(null=True)
+    preferred_name = TextField(null=True)
+    affiliation_id = BigIntegerField(unique=True, index=True, null=True)
+    url = TextField(null=True)
 
-# Migrations
-# docs_fetched = BooleanField(default=False)
-#
-# migrator = SqliteMigrator(db)
-# migrate(
-#     migrator.add_column('author', 'docs_fetched', docs_fetched)
-# )
+
+class Network(BaseNetwork):
+    from_author = BigIntegerField(index=True)
+    to_author = BigIntegerField(index=True)
+    article = BigIntegerField(index=True)
+    keywords = JSONField(null=True)
+    year = IntegerField(null=True)
+    citations = IntegerField(null=True)
+
+
+class Affiliation(BaseNetwork):
+    url = TextField(null=True)

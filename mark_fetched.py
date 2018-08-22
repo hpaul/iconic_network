@@ -8,5 +8,6 @@ re_auth = re.compile('Getting documents for: "(.*)"')
 fetched_authors = re_auth.findall(data)
 fetched_authors = [int(a) for a in fetched_authors]
 
-authors = Author.update(docs_fetched=True).where(Author.id.in_(fetched_authors))
+authors = Author.update(docs_fetched=False)
 authors.execute()
+
