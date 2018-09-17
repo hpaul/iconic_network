@@ -5,25 +5,24 @@ from peewee import *
 # The initialisation
 db = SqliteDatabase('./iconic.db', pragmas={
     'journal_mode': 'wal',
-    'cache_size': 10000,  # 10000 pages, or ~40MB
+    'cache_size': '-2000',
+    'fullfsync': 'on',
+    'journal_size_limit': '-1',
+    'threads': '8',
     'foreign_keys': 1,  # Enforce foreign-key constraints
 })
 
 # The initialisation
-network = SqliteDatabase('./network.db', pragmas={
-    'journal_mode': 'wal',
-    'cache_size': 10000,  # 10000 pages, or ~40MB
-    'foreign_keys': 1,  # Enforce foreign-key constraints
-})
+#network = MySQLDatabase('coauthorship', user='root', host='127.0.0.1', password='pass')
 
 class BaseModel(Model):
     class Meta:
         database = db
 
 
-class BaseNetwork(Model):
-    class Meta:
-        database = network
+# class BaseNetwork(Model):
+#     class Meta:
+#         database = network
 
 class Author(BaseModel):
     id = BigIntegerField(unique=True, index=True, primary_key=True)
@@ -53,21 +52,23 @@ class Collaboration(BaseModel):
     saved = BooleanField(default=False)
 
 
-class AuthorDetails(BaseNetwork):
-    full_name = TextField(null=True)
-    preferred_name = TextField(null=True)
-    affiliation_id = BigIntegerField(unique=True, index=True, null=True)
-    url = TextField(null=True)
+# class AuthorDetails(BaseNetwork):
+#     id = BigAutoField(unique=True, index=True, primary_key=True)
+#     full_name = TextField(null=True)
+#     preferred_name = TextField(null=True)
+#     affiliation_id = BigIntegerField(unique=True, index=True, null=True)
+#     url = TextField(null=True)
 
 
-class Network(BaseNetwork):
-    from_author = BigIntegerField(index=True)
-    to_author = BigIntegerField(index=True)
-    article = BigIntegerField(index=True)
-    keywords = JSONField(null=True)
-    year = IntegerField(null=True)
-    citations = IntegerField(null=True)
+# class Network(BaseNetwork):
+#     id = BigAutoField(unique=True, index=True, primary_key=True)
+#     from_author = BigIntegerField(index=True)
+#     to_author = BigIntegerField(index=True)
+#     article = BigIntegerField(index=True)
+#     keywords = JSONField(null=True)
+#     year = IntegerField(null=True)
+#     citations = IntegerField(null=True)
 
 
-class Affiliation(BaseNetwork):
-    url = TextField(null=True)
+# class Affiliation(BaseNetwork):
+#     url = TextField(null=True)

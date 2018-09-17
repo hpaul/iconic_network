@@ -1,7 +1,10 @@
 from models import *
 import dask
 import itertools
+import pyorient
 
+client = pyorient.OrientDB("localhost", 2424)
+client.db_open( "coauthors", "admin", "admin" )
 
 class Colour:
     OKGREEN = '\033[92m'
@@ -11,50 +14,27 @@ class Colour:
 
 
 def save_author(id, data):
-    try:
-        # Check first if author exist
-        coll = AuthorDetails.get(AuthorDetails.id == id)
-    except AuthorDetails.DoesNotExist:
-        with db.atomic() as transaction:
-            name = str(data.get('surname')) + ' ' + str(data.get('given-name'))
+    result = client.query("select from Author WHERE Author.id = %s" % id, 1, '*:0')
 
-            ath = AuthorDetails(id=id)
-            ath.full_name = name
-            ath.preferred_name = data.get('authname')
-            ath.affiliation_id = data.get('afid')
-            ath.url = data.get('author-url')
-
-            try:
-                ath.save(force_insert=True)
-                print(".", end="")
-            except IntegrityError:
-                # Because this block of code is wrapped with "atomic", a
-                # new transaction will begin automatically after the call
-                # to rollback().
-                transaction.rollback()
+    if len(result) == 0:
+        auth = { '@Authors': { 'id': id, 'name': data.get('authname') } }
+        rec_position = client.record_create(rec)
 
 
-def save_network(from_author, to_author, data):
-    with db.atomic() as transaction:
-        print(data.get('keywords'))
+def save_network(from_author, data):
 
-        vertex = Network()
-        vertex.from_author = from_author
-        vertex.to_author = to_author
-        vertex.article = data.abs_id
-        vertex.year = data.published.year
-        vertex.citations = data.cited_by
+    q = "CREATE EDGE Wrote FROM (SELECT FROM Authors WHERE id = %s) TO \
+          (SELECT FROM Article WHERE id = %s)" % (from_author, data.abs_id)
+    client.query(q)
 
-        try:
-            vertex.save(force_insert=True)
-            print(".", end="")
-        except IntegrityError:
-            # Because this block of code is wrapped with "atomic", a
-            # new transaction will begin automatically after the call
-            # to rollback().
-            transaction.rollback()
 
 def save_collaboration(row):
+    keywords = str(row.keywords or '')
+    keywords = keywords.replace('"', '')
+
+    rec = { '@Article': { 'id': row.id, 'published': row.published, 'citations': row.cited_by, 'keywords': keywords } }
+    rec_position = client.record_create(rec)
+
     lazy_network = []
     
     print(Colour.BOLD + str(row.abs_id) + ' - Saving authors' + Colour.END)
@@ -72,10 +52,10 @@ def save_collaboration(row):
     print(Colour.BOLD + str(row.abs_id) + ' - Saving network of authors' + Colour.END)
     auth_ids = [ath.get('authid') for ath in row.authors if ath.get('authid') is not None]
     # Generate network between article authors
-    comb = itertools.combinations(auth_ids, 2)
+    #comb = itertools.combinations(auth_ids, 2)
 
-    for from_author,to_author in comb:
-        s_network = dask.delayed(save_network)(from_author, to_author, row)
+    for from_author in auth_ids:
+        s_network = dask.delayed(save_network)(from_author, row)
         lazy_network.append(s_network)
 
     print('')
@@ -90,15 +70,52 @@ def save_collaboration(row):
 
 def build_network():
     lazy_collaborations = []
-    collaborations = Collaboration.select().where(Collaboration.cited_by > 10, Collaboration.keywords is not None).limit(10000)
+    collaborations = Collaboration.select().order_by(Collaboration.cited_by.desc()).where(Collaboration.saved == 0).limit(1).iterator()
 
     for collaboration in collaborations:
         task = dask.delayed(save_collaboration)(collaboration)
         lazy_collaborations.append(task)
 
-    results = dask.compute(*lazy_collaborations)
+    dask.compute(*lazy_collaborations)
 
-    return results
 
 net = build_network()
-print(net)
+
+
+# def connect_author(id):
+#     def create(tx, aid):
+#         return tx.run("MATCH (seed:Author {id:$id})-[:AUTHORED]->(ar:Article)<-[:AUTHORED]-(co)"
+#                       "MERGE (seed)-[r:COAUTHOR]->(co)"
+#                       "RETURN id(r)", id=aid)
+    
+#     ids = []
+#     with driver.session() as session:
+#         ids = session.write_transaction(create, id)
+    
+#     print(Colour.OKGREEN + str(id) + ' - End buliding' + Colour.END)
+#     return ids
+
+# def build_coauthors():
+
+#     lazy_queue = []
+#     # Get list o author
+#     # Iterate over each one and build own coauthorship
+#     def get_authors(tx):
+#         return tx.run("MATCH (a:Author) RETURN a.id")
+
+#     results = []
+
+#     with driver.session() as session:
+#         authors = session.read_transaction(get_authors)
+
+#         for author in authors:
+#             print(Colour.OKGREEN + str(author["a.id"]) + ' - Building..' + Colour.END)
+#             task = dask.delayed(connect_author)(author["a.id"])
+#             lazy_queue.append(task)
+
+#         results = dask.compute(*lazy_queue)
+
+#     return results
+
+# co = build_coauthors()
+# print(co)

@@ -1,39 +1,37 @@
 from models import *
-import matplotlib.pyplot as plt
+from matplotlib.ticker import FuncFormatter
 import pandas as pd
-# View statistics per year
-# SELECT year, count(year) as articles, sum(cited_by) as cited FROM
-#   (SELECT * FROM collaboration GROUP BY author)
-#   GROUP BY year
+import seaborn as sns
+import matplotlib.pyplot as plt
+sns.set(style="whitegrid")
 
-columns = [
-    Collaboration.year,
-    Collaboration.author,
-    Collaboration.cited_by
-]
-grouped = Collaboration.select(*columns).where(Collaboration.year > 2006).group_by(Collaboration.author)
+# Initialize the matplotlib figure
+f, ax = plt.subplots(figsize=(15, 6))
+plt.title("Number of authors in Scopus per country which wrote in Physics field")
 
-years = (Select(columns=[
-    grouped.c.year,
-    fn.COUNT(grouped.c.year).alias('articles'),
-    fn.SUM(grouped.c.cited_by).alias('cited')]
-).from_(grouped).group_by(grouped.c.year))
+authors = pd.read_csv('./authors_per_country.csv').sort_values('total_authors', ascending=False)
 
-results = years.execute(db)
-years = [r['year'] for r in results]
-articles = [r['articles'] for r in results]
-cited = [r['cited'] for r in results]
+def thousands(x, pos):
+    return '%1iK' % (x*1e-3)
 
-plt.figure(1, figsize=(10, 10))
+formatter = FuncFormatter(thousands)
 
-plt.subplot(211)
-plt.title('Articles per year')
-plt.plot(years, articles)
-plt.xticks(years)
+# Plot the total authors
+sns.set_color_codes("pastel")
+sns.barplot(x="country", y="total_authors", data=authors,
+            label="Total", color="b")
 
-plt.subplot(212)
-plt.title('Article citation per year')
-plt.plot(years, cited)
-plt.xticks(years)
+# Plot downloaded authors
+sns.set_color_codes("muted")
+sns.barplot(x="country", y="stored", data=authors,
+            label="Saved", color="b")
+
+
+# Add a legend and informative axis label
+ax.yaxis.set_major_formatter(formatter)
+ax.legend(ncol=2, loc="upper right", frameon=True)
+ax.set(ylabel="", xlabel="")
+
+sns.despine(left=True, bottom=True)
 
 plt.show()

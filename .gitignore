@@ -3,6 +3,11 @@
 __pycache__
 logs
 config.json
-iconic
-iconic.db
+.vscode
+*.db
+.db-shm
+*-v
+*-wb
+*-wal
 nohup.out
+*data/
