@@ -39,6 +39,7 @@ class Author(BaseModel):
     country = JSONField(null=True)
     docs_fetched = BooleanField(default=False)
     last_page = BigIntegerField(null=True,default=0)
+    is_sample = BooleanField(default=False)
 
 
 class Collaboration(BaseModel):
@@ -51,6 +52,11 @@ class Collaboration(BaseModel):
     message = TextField(null=True)
     saved = BooleanField(default=False)
 
+class Coauthors(BaseModel):
+    id = BigIntegerField(unique=True, index=True, primary_key=True)
+    co_list = JSONField(null=True)
+    last_page = IntegerField(null=True)
+    saved = BooleanField(default=False)
 
 # class AuthorDetails(BaseNetwork):
 #     id = BigAutoField(unique=True, index=True, primary_key=True)

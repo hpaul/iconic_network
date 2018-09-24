@@ -154,7 +154,10 @@ class ElsSearch:
         ## TODO: add exception handling
         api_response = els_client.exec_request(self._uri)
         self._tot_num_res = int(api_response['search-results']['opensearch:totalResults'])
-        self._results = api_response['search-results']['entry']
+        if api_response['search-results'].get('entry'):
+            self._results = api_response['search-results']['entry']
+        else:
+            self._results = []
         self._links = api_response['search-results']['link']
         if get_all is True:
             while (self.num_res < self.tot_num_res) and (self.num_res < limit):
