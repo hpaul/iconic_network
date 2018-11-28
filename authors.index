@@ -1,0 +1,49 @@
+PUT /authors/
+{
+  "mappings": {
+    "_doc": {
+      "properties": {
+        "auth_id": {
+          "type": "long"
+        },
+        "affiliation_current": {
+          "type": "object",
+          "properties": {
+            "affiliation-name": {
+              "type": "text"
+            },
+            "affiliation-city": {
+              "type": "text"
+            },
+            "affiliation-country": {
+              "type": "text"
+            }
+          }
+        },
+        "cited_by_count": {
+          "type": "integer"
+        },
+        "document_count": {
+          "type": "integer"
+        },
+        "subject_areas": {
+            "type": "nested"
+        },
+        "full_name": {
+          "type": "object",
+          "properties": {
+            "initials": {
+              "type": "text"
+            },
+            "surname": {
+              "type": "text"
+            },
+            "given-name": {
+              "type": "text"
+            }
+          }
+        }
+      }
+    }
+  }
+}

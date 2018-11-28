@@ -13,7 +13,7 @@ db = SqliteDatabase('./iconic.db', pragmas={
 })
 
 # The initialisation
-#network = MySQLDatabase('coauthorship', user='root', host='127.0.0.1', password='pass')
+#network = MySQLDatabase('iconic', user='root', host='127.0.0.1', password='H@mst3rdigital')
 
 class BaseModel(Model):
     class Meta:
@@ -40,6 +40,7 @@ class Author(BaseModel):
     docs_fetched = BooleanField(default=False)
     last_page = BigIntegerField(null=True,default=0)
     is_sample = BooleanField(default=False)
+    citations = JSONField(null=True)
 
 
 class Collaboration(BaseModel):
@@ -51,6 +52,7 @@ class Collaboration(BaseModel):
     coll_count = IntegerField(null=True)
     message = TextField(null=True)
     saved = BooleanField(default=False)
+    authors_id = TextField(null=False)
 
 class Coauthors(BaseModel):
     id = BigIntegerField(unique=True, index=True, primary_key=True)

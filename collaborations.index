@@ -1,0 +1,32 @@
+PUT /collaborations/
+{
+  "mappings": {
+    "doc": {
+      "properties": {
+        "abs_id": {
+          "type": "long"
+        },
+        "authors": {
+          "type": "nested",
+          "properties": {
+            "authid": {
+              "type": "long"
+            },
+            "authname": {
+              "type": "text"
+            },
+            "surname": {
+              "type": "text"
+            }
+          }
+        },
+        "cited_by": {
+          "type": "integer"
+        },
+        "published": {
+          "type": "date"
+        }
+      }
+    }
+  }
+}

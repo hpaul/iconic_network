@@ -92,12 +92,15 @@ def main():
                     try:
                         db_author = Author.get(Author.id == a_id)
                     except Author.DoesNotExist:
-                        if isinstance(coauthor['subject-area'], list) is False:
-                            coauthor['subject-area'] = [coauthor['subject-area']]
-
+                        subject_areas = coauthor.get('subject-area') or []
+                        if isinstance(coauthor.get('subject-area'), list) is False:
+                            subject_areas = [coauthor.get('subject-area')]
+                        
                         db_author = Author(id=a_id)
                         db_author.full_name = coauthor['preferred-name']
-                        db_author.subject_areas = [dict(frequency=s['@frequency'], name=s['$']) for s in coauthor['subject-area']]
+
+                        if coauthor.get('subject-area') is not None:
+                            db_author.subject_areas = [dict(frequency=s['@frequency'], name=s['$']) for s in subject_areas]
                         db_author.document_count = coauthor.get('document-count')
                         db_author.affiliation_current = coauthor.get('affiliation-current')
 
@@ -219,16 +222,20 @@ def main():
             print(Colour.OKGREEN + "DONE" + Colour.END)
 
 
-        coauthors = get_coauthors(author)
-        # Get unique values
-        coauthors = list(set(coauthors))
+        if coauthortable_author.saved is False:
+            coauthors = get_coauthors(author)
+            # Get unique values
+            coauthors = list(set(coauthors))
 
-        fetched = Coauthors.update(co_list=coauthors).where(Coauthors.id == author.id)
-        fetched.execute()
+            fetched = Coauthors.update(co_list=coauthors).where(Coauthors.id == author.id)
+            fetched.execute()
 
-        for coauthor in coauthors:
-            coath = Author.get(Author.id == coauthor)
-            get_articles(coath)
+            for coauthor in coauthors:
+                coath = Author.get(Author.id == coauthor)
+                get_articles(coath)
+
+                fetched = Coauthors.update(saved=True).where(Coauthors.id == author.id)
+                fetched.execute()
 
 def exit_handler():
     # let the db save last writes

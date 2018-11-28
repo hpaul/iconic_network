@@ -1,10 +1,17 @@
 from models import *
 import dask
 import itertools
-import pyorient
+import csv
+import json
+import logging
+import os.path
+import time
+from dateutil import parser
+import pprint as pp
+# logger = logging.getLogger('peewee')
+# logger.setLevel(logging.DEBUG)
+# logger.addHandler(logging.StreamHandler())
 
-client = pyorient.OrientDB("localhost", 2424)
-client.db_open( "coauthors", "admin", "admin" )
 
 class Colour:
     OKGREEN = '\033[92m'
@@ -13,109 +20,118 @@ class Colour:
     END = '\033[0m'
 
 
-def save_author(id, data):
-    result = client.query("select from Author WHERE Author.id = %s" % id, 1, '*:0')
+def save_collaboration(row, author_nodes, author_edges):
+    nodes_tasks = []
+    edges_tasks = []
 
-    if len(result) == 0:
-        auth = { '@Authors': { 'id': id, 'name': data.get('authname') } }
-        rec_position = client.record_create(rec)
-
-
-def save_network(from_author, data):
-
-    q = "CREATE EDGE Wrote FROM (SELECT FROM Authors WHERE id = %s) TO \
-          (SELECT FROM Article WHERE id = %s)" % (from_author, data.abs_id)
-    client.query(q)
-
-
-def save_collaboration(row):
-    keywords = str(row.keywords or '')
+    keywords = str(row['keywords'] or '')
     keywords = keywords.replace('"', '')
 
-    rec = { '@Article': { 'id': row.id, 'published': row.published, 'citations': row.cited_by, 'keywords': keywords } }
-    rec_position = client.record_create(rec)
-
-    lazy_network = []
+    print(Colour.BOLD + str(row['abs_id']) + ' - Saving authors' + Colour.END)
     
-    print(Colour.BOLD + str(row.abs_id) + ' - Saving authors' + Colour.END)
+    auth_ids = [int(ath.get('authid'))
+                    for ath in row['authors']
+                        if ath.get('authid') is not None and
+                        int(ath['authid']) in row['co_list']
+                ]
+
     # Store each author details
-    for author in row.authors:
-        id = author.get('authid')
+    for id in auth_ids:
+        try:
+            # Try to find details about author in authors table
+            author = Author.get(Author.id == id)
+            university = author.affiliation_current
+            university = university or {}
+            node = [
+                id,
+                university.get('affiliation-country'),
+                university.get('affiliation-name')
+            ]
+            # Insert data row into CSV
+            author_nodes.writerow(node)
+        except Author.DoesNotExist:
+            node = [id, '', '']
+            # Insert data row into CSV
+            author_nodes.writerow(node)
 
-        if id is not None:
-            s_author = dask.delayed(save_author)(id, author)
-            lazy_network.append(s_author)
 
-    print('')
-    print(Colour.OKGREEN + str(row.abs_id) + ' - Saved' + Colour.END)
-
-    print(Colour.BOLD + str(row.abs_id) + ' - Saving network of authors' + Colour.END)
-    auth_ids = [ath.get('authid') for ath in row.authors if ath.get('authid') is not None]
+    print(Colour.BOLD + str(row['abs_id']) + ' - Saving network of authors' + Colour.END)
+    
     # Generate network between article authors
-    #comb = itertools.combinations(auth_ids, 2)
+    comb = itertools.combinations(auth_ids, 2)
 
-    for from_author in auth_ids:
-        s_network = dask.delayed(save_network)(from_author, row)
-        lazy_network.append(s_network)
+    for source, target in comb:
+        edge = [
+            source,
+            target,
+            row['published'].year, 
+            row['cited_by']
+        ]
+        # Insert data into CSV
+        author_edges.writerow(edge)
 
     print('')
-    print(Colour.OKGREEN + str(row.abs_id) + ' - Saved' + Colour.END)
-
-    fetched = Collaboration.update(saved=True).where(Collaboration.abs_id == row.abs_id)
-    fetched.execute()
-
-    # Save network
-    dask.compute(*lazy_network)
+    print(Colour.OKGREEN + str(row['abs_id']) + ' - Saved' + Colour.END)
 
 
-def build_network():
-    lazy_collaborations = []
-    collaborations = Collaboration.select().order_by(Collaboration.cited_by.desc()).where(Collaboration.saved == 0).limit(1).iterator()
-
-    for collaboration in collaborations:
-        task = dask.delayed(save_collaboration)(collaboration)
-        lazy_collaborations.append(task)
-
-    dask.compute(*lazy_collaborations)
+def with_file(filename, callback):
+    with open(filename, 'w+') as f:
+        return callback(f)
 
 
-net = build_network()
-
-
-# def connect_author(id):
-#     def create(tx, aid):
-#         return tx.run("MATCH (seed:Author {id:$id})-[:AUTHORED]->(ar:Article)<-[:AUTHORED]-(co)"
-#                       "MERGE (seed)-[r:COAUTHOR]->(co)"
-#                       "RETURN id(r)", id=aid)
+def build_networks():
+    authors = Coauthors.select(Coauthors.id, Coauthors.co_list, Author.cited_by_count).join(Author, on=(Coauthors.id == Author.id)).where(Coauthors.saved == 1).order_by(Author.cited_by_count.desc())
     
-#     ids = []
-#     with driver.session() as session:
-#         ids = session.write_transaction(create, id)
-    
-#     print(Colour.OKGREEN + str(id) + ' - End buliding' + Colour.END)
-#     return ids
+    for author in authors:
+        print(Colour.BOLD + "Build network for: " + str(author) + Colour.END)
+        lazy_network = []
 
-# def build_coauthors():
+        nodes = "data/%s_nodes.csv" % author.id
+        edges = "data/%s_edges.csv" % author.id
+        
+        if os.path.exists(nodes) is False and os.path.exists(edges) is False:
+            with open(nodes, "wt") as nodes, open(edges, "wt") as edges:
+                # CSV with nodes and columns
+                nodes.truncate(0)
+                author_nodes = csv.writer(nodes, 'excel')
+                author_nodes.writerow(('Id', 'country', 'university'))
+                
+                # CSV with edges columns
+                edges.truncate(0)
+                author_edges = csv.writer(edges, 'excel')
+                author_edges.writerow(['Source', 'Target', 'year', 'citations'])
 
-#     lazy_queue = []
-#     # Get list o author
-#     # Iterate over each one and build own coauthorship
-#     def get_authors(tx):
-#         return tx.run("MATCH (a:Author) RETURN a.id")
+                def save_articles(coauth):
+                    print(Colour.BOLD + " -----articles for coauthor: " + str(coauth) + Colour.END)
+                    articles = Collaboration.select().where(Collaboration.authors_id.contains(coauth))
+  
+                    print(Colour.OKGREEN + "-GOT THEM: " + str(coauth) + Colour.END)
+                    for collaboration in articles:
+                        co_list = author.co_list
+                        co_list.append(author.id)
 
-#     results = []
+                        coll = {
+                            'abs_id': collaboration.abs_id,
+                            'authors': collaboration.authors,
+                            'published': collaboration.published,
+                            'cited_by': collaboration.cited_by,
+                            'keywords': collaboration.keywords,
+                            'co_list': set(co_list)
+                        }
+                        save_collaboration(coll, author_nodes, author_edges)
+                    
 
-#     with driver.session() as session:
-#         authors = session.read_transaction(get_authors)
+                for coauthor in author.co_list:
+                    task = dask.delayed(save_articles)(coauthor)
+                    lazy_network.append(task)
 
-#         for author in authors:
-#             print(Colour.OKGREEN + str(author["a.id"]) + ' - Building..' + Colour.END)
-#             task = dask.delayed(connect_author)(author["a.id"])
-#             lazy_queue.append(task)
+                dask.compute(*lazy_network)
 
-#         results = dask.compute(*lazy_queue)
+# Get list of most cited authors and their co-authors
+# For each co-author get his documents
+# Go in each document and build the network
+# Select author co-authors and exclude others
+# Save nodes in *id*_nodes.csv
+# Save edges in *id*_edges.csv
 
-#     return results
-
-# co = build_coauthors()
-# print(co)
+build_networks()

@@ -7,7 +7,8 @@ config.json
 *.db
 .db-shm
 *-v
-*-wb
-*-wal
+*.db-wb
+*.db-wal
+*.db-shm
 nohup.out
 *data/

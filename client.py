@@ -142,6 +142,11 @@ class ElsSearch:
         return len(self.results)
 
     @property
+    def cursor(self):
+        """Get cursor identification for next page of scopus search"""
+        return self._cursor
+
+    @property
     def uri(self):
         """Gets the request uri for the search"""
         return self._uri
@@ -154,6 +159,8 @@ class ElsSearch:
         ## TODO: add exception handling
         api_response = els_client.exec_request(self._uri)
         self._tot_num_res = int(api_response['search-results']['opensearch:totalResults'])
+        if api_response['search-results'].get('cursor'):
+            self._cursor = api_response['search-results']['cursor']
         if api_response['search-results'].get('entry'):
             self._results = api_response['search-results']['entry']
         else:
@@ -431,7 +438,7 @@ class ElsAuthor(ElsProfile):
              False."""
         try:
             api_response = els_client.exec_request(
-                self.uri + "?field=document-count,cited-by-count,citation-count,h-index,dc:identifier,coauthor-count")
+                self.uri + "?field=document-count,cited-by-count,citation-count,h-index,dc:identifier,coauthor-count&self-citation=exclude")
             data = api_response[self.__payload_type][0]
             if not self.data:
                 self._data = dict()
