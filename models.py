@@ -52,7 +52,7 @@ class Collaboration(BaseModel):
     coll_count = IntegerField(null=True)
     message = TextField(null=True)
     saved = BooleanField(default=False)
-    authors_id = TextField(null=False)
+
 
 class Coauthors(BaseModel):
     id = BigIntegerField(unique=True, index=True, primary_key=True)

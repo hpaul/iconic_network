@@ -1,32 +1,16 @@
 """ Elsevier data downloader """
 import itertools
 from requests import Request, exceptions
-from client import ElsClient, ElsSearch
+from client import ElsClient, ElsSearch, ElsAuthor
 from models import *
-from colorama import Style, Fore
+from colorama import Style
 import re
-import atexit
-import time
-import pprint as pp
-
-
-class Colour:
-    OKGREEN = '\033[92m'
-    BOLD = '\033[1m'
-    UNDERLINE = '\033[4m'
-    END = '\033[0m'
-
-
-# We only need publications between 2007 and 2018
-years = 'PUBYEAR > 2006 AND PUBYEAR < 2019'
-
-# Load configuration
-con_file = open("config.json")
-config = json.load(con_file)
-con_file.close()
-
-# Initialize elsclient client
-client = ElsClient(config['apikey'])
+import sys
+from retrying import retry
+import logging
+# logger = logging.getLogger('peewee')
+# logger.setLevel(logging.DEBUG)
+# logger.addHandler(logging.StreamHandler())
 
 countries = [
     'Austria',
@@ -58,248 +42,253 @@ countries = [
     'Sweden',
     'United Kingdom'
 ]
-# calculate the sample
-# select 1000 from each country
-# SELECT
-#     id, (json_extract(full_name, "$.surname") || ' ' || json_extract(full_name, "$.given-name")) AS name,
-#     cited_by_count, (json_extract(affiliation_current, "$.affiliation-city") || ', ' || json_extract(affiliation_current, "$.affiliation-country")) AS city,
-#     docs_fetched
-# FROM
-#     author
-# WHERE
-#     json_extract(affiliation_current, "$.affiliation-country")
-#     IN ('Austria', 'Belgium', 'Bulgaria', 'Croatia', 'Cyprus', 'Czech Republic', 'Denmark', 'Estonia', 'Finland', 'France', 'Germany', 'Greece', 'Hungary', 'Ireland', 'Italy', 'Latvia', 'Lithuania', 'Luxembourg', 'Malta', 'Netherlands', 'Poland', 'Portugal', 'Romania', 'Slovakia', 'Slovenia', 'Spain', 'Sweden', 'United Kingdom')
-#     AND cited_by_count IS NOT NULL
-# ORDER BY
-#     cited_by_count DESC,
-#     document_count DESC
-# LIMIT 600
-authors_list = Author.select().order_by(Author.cited_by_count.desc()).limit(1000)
+
+class Colour:
+    OKGREEN = '\033[92m'
+    BOLD = '\033[1m'
+    UNDERLINE = '\033[4m'
+    END = '\033[0m'
+
+
+# We only need publications between 2007 and 2018
+years = 'PUBYEAR > 2006 AND PUBYEAR < 2019'
+
+# Load configuration
+con_file = open("config.json")
+config = json.load(con_file)
+con_file.close()
+
+# Initialize elsclient client
+client = ElsClient(config['apikey'])
+
+query = """
+SELECT
+    id,
+    json_extract(affiliation_current, '$.affiliation-country') AS country_origin
+FROM
+    author
+WHERE
+    cat LIKE '%{}%'
+    AND country_origin IN ({})
+ORDER BY
+    cited_by_count DESC
+LIMIT 1200
+"""
+
+query = query.format('SOCI', ', '.join(["'{}'".format(c) for c in countries]))
+authors_list = db.execute_sql(query)
+
+
+# Return Author peewee model
+def save_author(author, save_metrics=False):
+    a_id = str(author['dc:identifier']).split('AUTHOR_ID:')
+    a_id = int(a_id[-1])
+
+    if isinstance(author.get('subject-area'), list) is False:
+        author['subject-area'] = [author.get('subject-area')]
+
+    # Check if author was already saved in db
+    db_author, created = Author.get_or_create(id=a_id)
+
+    if created:
+        db_author.full_name=author.get('preferred-name'),
+        db_author.subject_areas=[dict(frequency=s['@frequency'], name=s['$']) for s in author['subject-area'] if s is not None],
+        db_author.affiliation_current=author.get('affiliation-current')
+
+        if save_metrics:
+            # Request metrics for author profile
+            metrics = ElsAuthor(author_id=a_id)
+            metrics.read_metrics(client)
+            db_author.document_count = metrics.data['coredata'].get('document-count')
+            db_author.cited_by_count = metrics.data['coredata'].get('cited-by-count')
+            db_author.h_index = metrics.data.get('h_index')
+            db_author.coauthors_count = metrics.data.get('coauthors_count')
+            db_author.is_sample = True
+
+        db_author.save()
+
+        print("+1 ", end="", flush=True)
+    else:
+        print(".", end="", flush=True)
+
+    return db_author
+
+def get_coauthors(ath):   
+    def save_coauthors(coauthors):
+        colist = []
+        for coauthor in coauthors:
+            db_author = save_author(coauthor)
+            
+            colist.append(db_author.id)
+        return colist
+
+    # Check for author row in coauthors table
+    db_coauthor, created = Coauthors.get_or_create(id=ath.id)
+
+    coauthors = []
+    print(Style.BRIGHT + 'Getting coauthors of: "' + str(ath.id) + '"' + Style.RESET_ALL)
+
+    payload = {
+        'co-author':  '%s' % ath.id,
+        'count':    50,
+        'start':    db_coauthor.last_page or 0,
+    }
+    p = Request('GET', 'https://api.elsevier.com/content/search/author', params=payload).prepare()
+    search = ElsSearch(p.url)
+    search.execute(client)
+    print(Colour.OKGREEN + 'Author has ' + Colour.BOLD + str(search.tot_num_res) + ' coauthors' + Colour.END)
+
+    coauthors = coauthors + save_coauthors(search.results)
+    total_saved = 0
+    total_saved += search.num_res
+
+    while total_saved < search.tot_num_res:
+        # Store latest fetched page index
+        last_page = Coauthors.update(last_page=total_saved).where(Coauthors.id == ath.id)
+        last_page.execute()
+
+        search = None
+        # Build next url
+        payload = {
+            'co-author':  '%s' % ath.id,
+            'count':    25,
+            'start':    total_saved,
+        }
+        p = Request('GET', 'https://api.elsevier.com/content/search/author', params=payload).prepare()
+        search = ElsSearch(p.url)
+        search.execute(client)
+
+        # Save authors
+        coauthors = coauthors + save_coauthors(search.results)
+
+        # Increment saved
+        total_saved += search.num_res
+
+    print(Colour.BOLD + str(total_saved) + " Coauthors saved for '" + str(ath.id) + "'" + Colour.END,)
+
+    return coauthors
+
 
 @db.atomic()
 def save_collaboration(raw, id):
-    try:
-        # Check first if author exist
-        coll = Collaboration.get(Collaboration.abs_id == id)
-        print(",", end="")
-    except Collaboration.DoesNotExist:
-        with db.atomic() as transaction:
-            collaboration = Collaboration()
-            collaboration.abs_id = id
-            collaboration.authors = raw.get('author')
-            collaboration.affiliation = raw.get('affiliation')
-            collaboration.cited_by = raw.get('citedby-count')
-            collaboration.published = raw.get('prism:coverDate')
-            collaboration.keywords = raw.get('authkeywords')
-            collaboration.message = raw.get('message')
-
-            try:
-                collaboration.save(force_insert=True)
-                print(".", end="")
-            except IntegrityError:
-                # Because this block of code is wrapped with "atomic", a
-                # new transaction will begin automatically after the call
-                # to rollback().
-                transaction.rollback()
+    collaboration, created = Collaboration.get_or_create(abs_id=id)
+    if created:
+        collaboration.authors = raw.get('author')
+        collaboration.affiliation = raw.get('affiliation')
+        collaboration.cited_by = raw.get('citedby-count')
+        collaboration.published = raw.get('prism:coverDate')
+        collaboration.keywords = raw.get('authkeywords')
+        collaboration.message = raw.get('message')
+        collaboration.save()
+    print(".", end="")
 
 
 re_abs_id = re.compile('SCOPUS_ID:(.*)')
 
+
 # Gather the document list and store each collaboration from authors
 # If co author does not exist in db, insert a new record with basic data
+# Wait for 2 seconds between every retries (max 5)
+@retry(stop_max_attempt_number=5, wait_fixed=2000)
+def get_network(coauthortable_author):
+    def save_colls(articles):
+        for article in articles:
+            abs_id = re_abs_id.findall(article.get('dc:identifier'))
+            abs_id = abs_id[0]
+            save_collaboration(article, abs_id)
+    
+    # get coauthors articles
+    def get_articles(ath):
+        print(Style.BRIGHT + 'Getting documents for: "' + str(ath.id) + '"' + Style.RESET_ALL)
 
+        payload = {
+            'query':    'AU-ID({0})'.format(ath.id),
+            'count':    '150',
+            'cursor':    '*',
+            'field':   'author-count,author,dc:identifier,prism:coverDate,citedby-count,authkeywords,message',
+            'date':     '2007-2019'
+        }
+        p = Request('GET', 'https://api.elsevier.com/content/search/scopus', params=payload).prepare()
+        search = ElsSearch(p.url)
+        search.execute(client)
 
-def main():
-    for author in authors_list:
-        # get author coauthors
-        # save coauthors data
-        # get coauthors articles
-        try:
-            coauthortable_author = Coauthors.get(Coauthors.id == author.id)
-        except Coauthors.DoesNotExist:
-            coauthortable_author = Coauthors(id=author.id)
-            # Write into db
-            coauthortable_author.save(force_insert=True)
-        
-        coauthortable_author = Coauthors.get(Coauthors.id == author.id)
+        print(Colour.OKGREEN + 'Author has written: ' + Colour.BOLD + str(search.tot_num_res) + ' documents' + Colour.END)
+        # Save collaborations
+        if (search.tot_num_res > 0):
+            save_colls(search.results)
+        print(Colour.UNDERLINE + str(search.num_res) + " Documents saved" + Colour.END)
 
-        def get_coauthors(ath):
-            
-            def save_coauthors(coauthors):
-                colist = []
-                for coauthor in coauthors:
-                    a_id = str(coauthor['dc:identifier']).split('AUTHOR_ID:')
-                    a_id = int(a_id[-1])
-                    colist.append(a_id)
-                    db_author = None
-                    # Check if author was already saved in db
-                    try:
-                        db_author = Author.get(Author.id == a_id)
-                    except Author.DoesNotExist:
-                        subject_areas = coauthor.get('subject-area') or []
-                        if isinstance(coauthor.get('subject-area'), list) is False:
-                            subject_areas = [coauthor.get('subject-area')]
-                        
-                        db_author = Author(id=a_id)
-                        db_author.full_name = coauthor['preferred-name']
+        total_saved = 0
+        total_saved += search.num_res
 
-                        if coauthor.get('subject-area') is not None:
-                            db_author.subject_areas = [dict(frequency=s['@frequency'], name=s['$']) for s in subject_areas]
-                        db_author.document_count = coauthor.get('document-count')
-                        db_author.affiliation_current = coauthor.get('affiliation-current')
-
-                        # Write into db
-                        db_author.save(force_insert=True)
-
-                return colist
-
-
-            db_author = Coauthors.get(Coauthors.id == author.id)
-            if db_author.co_list is True and len(db_author.co_list) > 0:
-                return db_author.co_list
-            
-            coauthors = []
-
-            print(Style.BRIGHT + 'Getting coauthors of: "' + str(ath.id) + '"' + Style.RESET_ALL)
-
-            payload = {
-                'co-author':  '%s' % ath.id,
-                'count':    25,
-                'start':    ath.last_page,
-            }
-            p = Request('GET', 'https://api.elsevier.com/content/search/author', params=payload).prepare()
-            search = ElsSearch(p.url)
-            search.execute(client)
-
-            print(Colour.OKGREEN + 'Author has ' + Colour.BOLD + str(search.tot_num_res) + ' coauthors' + Colour.END)
-
-            coauthors = coauthors + save_coauthors(search.results)
-            total_saved = 0
-            total_saved += search.num_res
-
-            while total_saved < search.tot_num_res:
-
-                # Store latest fetched page index
-                last_page = Coauthors.update(last_page=total_saved).where(Coauthors.id == ath.id)
-                last_page.execute()
-
-                search = None
-                # Build next url
-                payload = {
-                    'co-author':  '%s' % ath.id,
-                    'count':    25,
-                    'start':    total_saved,
-                }
-                p = Request('GET', 'https://api.elsevier.com/content/search/author', params=payload).prepare()
-                search = ElsSearch(p.url)
-                search.execute(client)
-
-                # Save authors
-                coauthors = coauthors + save_coauthors(search.results)
-
-                # Increment saved
-                total_saved += search.num_res
-            
-            return coauthors
-
-        def get_articles(ath):
-
-            def save_colls(articles):
-                for article in articles:
-                    if article.get('author') is not None and len(article['author']) > 1:
-
-                        id = re_abs_id.findall(article.get('dc:identifier'))
-                        id = id[0]
-                        save_collaboration(article, id)
-            
-
-            print(Style.BRIGHT + 'Getting documents for: "' + str(ath.id) + '"' + Style.RESET_ALL)
-
+        while total_saved < search.tot_num_res:
             payload = {
                 'query':    'AU-ID({0})'.format(ath.id),
                 'count':    '150',
-                'cursor':    '*',
+                'cursor':   search.cursor['@next'],
                 'field':   'author-count,author,dc:identifier,prism:coverDate,citedby-count,authkeywords,message',
                 'date':     '2007-2019'
             }
             p = Request('GET', 'https://api.elsevier.com/content/search/scopus', params=payload).prepare()
+
             search = ElsSearch(p.url)
             search.execute(client)
 
-            print(Colour.OKGREEN + 'Author has written: ' + Colour.BOLD + str(search.tot_num_res) + ' documents' + Colour.END)
-
-            print(Colour.UNDERLINE + str(search.num_res) + " Documents gathered" + Colour.END)
             # Save collaborations
             save_colls(search.results)
+            
+            # Store latest fetched page index
+            last_page = Author.update(last_page=total_saved).where(Author.id == ath.id)
+            last_page.execute()
 
-            total_saved = 0
+            # Increment saved
             total_saved += search.num_res
+            print(Colour.UNDERLINE + str(total_saved) + " Documents saved" + Colour.END)
 
-            next_url = None
-            while total_saved < search.tot_num_res:
-                
-                # Store latest fetched page index
-                last_page = Author.update(last_page=total_saved).where(Author.id == ath.id)
-                last_page.execute()
+        author_fetched = Author.update(docs_fetched=True, last_page=total_saved).where(Author.id == ath.id)
+        author_fetched.execute()
+        print(Colour.OKGREEN + str(ath.id) + " - DONE" + Colour.END)
 
-                payload = {
-                    'query':    'AU-ID({0})'.format(ath.id),
-                    'count':    '150',
-                    'cursor':   search.cursor['@next'],
-                    'field':   'author-count,author,dc:identifier,prism:coverDate,citedby-count,authkeywords,message',
-                    'date':     '2007-2019'
-                }
-                p = Request('GET', 'https://api.elsevier.com/content/search/scopus', params=payload).prepare()
+    if coauthortable_author.saved is False:
+        coauthors = coauthortable_author.co_list
 
-                search = ElsSearch(p.url)
-                search.execute(client)
+        print(Colour.OKGREEN + "Getting network for author: " + str(coauthortable_author.id))
+        for coauthor in coauthors:
+            coath = Author.get(Author.id == coauthor)
+            if coath.docs_fetched is False:
+                get_articles(coath)
 
-                # Save collaborations
-                save_colls(search.results)
-
-                # Increment saved
-                total_saved += search.num_res
-
-                print(Colour.UNDERLINE + str(total_saved) + " Abstracts gathered" + Colour.END)
-
-            fetched = Author.update(docs_fetched=True, last_page=total_saved).where(Author.id == ath.id)
-            fetched.execute()
-            print(Colour.OKGREEN + "DONE" + Colour.END)
+        fetched = Coauthors.update(saved=True).where(Coauthors.id == coauthortable_author.id)
+        fetched.execute()
+        print(Colour.OKGREEN + str(coauthortable_author.id) + " - DONE" + Colour.END)
+    else:
+        print(Colour.OKGREEN + "Network of author: " + str(coauthortable_author.id) + " was saved before!" + Colour.END)
 
 
-        if coauthortable_author.saved is False:
-            coauthors = get_coauthors(author)
-            # Get unique values
-            coauthors = list(set(coauthors))
+# Some authors got problems with list of author
+# So it should be refetched
+def update_co_list(coauthor, db_author):
+    if len(coauthor.co_list) < 90:
+        print('We shall update the coauthor list for ' + str(coauthor.id))
+        coauthors = get_coauthors(db_author)
+        # Store only unique coauthors ids
+        coauthors = list(set(coauthors))  
+        fetched = Coauthors.update(co_list=coauthors, saved=False).where(Coauthors.id == db_author.id)
+        fetched.execute()
 
-            fetched = Coauthors.update(co_list=coauthors).where(Coauthors.id == author.id)
-            fetched.execute()
 
-            print(Colour.OKGREEN + "Getting network for author: " + str(author.id))
-            for coauthor in coauthors:
-                coath = Author.get(Author.id == coauthor)
-                if coath.docs_fetched is False:
-                    get_articles(coath)
+def main():
+    for author in authors_list:
+        db_author = Author.get(Author.id == author[0])
+        coauthortable_author = Coauthors.get(Coauthors.id == author[0])
+        
+        update_co_list(coauthortable_author, db_author)
+        get_network(coauthortable_author)
 
-            fetched = Coauthors.update(saved=True).where(Coauthors.id == author.id)
-            fetched.execute()
-
-def exit_handler():
-    main()
-
-atexit.register(exit_handler)
 
 if __name__=='__main__':
-    for x in range(0, 10):
-        try:
-            main()
-            str_error = None
-        except exceptions.HTTPError as err:
-            str_error = err
-            pp.pprint(err)
-            pass
-        
-        if str_error:
-            time.sleep(2)
-        else:
-            break
+    try:
+        main()
+    except exceptions.HTTPError as err:
+        print(err)
+        sys.exit('Something bad happened! Check ^')

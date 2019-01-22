@@ -1,5 +1,8 @@
 require Logger
 require Combination
+require NimbleCSV
+
+NimbleCSV.define(NetworkParser, separator: ",", escape: ~s(\"))
 
 defmodule Collaborations do
   @es_type "collaborations"
@@ -17,121 +20,195 @@ defmodule Authors do
   defstruct auth_id: nil, affiliation_current: nil, full_name: nil
 end
 
-defmodule BuildNetwork do
+defmodule Network do
+  @es_type "re_network"
+  @es_index "re_network"
+  use Elastic.Document.API
 
-  def network(articles, author_id, co_list) do
-    colist_ids = Enum.map(co_list, fn item -> Integer.parse(item.auth_id) |> elem(0) end)
+  defstruct source: nil, target: nil, year: nil, weight: nil, citations: nil, articles: nil
+end
 
-    {:ok, nodes} = File.open("data/#{author_id}_nodes.csv", [:append, :utf8])
-    {:ok, edges} = File.open("data/#{author_id}_edges.csv", [:append, :utf8])
+defmodule BuildNetworkWorker do
+  use GenServer
 
-    for article <- articles do
-
-      ids =
-        Enum.reduce(article.authors, [], fn auth, list ->
-          {id, _} = Map.get(auth, "authid") |> Integer.parse
-          [id  | list]
-        end)
-        |> Enum.uniq
-        |> Enum.filter(fn id -> Enum.member?(colist_ids, id) end)
-
-      authors =
-        ids
-        |> Enum.map(fn id -> Enum.find(co_list, fn item -> "#{item.auth_id}" == "#{id}" end) end)
-
-      for auth <- authors do
-        name = "#{Map.get(auth.full_name, "initials", "")} #{Map.get(auth.full_name, "surname", "")}"
-        city = "#{Map.get(auth.affiliation_current, "affiliation-city", "")}, #{Map.get(auth.affiliation_current, "affiliation-country", "")}"
-        univeristy = Map.get(auth.affiliation_current, "affiliation-name", "")
-
-        IO.write(nodes, "#{auth.auth_id};#{name};#{city};#{univeristy}\n")
-      end
-
-      connections =
-        case length(ids) do
-          0 -> []
-          1 -> []
-          _ -> Combination.combine(ids, 2)
-        end
-
-      for [source, target] <- connections do
-        IO.write(edges, "#{source};#{target};#{article.published};#{article.cited_by}\n")
-      end
-
-    end
-
-    File.close(nodes)
-    File.close(edges)
+  def start_link(_) do
+    GenServer.start_link(__MODULE__, nil, [])
   end
 
-  def coauthors(row) do
-    with [author_id, co_list | _] <- row
-    do
-      list = [author_id | co_list] |> Enum.uniq
+  def init(_) do
+    {:ok, nil}
+  end
 
+  def network(server, author_id, co_list) do
+    # Don't use cast: http://blog.elixirsips.com/2014/07/16/errata-dont-use-cast-in-a-poolboy-transaction/
+    timeout_ms = 1_000_000
+    GenServer.call(server, {:network, author_id, co_list}, timeout_ms)
+  end
+
+  def handle_call({:network, author_id, co_list}, _from, state) do
+    conns = Combination.combine(co_list, 2)
+    # Write csv header for nodes
+    {:ok, nodes} = File.open("data/#{author_id}_nodes.csv", [:write, :utf8])
+    IO.write(nodes, "Id,name,city,country,university\n")
+    # Get nodes and write them
+    File.close(nodes)
+
+    # Write csv header for edges
+    {:ok, edges} = File.open("data/#{author_id}_edges.csv", [:write, :utf8])
+    IO.write(edges, "Source,Target,year,weight,citations\n")
+
+    for [source,target] <- conns do
       query = %{
         query: %{
           bool: %{
-            filter: %{
-              terms: %{ auth_id: list }
-            }
+            must: [
+              %{ match: %{ source: source } },
+              %{ match: %{ target: target } }
+            ]
           }
-        },
-        size: 10000
+        }
       }
 
-      list = Authors.search(query)
+      list = Network.search(query)
 
-      for coauthor <- co_list do
-        articles = Collaborations.search(%{
-          query: %{
-            bool: %{
-              filter: %{
-                term: %{ "authors.authid": coauthor}
-              }
-            }
-          },
-          size: 2000
-        })
-
-        Logger.info "Getting articles for #{coauthor} coauthor"
-        Task.async(__MODULE__, :network, [articles, author_id, list])
+      for edge <- list do
+        IO.write(edges, "#{edge.source},#{edge.target},#{edge.weight},#{edge.citations}\n")
       end
-      |> Enum.map(fn task -> Task.await(task, 1_000_000) end)
-
-    else
-      {:error, _} -> {}
     end
+
+    Logger.info " - #{author_id} network finished"
+    File.close(edges)
+    {:reply, "done", state}
   end
+end
 
+defmodule BuildNetwork do
   def list() do
-    with {:ok, db} <- Mariaex.start_link(
-                        username: "root",
-                        password: "H@mst3rdigital",
-                        database: "iconic",
-                        show_sensitive_data_on_connection_error: true
-                      )
+    with {:ok, db} <- Sqlitex.open('../iconic.db'),
+         {:ok, data} <- Sqlitex.query(db, "SELECT coauthors.id as id, coauthors.co_list as co_list, author.cited_by_count FROM coauthors INNER JOIN author ON coauthors.id = author.id ORDER BY author.cited_by_count DESC LIMIT 100", db_timeout: 1_000_000)
     do
-      {:ok, data} = Mariaex.query(db, "SELECT coauthors.id as id, coauthors.co_list as co_list, author.cited_by_count FROM coauthors INNER JOIN author ON coauthors.id = author.id ORDER BY author.cited_by_count DESC LIMIT 50 OFFSET 50")
+      {:ok, pool} = :poolboy.start_link(
+        [worker_module: BuildNetworkWorker, size: 10, max_overflow: 2]
+      )
 
-      for row <- data.rows do
-        id = List.first(row)
-        # Write csv header for nodes
-        {:ok, nodes} = File.open("data/#{id}_nodes.csv", [:write, :utf8])
-        IO.write(nodes, "Id;name;country;university\n")
-        File.close(nodes)
-
-        # Write csv header for edges
-        {:ok, edges} = File.open("data/#{id}_edges.csv", [:write, :utf8])
-        IO.write(edges, "Source;Target;year;citations\n")
-        File.close(edges)
+      for row <- data do
+        id = row[:id]
+        co_list = Poison.decode!(row[:co_list]) |> Enum.take(2)
 
         Logger.info "Started process for author #{inspect(id)}"
-        Task.start(__MODULE__, :coauthors, [row])
+
+        :poolboy.transaction(pool, fn(http_requester_pid) ->
+          BuildNetworkWorker.network(http_requester_pid, id, co_list)
+        end, :infinity)
       end
 
     else
-      {:error, err} -> err
+      {:error, err} -> Logger.error(err)
+    end
+  end
+end
+
+defmodule Network.CLI do
+
+  def main(_args) do
+    IO.puts("ICONIC!")
+    print_help_message()
+    receive_command()
+  end
+
+  @commands %{
+    "compute" => "Start building authors network"
+  }
+
+  defp receive_command do
+    IO.gets("\n> ")
+    |> String.trim
+    |> String.downcase
+    |> execute_command
+  end
+
+  defp execute_command("compute") do
+    compute()
+  end
+
+  defp execute_command(_unknown) do
+    IO.puts("\nInvalid command. I don't know what to do.")
+    print_help_message()
+
+    receive_command()
+  end
+
+  defp print_help_message do
+    IO.puts("\nYou can run these actions:\n")
+    @commands
+    |> Enum.map(fn({command, description}) -> IO.puts("  #{command} - #{description}") end)
+  end
+
+  def compute() do
+    Logger.info "Invoked compute method - Starting process"
+    with {:ok, db} <- Sqlitex.open('../iconic.db'),
+         {:ok, data} <- Sqlitex.query(db, "SELECT * FROM collaboration", db_timeout: 1_000_000_000),
+         {:ok, edges} <- File.open("data/all_edges.csv", [:write, :utf8])
+    do
+      Logger.info "Data retrived - Start computing"
+      IO.write(edges, "Source,Target,year,cumulated_citations,articles\n")
+
+      rows =
+        data
+        |> Flow.from_enumerable()
+        |> Flow.flat_map(fn collaboration ->
+          {year, _, _} = collaboration[:published]
+          citations = collaboration[:cited_by] || 0
+          authors = Poison.decode!(collaboration[:authors])
+          ids =
+            Enum.reduce(authors, [], fn auth, list ->
+              [Map.get(auth, "authid") | list]
+            end)
+            |> Enum.reject(&is_nil/1)
+            |> Enum.map(fn id -> elem(Integer.parse(id), 0) end)
+            |> Enum.uniq
+            |> Enum.sort
+          connections =
+            case length(ids) do
+              0 -> []
+              1 -> []
+              _ -> Combination.combine(ids, 2)
+            end
+
+          :erlang.garbage_collect()
+
+          Enum.map(connections, fn [source,target] ->
+            [source, target, year, citations, collaboration[:abs_id]]
+          end)
+        end)
+        |> Flow.partition()
+        |> Flow.reduce(fn -> %{} end, fn [source, target, year, citations, article], acc ->
+          Map.update(acc, "#{source}-#{target}-#{year}", [{citations, article}], fn conns ->
+            [{citations, article} | conns]
+          end)
+        end)
+        |> Enum.to_list()
+
+      Logger.info "Half the way..."
+      :erlang.garbage_collect()
+
+      rows =
+        rows
+        |> Flow.from_enumerable()
+        |> Flow.partition()
+        |> Flow.reduce(fn -> [] end, fn {edge, details}, acc ->
+          [source, target, year] = String.split(edge, "-")
+          citations = Enum.reduce(details, 0, fn {cit, _}, total -> cit + total end)
+          articles = Enum.reduce(details, [], fn {_, a}, total -> [a | total] end)
+
+          [[source, target, year, length(details), citations, Enum.join(articles, ",")] | acc]
+        end)
+        |> Enum.to_list()
+
+      Logger.info "Writing..."
+      IO.write(edges, NetworkParser.dump_to_iodata(rows))
+
+      Logger.info "Processed all collaboration, yaaay!!"
     end
   end
 end

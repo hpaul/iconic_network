@@ -440,13 +440,16 @@ class ElsAuthor(ElsProfile):
             api_response = els_client.exec_request(
                 self.uri + "?field=document-count,cited-by-count,citation-count,h-index,dc:identifier,coauthor-count&self-citation=exclude")
             data = api_response[self.__payload_type][0]
-            if not self.data:
+            if not self._data:
                 self._data = dict()
                 self._data['coredata'] = dict()
+            if not data['coredata']:
+                data['coredata'] = {}
+            
             self._data['coredata']['dc:identifier'] = data['coredata']['dc:identifier']
-            self._data['coredata']['citation-count'] = int(data['coredata']['citation-count'])
-            self._data['coredata']['cited-by-count'] = int(data['coredata']['citation-count'])
-            self._data['coredata']['document-count'] = int(data['coredata']['document-count'])
+            self._data['coredata']['citation-count'] = int(data['coredata']['citation-count'] or 0)
+            self._data['coredata']['cited-by-count'] = int(data['coredata']['citation-count'] or 0)
+            self._data['coredata']['document-count'] = int(data['coredata']['document-count'] or 0)
             self._data['h-index'] = int(data['h-index'])
             self._data['coauthor-count'] = int(data['coauthor-count'])
             logger.info('Added/updated author metrics')

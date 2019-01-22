@@ -28,3 +28,8 @@ use Mix.Config
 # here (which is why it is important to import them last).
 #
 #     import_config "#{Mix.env()}.exs"
+
+config :elastic,
+  base_url: "https://e8ce91c6882c49b0a209320d4e04442a.us-east-1.aws.found.io:9243",
+  basic_auth: {"elastic", "3LJSA3Fgb2NBA1Mg2WeCe5Pf"},
+  timeout: 30_000_000_000

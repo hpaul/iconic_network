@@ -23,3 +23,5 @@ erl_crash.dump
 build_network-*.tar
 
 /data/
+
+.elixir_ls
