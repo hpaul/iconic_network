@@ -13,8 +13,8 @@ import boto3
 # Create an SNS client
 awsclient = boto3.client(
     "sns",
-    aws_access_key_id="AKIAJ7XUMJUDRYUVJFFQ",
-    aws_secret_access_key="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",
+    aws_access_key_id=os.environ.get('AWS_KEY'),
+    aws_secret_access_key=os.environ.get('AWS_SECRET'),
     region_name="us-east-1"
 )
 
