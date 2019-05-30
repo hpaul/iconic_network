@@ -3,7 +3,7 @@ from playhouse.migrate import *
 from peewee import *
 
 # The initialisation
-db = SqliteDatabase('./iconic.db', pragmas={
+db = SqliteDatabase('../cache/iconic.db', pragmas={
     'journal_mode': 'wal',
     'cache_size': '-2000',
     'fullfsync': 'on',

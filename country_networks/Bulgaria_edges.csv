@@ -1,0 +1,843 @@
+Source,Target,Year,Weight,Keywords
+36143231500,35228119200,2007,1,"['CMS', 'MTCC', 'Resistive plate chambers']"
+36143231500,35228119200,2010,2,"['CMS', 'Detectors', 'LHC', 'Muon system', 'RPC', 'RPC']"
+36143231500,35228119200,2013,2,"['Gaseous detectors', 'Muon spectrometers', 'Resistive-plate chambers', '']"
+36143231500,7006790820,2007,1,"['CMS', 'MTCC', 'Resistive plate chambers']"
+36143231500,7006790820,2010,2,"['CMS', 'Detectors', 'LHC', 'Muon system', 'RPC', 'RPC']"
+36143231500,7006790820,2013,1,['']
+36143231500,7006790820,2014,2,"['', '']"
+36143231500,7006790820,2015,1,"['Electron multipliers (gas)', 'Gaseous detectors', 'Particle tracking detectors', 'Particle tracking detectors (Gaseous detectors)']"
+36143231500,7006790820,2016,2,"['', '']"
+36143231500,7101600969,2007,1,"['CMS', 'MTCC', 'Resistive plate chambers']"
+36143231500,7101600969,2010,2,"['CMS', 'Detectors', 'LHC', 'Muon system', 'RPC', 'RPC']"
+36143231500,7101600969,2013,1,['']
+36143231500,35240572900,2007,1,"['CMS', 'MTCC', 'Resistive plate chambers']"
+36143231500,35240572900,2010,2,"['CMS', 'Detectors', 'LHC', 'Muon system', 'RPC', 'RPC']"
+36143231500,35240572900,2013,1,['']
+36143231500,35240572900,2014,2,"['', '']"
+36143231500,35240572900,2015,1,"['Electron multipliers (gas)', 'Gaseous detectors', 'Particle tracking detectors', 'Particle tracking detectors (Gaseous detectors)']"
+36143231500,35240572900,2016,2,"['', '']"
+35228119200,7006790820,2007,1,['']
+35228119200,7006790820,2008,2,"['Avalanche mode', 'Bakelite resistivity', 'Closed loop gas circulation', 'CMS', 'Gas purification', 'Resistive Plate Chamber', 'Streamer mode', '']"
+35228119200,7006790820,2009,3,"['CMS', 'Resistive plate chamber', 'RPC efficiency', 'RPC noise', 'CMS', 'Detector', 'Muon system', 'RPC', 'Trigger', 'CMS', 'MTCC', 'Resistive Plate Chamber', 'RPC']"
+35228119200,7006790820,2010,2,"['CMS', 'Detectors', 'LHC', 'Muon system', 'RPC', 'RPC']"
+35228119200,7006790820,2013,1,['']
+35228119200,7101600969,2007,1,['']
+35228119200,7101600969,2008,2,"['Avalanche mode', 'Bakelite resistivity', 'Closed loop gas circulation', 'CMS', 'Gas purification', 'Resistive Plate Chamber', 'Streamer mode', '']"
+35228119200,7101600969,2009,3,"['CMS', 'Resistive plate chamber', 'RPC efficiency', 'RPC noise', 'CMS', 'Detector', 'Muon system', 'RPC', 'Trigger', 'CMS', 'MTCC', 'Resistive Plate Chamber', 'RPC']"
+35228119200,7101600969,2010,2,"['CMS', 'Detectors', 'LHC', 'Muon system', 'RPC', 'RPC']"
+35228119200,7101600969,2013,1,['']
+35228119200,35240572900,2007,1,['']
+35228119200,35240572900,2008,2,"['Avalanche mode', 'Bakelite resistivity', 'Closed loop gas circulation', 'CMS', 'Gas purification', 'Resistive Plate Chamber', 'Streamer mode', '']"
+35228119200,35240572900,2009,3,"['CMS', 'Resistive plate chamber', 'RPC efficiency', 'RPC noise', 'CMS', 'Detector', 'Muon system', 'RPC', 'Trigger', 'CMS', 'MTCC', 'Resistive Plate Chamber', 'RPC']"
+35228119200,35240572900,2010,2,"['CMS', 'Detectors', 'LHC', 'Muon system', 'RPC', 'RPC']"
+35228119200,35240572900,2013,1,['']
+7006790820,7101600969,2007,1,['']
+7006790820,7101600969,2008,2,"['Avalanche mode', 'Bakelite resistivity', 'Closed loop gas circulation', 'CMS', 'Gas purification', 'Resistive Plate Chamber', 'Streamer mode', '']"
+7006790820,7101600969,2009,4,"['CMS', 'Resistive plate chamber', 'RPC efficiency', 'RPC noise', 'Algorithm', 'CMS', 'Cosmic muon', 'RPC', 'Technical trigger', 'Tracking', 'CMS', 'Detector', 'Muon system', 'RPC', 'Trigger', 'CMS', 'MTCC', 'Resistive Plate Chamber', 'RPC']"
+7006790820,7101600969,2010,2,"['CMS', 'Detectors', 'LHC', 'Muon system', 'RPC', 'RPC']"
+7006790820,7101600969,2013,1,['']
+7006790820,35240572900,2007,1,['']
+7006790820,35240572900,2008,2,"['Avalanche mode', 'Bakelite resistivity', 'Closed loop gas circulation', 'CMS', 'Gas purification', 'Resistive Plate Chamber', 'Streamer mode', '']"
+7006790820,35240572900,2009,4,"['CMS', 'Resistive plate chamber', 'RPC efficiency', 'RPC noise', 'Algorithm', 'CMS', 'Cosmic muon', 'RPC', 'Technical trigger', 'Tracking', 'CMS', 'Detector', 'Muon system', 'RPC', 'Trigger', 'CMS', 'MTCC', 'Resistive Plate Chamber', 'RPC']"
+7006790820,35240572900,2010,3,"['Optimization', 'Positron Emission Tomography', 'Resistive Plate Chambers', 'CMS', 'Detectors', 'LHC', 'Muon system', 'RPC', 'RPC']"
+7006790820,35240572900,2013,1,['']
+7006790820,35240572900,2014,2,"['', '']"
+7006790820,35240572900,2015,1,"['Electron multipliers (gas)', 'Gaseous detectors', 'Particle tracking detectors', 'Particle tracking detectors (Gaseous detectors)']"
+7006790820,35240572900,2016,2,"['', '']"
+7006790820,35240572900,2017,1,"['Acceleration', 'Co-processors', 'Hybrid architecture', 'Multithreading', 'Particle-matter interactions', 'Simulations']"
+7006790820,35240572900,2012,1,['']
+7101600969,35240572900,2004,1,['']
+7101600969,35240572900,2005,1,['']
+7101600969,35240572900,2007,1,['']
+7101600969,35240572900,2008,2,"['Avalanche mode', 'Bakelite resistivity', 'Closed loop gas circulation', 'CMS', 'Gas purification', 'Resistive Plate Chamber', 'Streamer mode', '']"
+7101600969,35240572900,2009,4,"['CMS', 'Resistive plate chamber', 'RPC efficiency', 'RPC noise', 'Algorithm', 'CMS', 'Cosmic muon', 'RPC', 'Technical trigger', 'Tracking', 'CMS', 'Detector', 'Muon system', 'RPC', 'Trigger', 'CMS', 'MTCC', 'Resistive Plate Chamber', 'RPC']"
+7101600969,35240572900,2010,2,"['CMS', 'Detectors', 'LHC', 'Muon system', 'RPC', 'RPC']"
+7101600969,35240572900,2013,1,['']
+20733806200,6603563795,2009,1,"['Colloids', 'Molecular dynamics (MD)', 'Nanoinclusions', 'Polymer brush']"
+36143231500,7006790820,2007,1,"['CMS', 'MTCC', 'Resistive plate chambers']"
+36143231500,7006790820,2010,2,"['CMS', 'Detectors', 'LHC', 'Muon system', 'RPC', 'RPC']"
+36143231500,7006790820,2013,1,['']
+36143231500,7006790820,2014,2,"['', '']"
+36143231500,7006790820,2015,1,"['Electron multipliers (gas)', 'Gaseous detectors', 'Particle tracking detectors', 'Particle tracking detectors (Gaseous detectors)']"
+36143231500,7006790820,2016,2,"['', '']"
+36143231500,7101600969,2007,1,"['CMS', 'MTCC', 'Resistive plate chambers']"
+36143231500,7101600969,2010,2,"['CMS', 'Detectors', 'LHC', 'Muon system', 'RPC', 'RPC']"
+36143231500,7101600969,2013,1,['']
+36143231500,35240572900,2007,1,"['CMS', 'MTCC', 'Resistive plate chambers']"
+36143231500,35240572900,2010,2,"['CMS', 'Detectors', 'LHC', 'Muon system', 'RPC', 'RPC']"
+36143231500,35240572900,2013,1,['']
+36143231500,35240572900,2014,2,"['', '']"
+36143231500,35240572900,2015,1,"['Electron multipliers (gas)', 'Gaseous detectors', 'Particle tracking detectors', 'Particle tracking detectors (Gaseous detectors)']"
+36143231500,35240572900,2016,2,"['', '']"
+7006790820,7101600969,2007,1,['']
+7006790820,7101600969,2008,2,"['Avalanche mode', 'Bakelite resistivity', 'Closed loop gas circulation', 'CMS', 'Gas purification', 'Resistive Plate Chamber', 'Streamer mode', '']"
+7006790820,7101600969,2009,4,"['CMS', 'Resistive plate chamber', 'RPC efficiency', 'RPC noise', 'Algorithm', 'CMS', 'Cosmic muon', 'RPC', 'Technical trigger', 'Tracking', 'CMS', 'Detector', 'Muon system', 'RPC', 'Trigger', 'CMS', 'MTCC', 'Resistive Plate Chamber', 'RPC']"
+7006790820,7101600969,2010,2,"['CMS', 'Detectors', 'LHC', 'Muon system', 'RPC', 'RPC']"
+7006790820,7101600969,2013,1,['']
+7006790820,35240572900,2007,1,['']
+7006790820,35240572900,2008,2,"['Avalanche mode', 'Bakelite resistivity', 'Closed loop gas circulation', 'CMS', 'Gas purification', 'Resistive Plate Chamber', 'Streamer mode', '']"
+7006790820,35240572900,2009,4,"['CMS', 'Resistive plate chamber', 'RPC efficiency', 'RPC noise', 'Algorithm', 'CMS', 'Cosmic muon', 'RPC', 'Technical trigger', 'Tracking', 'CMS', 'Detector', 'Muon system', 'RPC', 'Trigger', 'CMS', 'MTCC', 'Resistive Plate Chamber', 'RPC']"
+7006790820,35240572900,2010,3,"['Optimization', 'Positron Emission Tomography', 'Resistive Plate Chambers', 'CMS', 'Detectors', 'LHC', 'Muon system', 'RPC', 'RPC']"
+7006790820,35240572900,2013,1,['']
+7006790820,35240572900,2014,2,"['', '']"
+7006790820,35240572900,2015,1,"['Electron multipliers (gas)', 'Gaseous detectors', 'Particle tracking detectors', 'Particle tracking detectors (Gaseous detectors)']"
+7006790820,35240572900,2016,2,"['', '']"
+7006790820,35240572900,2017,1,"['Acceleration', 'Co-processors', 'Hybrid architecture', 'Multithreading', 'Particle-matter interactions', 'Simulations']"
+7006790820,35240572900,2012,1,['']
+7101600969,35240572900,2004,1,['']
+7101600969,35240572900,2005,1,['']
+7101600969,35240572900,2007,1,['']
+7101600969,35240572900,2008,2,"['Avalanche mode', 'Bakelite resistivity', 'Closed loop gas circulation', 'CMS', 'Gas purification', 'Resistive Plate Chamber', 'Streamer mode', '']"
+7101600969,35240572900,2009,4,"['CMS', 'Resistive plate chamber', 'RPC efficiency', 'RPC noise', 'Algorithm', 'CMS', 'Cosmic muon', 'RPC', 'Technical trigger', 'Tracking', 'CMS', 'Detector', 'Muon system', 'RPC', 'Trigger', 'CMS', 'MTCC', 'Resistive Plate Chamber', 'RPC']"
+7101600969,35240572900,2010,2,"['CMS', 'Detectors', 'LHC', 'Muon system', 'RPC', 'RPC']"
+7101600969,35240572900,2013,1,['']
+36143231500,7006790820,2007,1,"['CMS', 'MTCC', 'Resistive plate chambers']"
+36143231500,7006790820,2010,2,"['CMS', 'Detectors', 'LHC', 'Muon system', 'RPC', 'RPC']"
+36143231500,7006790820,2013,1,['']
+36143231500,7006790820,2014,2,"['', '']"
+36143231500,7006790820,2015,1,"['Electron multipliers (gas)', 'Gaseous detectors', 'Particle tracking detectors', 'Particle tracking detectors (Gaseous detectors)']"
+36143231500,7006790820,2016,2,"['', '']"
+36143231500,35240572900,2007,1,"['CMS', 'MTCC', 'Resistive plate chambers']"
+36143231500,35240572900,2010,2,"['CMS', 'Detectors', 'LHC', 'Muon system', 'RPC', 'RPC']"
+36143231500,35240572900,2013,1,['']
+36143231500,35240572900,2014,2,"['', '']"
+36143231500,35240572900,2015,1,"['Electron multipliers (gas)', 'Gaseous detectors', 'Particle tracking detectors', 'Particle tracking detectors (Gaseous detectors)']"
+36143231500,35240572900,2016,2,"['', '']"
+7006790820,35240572900,2007,1,['']
+7006790820,35240572900,2008,2,"['Avalanche mode', 'Bakelite resistivity', 'Closed loop gas circulation', 'CMS', 'Gas purification', 'Resistive Plate Chamber', 'Streamer mode', '']"
+7006790820,35240572900,2009,4,"['CMS', 'Resistive plate chamber', 'RPC efficiency', 'RPC noise', 'Algorithm', 'CMS', 'Cosmic muon', 'RPC', 'Technical trigger', 'Tracking', 'CMS', 'Detector', 'Muon system', 'RPC', 'Trigger', 'CMS', 'MTCC', 'Resistive Plate Chamber', 'RPC']"
+7006790820,35240572900,2010,3,"['Optimization', 'Positron Emission Tomography', 'Resistive Plate Chambers', 'CMS', 'Detectors', 'LHC', 'Muon system', 'RPC', 'RPC']"
+7006790820,35240572900,2013,1,['']
+7006790820,35240572900,2014,2,"['', '']"
+7006790820,35240572900,2015,1,"['Electron multipliers (gas)', 'Gaseous detectors', 'Particle tracking detectors', 'Particle tracking detectors (Gaseous detectors)']"
+7006790820,35240572900,2016,2,"['', '']"
+7006790820,35240572900,2017,1,"['Acceleration', 'Co-processors', 'Hybrid architecture', 'Multithreading', 'Particle-matter interactions', 'Simulations']"
+7006790820,35240572900,2012,1,['']
+36143231500,7006790820,2007,1,"['CMS', 'MTCC', 'Resistive plate chambers']"
+36143231500,7006790820,2010,2,"['CMS', 'Detectors', 'LHC', 'Muon system', 'RPC', 'RPC']"
+36143231500,7006790820,2013,1,['']
+36143231500,7006790820,2014,2,"['', '']"
+36143231500,7006790820,2015,1,"['Electron multipliers (gas)', 'Gaseous detectors', 'Particle tracking detectors', 'Particle tracking detectors (Gaseous detectors)']"
+36143231500,7006790820,2016,2,"['', '']"
+36143231500,7101600969,2007,1,"['CMS', 'MTCC', 'Resistive plate chambers']"
+36143231500,7101600969,2010,2,"['CMS', 'Detectors', 'LHC', 'Muon system', 'RPC', 'RPC']"
+36143231500,7101600969,2013,1,['']
+36143231500,35240572900,2007,1,"['CMS', 'MTCC', 'Resistive plate chambers']"
+36143231500,35240572900,2010,2,"['CMS', 'Detectors', 'LHC', 'Muon system', 'RPC', 'RPC']"
+36143231500,35240572900,2013,1,['']
+36143231500,35240572900,2014,2,"['', '']"
+36143231500,35240572900,2015,1,"['Electron multipliers (gas)', 'Gaseous detectors', 'Particle tracking detectors', 'Particle tracking detectors (Gaseous detectors)']"
+36143231500,35240572900,2016,2,"['', '']"
+7006790820,7101600969,2007,1,['']
+7006790820,7101600969,2008,2,"['Avalanche mode', 'Bakelite resistivity', 'Closed loop gas circulation', 'CMS', 'Gas purification', 'Resistive Plate Chamber', 'Streamer mode', '']"
+7006790820,7101600969,2009,4,"['CMS', 'Resistive plate chamber', 'RPC efficiency', 'RPC noise', 'Algorithm', 'CMS', 'Cosmic muon', 'RPC', 'Technical trigger', 'Tracking', 'CMS', 'Detector', 'Muon system', 'RPC', 'Trigger', 'CMS', 'MTCC', 'Resistive Plate Chamber', 'RPC']"
+7006790820,7101600969,2010,2,"['CMS', 'Detectors', 'LHC', 'Muon system', 'RPC', 'RPC']"
+7006790820,7101600969,2013,1,['']
+7006790820,35240572900,2007,1,['']
+7006790820,35240572900,2008,2,"['Avalanche mode', 'Bakelite resistivity', 'Closed loop gas circulation', 'CMS', 'Gas purification', 'Resistive Plate Chamber', 'Streamer mode', '']"
+7006790820,35240572900,2009,4,"['CMS', 'Resistive plate chamber', 'RPC efficiency', 'RPC noise', 'Algorithm', 'CMS', 'Cosmic muon', 'RPC', 'Technical trigger', 'Tracking', 'CMS', 'Detector', 'Muon system', 'RPC', 'Trigger', 'CMS', 'MTCC', 'Resistive Plate Chamber', 'RPC']"
+7006790820,35240572900,2010,3,"['Optimization', 'Positron Emission Tomography', 'Resistive Plate Chambers', 'CMS', 'Detectors', 'LHC', 'Muon system', 'RPC', 'RPC']"
+7006790820,35240572900,2013,1,['']
+7006790820,35240572900,2014,2,"['', '']"
+7006790820,35240572900,2015,1,"['Electron multipliers (gas)', 'Gaseous detectors', 'Particle tracking detectors', 'Particle tracking detectors (Gaseous detectors)']"
+7006790820,35240572900,2016,2,"['', '']"
+7006790820,35240572900,2017,1,"['Acceleration', 'Co-processors', 'Hybrid architecture', 'Multithreading', 'Particle-matter interactions', 'Simulations']"
+7006790820,35240572900,2012,1,['']
+7101600969,35240572900,2004,1,['']
+7101600969,35240572900,2005,1,['']
+7101600969,35240572900,2007,1,['']
+7101600969,35240572900,2008,2,"['Avalanche mode', 'Bakelite resistivity', 'Closed loop gas circulation', 'CMS', 'Gas purification', 'Resistive Plate Chamber', 'Streamer mode', '']"
+7101600969,35240572900,2009,4,"['CMS', 'Resistive plate chamber', 'RPC efficiency', 'RPC noise', 'Algorithm', 'CMS', 'Cosmic muon', 'RPC', 'Technical trigger', 'Tracking', 'CMS', 'Detector', 'Muon system', 'RPC', 'Trigger', 'CMS', 'MTCC', 'Resistive Plate Chamber', 'RPC']"
+7101600969,35240572900,2010,2,"['CMS', 'Detectors', 'LHC', 'Muon system', 'RPC', 'RPC']"
+7101600969,35240572900,2013,1,['']
+7006790820,7101600969,2007,1,['']
+7006790820,7101600969,2008,2,"['Avalanche mode', 'Bakelite resistivity', 'Closed loop gas circulation', 'CMS', 'Gas purification', 'Resistive Plate Chamber', 'Streamer mode', '']"
+7006790820,7101600969,2009,4,"['CMS', 'Resistive plate chamber', 'RPC efficiency', 'RPC noise', 'Algorithm', 'CMS', 'Cosmic muon', 'RPC', 'Technical trigger', 'Tracking', 'CMS', 'Detector', 'Muon system', 'RPC', 'Trigger', 'CMS', 'MTCC', 'Resistive Plate Chamber', 'RPC']"
+7006790820,7101600969,2010,2,"['CMS', 'Detectors', 'LHC', 'Muon system', 'RPC', 'RPC']"
+7006790820,7101600969,2013,1,['']
+7006790820,35240572900,2007,1,['']
+7006790820,35240572900,2008,2,"['Avalanche mode', 'Bakelite resistivity', 'Closed loop gas circulation', 'CMS', 'Gas purification', 'Resistive Plate Chamber', 'Streamer mode', '']"
+7006790820,35240572900,2009,4,"['CMS', 'Resistive plate chamber', 'RPC efficiency', 'RPC noise', 'Algorithm', 'CMS', 'Cosmic muon', 'RPC', 'Technical trigger', 'Tracking', 'CMS', 'Detector', 'Muon system', 'RPC', 'Trigger', 'CMS', 'MTCC', 'Resistive Plate Chamber', 'RPC']"
+7006790820,35240572900,2010,3,"['Optimization', 'Positron Emission Tomography', 'Resistive Plate Chambers', 'CMS', 'Detectors', 'LHC', 'Muon system', 'RPC', 'RPC']"
+7006790820,35240572900,2013,1,['']
+7006790820,35240572900,2014,2,"['', '']"
+7006790820,35240572900,2015,1,"['Electron multipliers (gas)', 'Gaseous detectors', 'Particle tracking detectors', 'Particle tracking detectors (Gaseous detectors)']"
+7006790820,35240572900,2016,2,"['', '']"
+7006790820,35240572900,2017,1,"['Acceleration', 'Co-processors', 'Hybrid architecture', 'Multithreading', 'Particle-matter interactions', 'Simulations']"
+7006790820,35240572900,2012,1,['']
+7101600969,35240572900,2004,1,['']
+7101600969,35240572900,2005,1,['']
+7101600969,35240572900,2007,1,['']
+7101600969,35240572900,2008,2,"['Avalanche mode', 'Bakelite resistivity', 'Closed loop gas circulation', 'CMS', 'Gas purification', 'Resistive Plate Chamber', 'Streamer mode', '']"
+7101600969,35240572900,2009,4,"['CMS', 'Resistive plate chamber', 'RPC efficiency', 'RPC noise', 'Algorithm', 'CMS', 'Cosmic muon', 'RPC', 'Technical trigger', 'Tracking', 'CMS', 'Detector', 'Muon system', 'RPC', 'Trigger', 'CMS', 'MTCC', 'Resistive Plate Chamber', 'RPC']"
+7101600969,35240572900,2010,2,"['CMS', 'Detectors', 'LHC', 'Muon system', 'RPC', 'RPC']"
+7101600969,35240572900,2013,1,['']
+36143231500,7006790820,2007,1,"['CMS', 'MTCC', 'Resistive plate chambers']"
+36143231500,7006790820,2010,2,"['CMS', 'Detectors', 'LHC', 'Muon system', 'RPC', 'RPC']"
+36143231500,7006790820,2013,1,['']
+36143231500,7006790820,2014,2,"['', '']"
+36143231500,7006790820,2015,1,"['Electron multipliers (gas)', 'Gaseous detectors', 'Particle tracking detectors', 'Particle tracking detectors (Gaseous detectors)']"
+36143231500,7006790820,2016,2,"['', '']"
+36143231500,7101600969,2007,1,"['CMS', 'MTCC', 'Resistive plate chambers']"
+36143231500,7101600969,2010,2,"['CMS', 'Detectors', 'LHC', 'Muon system', 'RPC', 'RPC']"
+36143231500,7101600969,2013,1,['']
+36143231500,35240572900,2007,1,"['CMS', 'MTCC', 'Resistive plate chambers']"
+36143231500,35240572900,2010,2,"['CMS', 'Detectors', 'LHC', 'Muon system', 'RPC', 'RPC']"
+36143231500,35240572900,2013,1,['']
+36143231500,35240572900,2014,2,"['', '']"
+36143231500,35240572900,2015,1,"['Electron multipliers (gas)', 'Gaseous detectors', 'Particle tracking detectors', 'Particle tracking detectors (Gaseous detectors)']"
+36143231500,35240572900,2016,2,"['', '']"
+7006790820,7101600969,2007,1,['']
+7006790820,7101600969,2008,2,"['Avalanche mode', 'Bakelite resistivity', 'Closed loop gas circulation', 'CMS', 'Gas purification', 'Resistive Plate Chamber', 'Streamer mode', '']"
+7006790820,7101600969,2009,4,"['CMS', 'Resistive plate chamber', 'RPC efficiency', 'RPC noise', 'Algorithm', 'CMS', 'Cosmic muon', 'RPC', 'Technical trigger', 'Tracking', 'CMS', 'Detector', 'Muon system', 'RPC', 'Trigger', 'CMS', 'MTCC', 'Resistive Plate Chamber', 'RPC']"
+7006790820,7101600969,2010,2,"['CMS', 'Detectors', 'LHC', 'Muon system', 'RPC', 'RPC']"
+7006790820,7101600969,2013,1,['']
+7006790820,35240572900,2007,1,['']
+7006790820,35240572900,2008,2,"['Avalanche mode', 'Bakelite resistivity', 'Closed loop gas circulation', 'CMS', 'Gas purification', 'Resistive Plate Chamber', 'Streamer mode', '']"
+7006790820,35240572900,2009,4,"['CMS', 'Resistive plate chamber', 'RPC efficiency', 'RPC noise', 'Algorithm', 'CMS', 'Cosmic muon', 'RPC', 'Technical trigger', 'Tracking', 'CMS', 'Detector', 'Muon system', 'RPC', 'Trigger', 'CMS', 'MTCC', 'Resistive Plate Chamber', 'RPC']"
+7006790820,35240572900,2010,3,"['Optimization', 'Positron Emission Tomography', 'Resistive Plate Chambers', 'CMS', 'Detectors', 'LHC', 'Muon system', 'RPC', 'RPC']"
+7006790820,35240572900,2013,1,['']
+7006790820,35240572900,2014,2,"['', '']"
+7006790820,35240572900,2015,1,"['Electron multipliers (gas)', 'Gaseous detectors', 'Particle tracking detectors', 'Particle tracking detectors (Gaseous detectors)']"
+7006790820,35240572900,2016,2,"['', '']"
+7006790820,35240572900,2017,1,"['Acceleration', 'Co-processors', 'Hybrid architecture', 'Multithreading', 'Particle-matter interactions', 'Simulations']"
+7006790820,35240572900,2012,1,['']
+7101600969,35240572900,2004,1,['']
+7101600969,35240572900,2005,1,['']
+7101600969,35240572900,2007,1,['']
+7101600969,35240572900,2008,2,"['Avalanche mode', 'Bakelite resistivity', 'Closed loop gas circulation', 'CMS', 'Gas purification', 'Resistive Plate Chamber', 'Streamer mode', '']"
+7101600969,35240572900,2009,4,"['CMS', 'Resistive plate chamber', 'RPC efficiency', 'RPC noise', 'Algorithm', 'CMS', 'Cosmic muon', 'RPC', 'Technical trigger', 'Tracking', 'CMS', 'Detector', 'Muon system', 'RPC', 'Trigger', 'CMS', 'MTCC', 'Resistive Plate Chamber', 'RPC']"
+7101600969,35240572900,2010,2,"['CMS', 'Detectors', 'LHC', 'Muon system', 'RPC', 'RPC']"
+7101600969,35240572900,2013,1,['']
+36143231500,7006790820,2007,1,"['CMS', 'MTCC', 'Resistive plate chambers']"
+36143231500,7006790820,2010,2,"['CMS', 'Detectors', 'LHC', 'Muon system', 'RPC', 'RPC']"
+36143231500,7006790820,2013,1,['']
+36143231500,7006790820,2014,2,"['', '']"
+36143231500,7006790820,2015,1,"['Electron multipliers (gas)', 'Gaseous detectors', 'Particle tracking detectors', 'Particle tracking detectors (Gaseous detectors)']"
+36143231500,7006790820,2016,2,"['', '']"
+36143231500,7101600969,2007,1,"['CMS', 'MTCC', 'Resistive plate chambers']"
+36143231500,7101600969,2010,2,"['CMS', 'Detectors', 'LHC', 'Muon system', 'RPC', 'RPC']"
+36143231500,7101600969,2013,1,['']
+36143231500,35240572900,2007,1,"['CMS', 'MTCC', 'Resistive plate chambers']"
+36143231500,35240572900,2010,2,"['CMS', 'Detectors', 'LHC', 'Muon system', 'RPC', 'RPC']"
+36143231500,35240572900,2013,1,['']
+36143231500,35240572900,2014,2,"['', '']"
+36143231500,35240572900,2015,1,"['Electron multipliers (gas)', 'Gaseous detectors', 'Particle tracking detectors', 'Particle tracking detectors (Gaseous detectors)']"
+36143231500,35240572900,2016,2,"['', '']"
+7006790820,7101600969,2007,1,['']
+7006790820,7101600969,2008,2,"['Avalanche mode', 'Bakelite resistivity', 'Closed loop gas circulation', 'CMS', 'Gas purification', 'Resistive Plate Chamber', 'Streamer mode', '']"
+7006790820,7101600969,2009,4,"['CMS', 'Resistive plate chamber', 'RPC efficiency', 'RPC noise', 'Algorithm', 'CMS', 'Cosmic muon', 'RPC', 'Technical trigger', 'Tracking', 'CMS', 'Detector', 'Muon system', 'RPC', 'Trigger', 'CMS', 'MTCC', 'Resistive Plate Chamber', 'RPC']"
+7006790820,7101600969,2010,2,"['CMS', 'Detectors', 'LHC', 'Muon system', 'RPC', 'RPC']"
+7006790820,7101600969,2013,1,['']
+7006790820,35240572900,2007,1,['']
+7006790820,35240572900,2008,2,"['Avalanche mode', 'Bakelite resistivity', 'Closed loop gas circulation', 'CMS', 'Gas purification', 'Resistive Plate Chamber', 'Streamer mode', '']"
+7006790820,35240572900,2009,4,"['CMS', 'Resistive plate chamber', 'RPC efficiency', 'RPC noise', 'Algorithm', 'CMS', 'Cosmic muon', 'RPC', 'Technical trigger', 'Tracking', 'CMS', 'Detector', 'Muon system', 'RPC', 'Trigger', 'CMS', 'MTCC', 'Resistive Plate Chamber', 'RPC']"
+7006790820,35240572900,2010,3,"['Optimization', 'Positron Emission Tomography', 'Resistive Plate Chambers', 'CMS', 'Detectors', 'LHC', 'Muon system', 'RPC', 'RPC']"
+7006790820,35240572900,2013,1,['']
+7006790820,35240572900,2014,2,"['', '']"
+7006790820,35240572900,2015,1,"['Electron multipliers (gas)', 'Gaseous detectors', 'Particle tracking detectors', 'Particle tracking detectors (Gaseous detectors)']"
+7006790820,35240572900,2016,2,"['', '']"
+7006790820,35240572900,2017,1,"['Acceleration', 'Co-processors', 'Hybrid architecture', 'Multithreading', 'Particle-matter interactions', 'Simulations']"
+7006790820,35240572900,2012,1,['']
+7101600969,35240572900,2004,1,['']
+7101600969,35240572900,2005,1,['']
+7101600969,35240572900,2007,1,['']
+7101600969,35240572900,2008,2,"['Avalanche mode', 'Bakelite resistivity', 'Closed loop gas circulation', 'CMS', 'Gas purification', 'Resistive Plate Chamber', 'Streamer mode', '']"
+7101600969,35240572900,2009,4,"['CMS', 'Resistive plate chamber', 'RPC efficiency', 'RPC noise', 'Algorithm', 'CMS', 'Cosmic muon', 'RPC', 'Technical trigger', 'Tracking', 'CMS', 'Detector', 'Muon system', 'RPC', 'Trigger', 'CMS', 'MTCC', 'Resistive Plate Chamber', 'RPC']"
+7101600969,35240572900,2010,2,"['CMS', 'Detectors', 'LHC', 'Muon system', 'RPC', 'RPC']"
+7101600969,35240572900,2013,1,['']
+36143231500,7006790820,2007,1,"['CMS', 'MTCC', 'Resistive plate chambers']"
+36143231500,7006790820,2010,2,"['CMS', 'Detectors', 'LHC', 'Muon system', 'RPC', 'RPC']"
+36143231500,7006790820,2013,1,['']
+36143231500,7006790820,2014,2,"['', '']"
+36143231500,7006790820,2015,1,"['Electron multipliers (gas)', 'Gaseous detectors', 'Particle tracking detectors', 'Particle tracking detectors (Gaseous detectors)']"
+36143231500,7006790820,2016,2,"['', '']"
+36143231500,35240572900,2007,1,"['CMS', 'MTCC', 'Resistive plate chambers']"
+36143231500,35240572900,2010,2,"['CMS', 'Detectors', 'LHC', 'Muon system', 'RPC', 'RPC']"
+36143231500,35240572900,2013,1,['']
+36143231500,35240572900,2014,2,"['', '']"
+36143231500,35240572900,2015,1,"['Electron multipliers (gas)', 'Gaseous detectors', 'Particle tracking detectors', 'Particle tracking detectors (Gaseous detectors)']"
+36143231500,35240572900,2016,2,"['', '']"
+7006790820,35240572900,2007,1,['']
+7006790820,35240572900,2008,2,"['Avalanche mode', 'Bakelite resistivity', 'Closed loop gas circulation', 'CMS', 'Gas purification', 'Resistive Plate Chamber', 'Streamer mode', '']"
+7006790820,35240572900,2009,4,"['CMS', 'Resistive plate chamber', 'RPC efficiency', 'RPC noise', 'Algorithm', 'CMS', 'Cosmic muon', 'RPC', 'Technical trigger', 'Tracking', 'CMS', 'Detector', 'Muon system', 'RPC', 'Trigger', 'CMS', 'MTCC', 'Resistive Plate Chamber', 'RPC']"
+7006790820,35240572900,2010,3,"['Optimization', 'Positron Emission Tomography', 'Resistive Plate Chambers', 'CMS', 'Detectors', 'LHC', 'Muon system', 'RPC', 'RPC']"
+7006790820,35240572900,2013,1,['']
+7006790820,35240572900,2014,2,"['', '']"
+7006790820,35240572900,2015,1,"['Electron multipliers (gas)', 'Gaseous detectors', 'Particle tracking detectors', 'Particle tracking detectors (Gaseous detectors)']"
+7006790820,35240572900,2016,2,"['', '']"
+7006790820,35240572900,2017,1,"['Acceleration', 'Co-processors', 'Hybrid architecture', 'Multithreading', 'Particle-matter interactions', 'Simulations']"
+7006790820,35240572900,2012,1,['']
+6602995760,57193219896,2007,2,"['', '']"
+6602995760,57193219896,2009,1,"['Bipolar disorder', 'Genetic isolate', 'Haplotypes', 'Linkage', 'Linkage disequilibrium']"
+6602995760,57193219896,2017,1,"['interaction', 'rs1872824', 'rs6675281']"
+36143231500,7006790820,2007,1,"['CMS', 'MTCC', 'Resistive plate chambers']"
+36143231500,7006790820,2010,2,"['CMS', 'Detectors', 'LHC', 'Muon system', 'RPC', 'RPC']"
+36143231500,7006790820,2013,1,['']
+36143231500,7006790820,2014,2,"['', '']"
+36143231500,7006790820,2015,1,"['Electron multipliers (gas)', 'Gaseous detectors', 'Particle tracking detectors', 'Particle tracking detectors (Gaseous detectors)']"
+36143231500,7006790820,2016,2,"['', '']"
+36143231500,7101600969,2007,1,"['CMS', 'MTCC', 'Resistive plate chambers']"
+36143231500,7101600969,2010,2,"['CMS', 'Detectors', 'LHC', 'Muon system', 'RPC', 'RPC']"
+36143231500,7101600969,2013,1,['']
+36143231500,35240572900,2007,1,"['CMS', 'MTCC', 'Resistive plate chambers']"
+36143231500,35240572900,2010,2,"['CMS', 'Detectors', 'LHC', 'Muon system', 'RPC', 'RPC']"
+36143231500,35240572900,2013,1,['']
+36143231500,35240572900,2014,2,"['', '']"
+36143231500,35240572900,2015,1,"['Electron multipliers (gas)', 'Gaseous detectors', 'Particle tracking detectors', 'Particle tracking detectors (Gaseous detectors)']"
+36143231500,35240572900,2016,2,"['', '']"
+7006790820,7101600969,2007,1,['']
+7006790820,7101600969,2008,2,"['Avalanche mode', 'Bakelite resistivity', 'Closed loop gas circulation', 'CMS', 'Gas purification', 'Resistive Plate Chamber', 'Streamer mode', '']"
+7006790820,7101600969,2009,4,"['CMS', 'Resistive plate chamber', 'RPC efficiency', 'RPC noise', 'Algorithm', 'CMS', 'Cosmic muon', 'RPC', 'Technical trigger', 'Tracking', 'CMS', 'Detector', 'Muon system', 'RPC', 'Trigger', 'CMS', 'MTCC', 'Resistive Plate Chamber', 'RPC']"
+7006790820,7101600969,2010,2,"['CMS', 'Detectors', 'LHC', 'Muon system', 'RPC', 'RPC']"
+7006790820,7101600969,2013,1,['']
+7006790820,35240572900,2007,1,['']
+7006790820,35240572900,2008,2,"['Avalanche mode', 'Bakelite resistivity', 'Closed loop gas circulation', 'CMS', 'Gas purification', 'Resistive Plate Chamber', 'Streamer mode', '']"
+7006790820,35240572900,2009,4,"['CMS', 'Resistive plate chamber', 'RPC efficiency', 'RPC noise', 'Algorithm', 'CMS', 'Cosmic muon', 'RPC', 'Technical trigger', 'Tracking', 'CMS', 'Detector', 'Muon system', 'RPC', 'Trigger', 'CMS', 'MTCC', 'Resistive Plate Chamber', 'RPC']"
+7006790820,35240572900,2010,3,"['Optimization', 'Positron Emission Tomography', 'Resistive Plate Chambers', 'CMS', 'Detectors', 'LHC', 'Muon system', 'RPC', 'RPC']"
+7006790820,35240572900,2013,1,['']
+7006790820,35240572900,2014,2,"['', '']"
+7006790820,35240572900,2015,1,"['Electron multipliers (gas)', 'Gaseous detectors', 'Particle tracking detectors', 'Particle tracking detectors (Gaseous detectors)']"
+7006790820,35240572900,2016,2,"['', '']"
+7006790820,35240572900,2017,1,"['Acceleration', 'Co-processors', 'Hybrid architecture', 'Multithreading', 'Particle-matter interactions', 'Simulations']"
+7006790820,35240572900,2012,1,['']
+7101600969,35240572900,2004,1,['']
+7101600969,35240572900,2005,1,['']
+7101600969,35240572900,2007,1,['']
+7101600969,35240572900,2008,2,"['Avalanche mode', 'Bakelite resistivity', 'Closed loop gas circulation', 'CMS', 'Gas purification', 'Resistive Plate Chamber', 'Streamer mode', '']"
+7101600969,35240572900,2009,4,"['CMS', 'Resistive plate chamber', 'RPC efficiency', 'RPC noise', 'Algorithm', 'CMS', 'Cosmic muon', 'RPC', 'Technical trigger', 'Tracking', 'CMS', 'Detector', 'Muon system', 'RPC', 'Trigger', 'CMS', 'MTCC', 'Resistive Plate Chamber', 'RPC']"
+7101600969,35240572900,2010,2,"['CMS', 'Detectors', 'LHC', 'Muon system', 'RPC', 'RPC']"
+7101600969,35240572900,2013,1,['']
+36143231500,7006790820,2007,1,"['CMS', 'MTCC', 'Resistive plate chambers']"
+36143231500,7006790820,2010,2,"['CMS', 'Detectors', 'LHC', 'Muon system', 'RPC', 'RPC']"
+36143231500,7006790820,2013,1,['']
+36143231500,7006790820,2014,2,"['', '']"
+36143231500,7006790820,2015,1,"['Electron multipliers (gas)', 'Gaseous detectors', 'Particle tracking detectors', 'Particle tracking detectors (Gaseous detectors)']"
+36143231500,7006790820,2016,2,"['', '']"
+36143231500,7101600969,2007,1,"['CMS', 'MTCC', 'Resistive plate chambers']"
+36143231500,7101600969,2010,2,"['CMS', 'Detectors', 'LHC', 'Muon system', 'RPC', 'RPC']"
+36143231500,7101600969,2013,1,['']
+36143231500,35240572900,2007,1,"['CMS', 'MTCC', 'Resistive plate chambers']"
+36143231500,35240572900,2010,2,"['CMS', 'Detectors', 'LHC', 'Muon system', 'RPC', 'RPC']"
+36143231500,35240572900,2013,1,['']
+36143231500,35240572900,2014,2,"['', '']"
+36143231500,35240572900,2015,1,"['Electron multipliers (gas)', 'Gaseous detectors', 'Particle tracking detectors', 'Particle tracking detectors (Gaseous detectors)']"
+36143231500,35240572900,2016,2,"['', '']"
+7006790820,7101600969,2007,1,['']
+7006790820,7101600969,2008,2,"['Avalanche mode', 'Bakelite resistivity', 'Closed loop gas circulation', 'CMS', 'Gas purification', 'Resistive Plate Chamber', 'Streamer mode', '']"
+7006790820,7101600969,2009,4,"['CMS', 'Resistive plate chamber', 'RPC efficiency', 'RPC noise', 'Algorithm', 'CMS', 'Cosmic muon', 'RPC', 'Technical trigger', 'Tracking', 'CMS', 'Detector', 'Muon system', 'RPC', 'Trigger', 'CMS', 'MTCC', 'Resistive Plate Chamber', 'RPC']"
+7006790820,7101600969,2010,2,"['CMS', 'Detectors', 'LHC', 'Muon system', 'RPC', 'RPC']"
+7006790820,7101600969,2013,1,['']
+7006790820,35240572900,2007,1,['']
+7006790820,35240572900,2008,2,"['Avalanche mode', 'Bakelite resistivity', 'Closed loop gas circulation', 'CMS', 'Gas purification', 'Resistive Plate Chamber', 'Streamer mode', '']"
+7006790820,35240572900,2009,4,"['CMS', 'Resistive plate chamber', 'RPC efficiency', 'RPC noise', 'Algorithm', 'CMS', 'Cosmic muon', 'RPC', 'Technical trigger', 'Tracking', 'CMS', 'Detector', 'Muon system', 'RPC', 'Trigger', 'CMS', 'MTCC', 'Resistive Plate Chamber', 'RPC']"
+7006790820,35240572900,2010,3,"['Optimization', 'Positron Emission Tomography', 'Resistive Plate Chambers', 'CMS', 'Detectors', 'LHC', 'Muon system', 'RPC', 'RPC']"
+7006790820,35240572900,2013,1,['']
+7006790820,35240572900,2014,2,"['', '']"
+7006790820,35240572900,2015,1,"['Electron multipliers (gas)', 'Gaseous detectors', 'Particle tracking detectors', 'Particle tracking detectors (Gaseous detectors)']"
+7006790820,35240572900,2016,2,"['', '']"
+7006790820,35240572900,2017,1,"['Acceleration', 'Co-processors', 'Hybrid architecture', 'Multithreading', 'Particle-matter interactions', 'Simulations']"
+7006790820,35240572900,2012,1,['']
+7101600969,35240572900,2004,1,['']
+7101600969,35240572900,2005,1,['']
+7101600969,35240572900,2007,1,['']
+7101600969,35240572900,2008,2,"['Avalanche mode', 'Bakelite resistivity', 'Closed loop gas circulation', 'CMS', 'Gas purification', 'Resistive Plate Chamber', 'Streamer mode', '']"
+7101600969,35240572900,2009,4,"['CMS', 'Resistive plate chamber', 'RPC efficiency', 'RPC noise', 'Algorithm', 'CMS', 'Cosmic muon', 'RPC', 'Technical trigger', 'Tracking', 'CMS', 'Detector', 'Muon system', 'RPC', 'Trigger', 'CMS', 'MTCC', 'Resistive Plate Chamber', 'RPC']"
+7101600969,35240572900,2010,2,"['CMS', 'Detectors', 'LHC', 'Muon system', 'RPC', 'RPC']"
+7101600969,35240572900,2013,1,['']
+36143231500,7006790820,2007,1,"['CMS', 'MTCC', 'Resistive plate chambers']"
+36143231500,7006790820,2010,2,"['CMS', 'Detectors', 'LHC', 'Muon system', 'RPC', 'RPC']"
+36143231500,7006790820,2013,1,['']
+36143231500,7006790820,2014,2,"['', '']"
+36143231500,7006790820,2015,1,"['Electron multipliers (gas)', 'Gaseous detectors', 'Particle tracking detectors', 'Particle tracking detectors (Gaseous detectors)']"
+36143231500,7006790820,2016,2,"['', '']"
+36143231500,7101600969,2007,1,"['CMS', 'MTCC', 'Resistive plate chambers']"
+36143231500,7101600969,2010,2,"['CMS', 'Detectors', 'LHC', 'Muon system', 'RPC', 'RPC']"
+36143231500,7101600969,2013,1,['']
+36143231500,35240572900,2007,1,"['CMS', 'MTCC', 'Resistive plate chambers']"
+36143231500,35240572900,2010,2,"['CMS', 'Detectors', 'LHC', 'Muon system', 'RPC', 'RPC']"
+36143231500,35240572900,2013,1,['']
+36143231500,35240572900,2014,2,"['', '']"
+36143231500,35240572900,2015,1,"['Electron multipliers (gas)', 'Gaseous detectors', 'Particle tracking detectors', 'Particle tracking detectors (Gaseous detectors)']"
+36143231500,35240572900,2016,2,"['', '']"
+7006790820,7101600969,2007,1,['']
+7006790820,7101600969,2008,2,"['Avalanche mode', 'Bakelite resistivity', 'Closed loop gas circulation', 'CMS', 'Gas purification', 'Resistive Plate Chamber', 'Streamer mode', '']"
+7006790820,7101600969,2009,4,"['CMS', 'Resistive plate chamber', 'RPC efficiency', 'RPC noise', 'Algorithm', 'CMS', 'Cosmic muon', 'RPC', 'Technical trigger', 'Tracking', 'CMS', 'Detector', 'Muon system', 'RPC', 'Trigger', 'CMS', 'MTCC', 'Resistive Plate Chamber', 'RPC']"
+7006790820,7101600969,2010,2,"['CMS', 'Detectors', 'LHC', 'Muon system', 'RPC', 'RPC']"
+7006790820,7101600969,2013,1,['']
+7006790820,35240572900,2007,1,['']
+7006790820,35240572900,2008,2,"['Avalanche mode', 'Bakelite resistivity', 'Closed loop gas circulation', 'CMS', 'Gas purification', 'Resistive Plate Chamber', 'Streamer mode', '']"
+7006790820,35240572900,2009,4,"['CMS', 'Resistive plate chamber', 'RPC efficiency', 'RPC noise', 'Algorithm', 'CMS', 'Cosmic muon', 'RPC', 'Technical trigger', 'Tracking', 'CMS', 'Detector', 'Muon system', 'RPC', 'Trigger', 'CMS', 'MTCC', 'Resistive Plate Chamber', 'RPC']"
+7006790820,35240572900,2010,3,"['Optimization', 'Positron Emission Tomography', 'Resistive Plate Chambers', 'CMS', 'Detectors', 'LHC', 'Muon system', 'RPC', 'RPC']"
+7006790820,35240572900,2013,1,['']
+7006790820,35240572900,2014,2,"['', '']"
+7006790820,35240572900,2015,1,"['Electron multipliers (gas)', 'Gaseous detectors', 'Particle tracking detectors', 'Particle tracking detectors (Gaseous detectors)']"
+7006790820,35240572900,2016,2,"['', '']"
+7006790820,35240572900,2017,1,"['Acceleration', 'Co-processors', 'Hybrid architecture', 'Multithreading', 'Particle-matter interactions', 'Simulations']"
+7006790820,35240572900,2012,1,['']
+7101600969,35240572900,2004,1,['']
+7101600969,35240572900,2005,1,['']
+7101600969,35240572900,2007,1,['']
+7101600969,35240572900,2008,2,"['Avalanche mode', 'Bakelite resistivity', 'Closed loop gas circulation', 'CMS', 'Gas purification', 'Resistive Plate Chamber', 'Streamer mode', '']"
+7101600969,35240572900,2009,4,"['CMS', 'Resistive plate chamber', 'RPC efficiency', 'RPC noise', 'Algorithm', 'CMS', 'Cosmic muon', 'RPC', 'Technical trigger', 'Tracking', 'CMS', 'Detector', 'Muon system', 'RPC', 'Trigger', 'CMS', 'MTCC', 'Resistive Plate Chamber', 'RPC']"
+7101600969,35240572900,2010,2,"['CMS', 'Detectors', 'LHC', 'Muon system', 'RPC', 'RPC']"
+7101600969,35240572900,2013,1,['']
+36143231500,35228119200,2007,1,"['CMS', 'MTCC', 'Resistive plate chambers']"
+36143231500,35228119200,2010,2,"['CMS', 'Detectors', 'LHC', 'Muon system', 'RPC', 'RPC']"
+36143231500,35228119200,2013,2,"['Gaseous detectors', 'Muon spectrometers', 'Resistive-plate chambers', '']"
+36143231500,7006790820,2007,1,"['CMS', 'MTCC', 'Resistive plate chambers']"
+36143231500,7006790820,2010,2,"['CMS', 'Detectors', 'LHC', 'Muon system', 'RPC', 'RPC']"
+36143231500,7006790820,2013,1,['']
+36143231500,7006790820,2014,2,"['', '']"
+36143231500,7006790820,2015,1,"['Electron multipliers (gas)', 'Gaseous detectors', 'Particle tracking detectors', 'Particle tracking detectors (Gaseous detectors)']"
+36143231500,7006790820,2016,2,"['', '']"
+36143231500,7101600969,2007,1,"['CMS', 'MTCC', 'Resistive plate chambers']"
+36143231500,7101600969,2010,2,"['CMS', 'Detectors', 'LHC', 'Muon system', 'RPC', 'RPC']"
+36143231500,7101600969,2013,1,['']
+36143231500,35240572900,2007,1,"['CMS', 'MTCC', 'Resistive plate chambers']"
+36143231500,35240572900,2010,2,"['CMS', 'Detectors', 'LHC', 'Muon system', 'RPC', 'RPC']"
+36143231500,35240572900,2013,1,['']
+36143231500,35240572900,2014,2,"['', '']"
+36143231500,35240572900,2015,1,"['Electron multipliers (gas)', 'Gaseous detectors', 'Particle tracking detectors', 'Particle tracking detectors (Gaseous detectors)']"
+36143231500,35240572900,2016,2,"['', '']"
+35228119200,7006790820,2007,1,['']
+35228119200,7006790820,2008,2,"['Avalanche mode', 'Bakelite resistivity', 'Closed loop gas circulation', 'CMS', 'Gas purification', 'Resistive Plate Chamber', 'Streamer mode', '']"
+35228119200,7006790820,2009,3,"['CMS', 'Resistive plate chamber', 'RPC efficiency', 'RPC noise', 'CMS', 'Detector', 'Muon system', 'RPC', 'Trigger', 'CMS', 'MTCC', 'Resistive Plate Chamber', 'RPC']"
+35228119200,7006790820,2010,2,"['CMS', 'Detectors', 'LHC', 'Muon system', 'RPC', 'RPC']"
+35228119200,7006790820,2013,1,['']
+35228119200,7101600969,2007,1,['']
+35228119200,7101600969,2008,2,"['Avalanche mode', 'Bakelite resistivity', 'Closed loop gas circulation', 'CMS', 'Gas purification', 'Resistive Plate Chamber', 'Streamer mode', '']"
+35228119200,7101600969,2009,3,"['CMS', 'Resistive plate chamber', 'RPC efficiency', 'RPC noise', 'CMS', 'Detector', 'Muon system', 'RPC', 'Trigger', 'CMS', 'MTCC', 'Resistive Plate Chamber', 'RPC']"
+35228119200,7101600969,2010,2,"['CMS', 'Detectors', 'LHC', 'Muon system', 'RPC', 'RPC']"
+35228119200,7101600969,2013,1,['']
+35228119200,35240572900,2007,1,['']
+35228119200,35240572900,2008,2,"['Avalanche mode', 'Bakelite resistivity', 'Closed loop gas circulation', 'CMS', 'Gas purification', 'Resistive Plate Chamber', 'Streamer mode', '']"
+35228119200,35240572900,2009,3,"['CMS', 'Resistive plate chamber', 'RPC efficiency', 'RPC noise', 'CMS', 'Detector', 'Muon system', 'RPC', 'Trigger', 'CMS', 'MTCC', 'Resistive Plate Chamber', 'RPC']"
+35228119200,35240572900,2010,2,"['CMS', 'Detectors', 'LHC', 'Muon system', 'RPC', 'RPC']"
+35228119200,35240572900,2013,1,['']
+7006790820,7101600969,2007,1,['']
+7006790820,7101600969,2008,2,"['Avalanche mode', 'Bakelite resistivity', 'Closed loop gas circulation', 'CMS', 'Gas purification', 'Resistive Plate Chamber', 'Streamer mode', '']"
+7006790820,7101600969,2009,4,"['CMS', 'Resistive plate chamber', 'RPC efficiency', 'RPC noise', 'Algorithm', 'CMS', 'Cosmic muon', 'RPC', 'Technical trigger', 'Tracking', 'CMS', 'Detector', 'Muon system', 'RPC', 'Trigger', 'CMS', 'MTCC', 'Resistive Plate Chamber', 'RPC']"
+7006790820,7101600969,2010,2,"['CMS', 'Detectors', 'LHC', 'Muon system', 'RPC', 'RPC']"
+7006790820,7101600969,2013,1,['']
+7006790820,35240572900,2007,1,['']
+7006790820,35240572900,2008,2,"['Avalanche mode', 'Bakelite resistivity', 'Closed loop gas circulation', 'CMS', 'Gas purification', 'Resistive Plate Chamber', 'Streamer mode', '']"
+7006790820,35240572900,2009,4,"['CMS', 'Resistive plate chamber', 'RPC efficiency', 'RPC noise', 'Algorithm', 'CMS', 'Cosmic muon', 'RPC', 'Technical trigger', 'Tracking', 'CMS', 'Detector', 'Muon system', 'RPC', 'Trigger', 'CMS', 'MTCC', 'Resistive Plate Chamber', 'RPC']"
+7006790820,35240572900,2010,3,"['Optimization', 'Positron Emission Tomography', 'Resistive Plate Chambers', 'CMS', 'Detectors', 'LHC', 'Muon system', 'RPC', 'RPC']"
+7006790820,35240572900,2013,1,['']
+7006790820,35240572900,2014,2,"['', '']"
+7006790820,35240572900,2015,1,"['Electron multipliers (gas)', 'Gaseous detectors', 'Particle tracking detectors', 'Particle tracking detectors (Gaseous detectors)']"
+7006790820,35240572900,2016,2,"['', '']"
+7006790820,35240572900,2017,1,"['Acceleration', 'Co-processors', 'Hybrid architecture', 'Multithreading', 'Particle-matter interactions', 'Simulations']"
+7006790820,35240572900,2012,1,['']
+7101600969,35240572900,2004,1,['']
+7101600969,35240572900,2005,1,['']
+7101600969,35240572900,2007,1,['']
+7101600969,35240572900,2008,2,"['Avalanche mode', 'Bakelite resistivity', 'Closed loop gas circulation', 'CMS', 'Gas purification', 'Resistive Plate Chamber', 'Streamer mode', '']"
+7101600969,35240572900,2009,4,"['CMS', 'Resistive plate chamber', 'RPC efficiency', 'RPC noise', 'Algorithm', 'CMS', 'Cosmic muon', 'RPC', 'Technical trigger', 'Tracking', 'CMS', 'Detector', 'Muon system', 'RPC', 'Trigger', 'CMS', 'MTCC', 'Resistive Plate Chamber', 'RPC']"
+7101600969,35240572900,2010,2,"['CMS', 'Detectors', 'LHC', 'Muon system', 'RPC', 'RPC']"
+7101600969,35240572900,2013,1,['']
+36143231500,7006790820,2007,1,"['CMS', 'MTCC', 'Resistive plate chambers']"
+36143231500,7006790820,2010,2,"['CMS', 'Detectors', 'LHC', 'Muon system', 'RPC', 'RPC']"
+36143231500,7006790820,2013,1,['']
+36143231500,7006790820,2014,2,"['', '']"
+36143231500,7006790820,2015,1,"['Electron multipliers (gas)', 'Gaseous detectors', 'Particle tracking detectors', 'Particle tracking detectors (Gaseous detectors)']"
+36143231500,7006790820,2016,2,"['', '']"
+36143231500,7101600969,2007,1,"['CMS', 'MTCC', 'Resistive plate chambers']"
+36143231500,7101600969,2010,2,"['CMS', 'Detectors', 'LHC', 'Muon system', 'RPC', 'RPC']"
+36143231500,7101600969,2013,1,['']
+36143231500,35240572900,2007,1,"['CMS', 'MTCC', 'Resistive plate chambers']"
+36143231500,35240572900,2010,2,"['CMS', 'Detectors', 'LHC', 'Muon system', 'RPC', 'RPC']"
+36143231500,35240572900,2013,1,['']
+36143231500,35240572900,2014,2,"['', '']"
+36143231500,35240572900,2015,1,"['Electron multipliers (gas)', 'Gaseous detectors', 'Particle tracking detectors', 'Particle tracking detectors (Gaseous detectors)']"
+36143231500,35240572900,2016,2,"['', '']"
+7006790820,7101600969,2007,1,['']
+7006790820,7101600969,2008,2,"['Avalanche mode', 'Bakelite resistivity', 'Closed loop gas circulation', 'CMS', 'Gas purification', 'Resistive Plate Chamber', 'Streamer mode', '']"
+7006790820,7101600969,2009,4,"['CMS', 'Resistive plate chamber', 'RPC efficiency', 'RPC noise', 'Algorithm', 'CMS', 'Cosmic muon', 'RPC', 'Technical trigger', 'Tracking', 'CMS', 'Detector', 'Muon system', 'RPC', 'Trigger', 'CMS', 'MTCC', 'Resistive Plate Chamber', 'RPC']"
+7006790820,7101600969,2010,2,"['CMS', 'Detectors', 'LHC', 'Muon system', 'RPC', 'RPC']"
+7006790820,7101600969,2013,1,['']
+7006790820,35240572900,2007,1,['']
+7006790820,35240572900,2008,2,"['Avalanche mode', 'Bakelite resistivity', 'Closed loop gas circulation', 'CMS', 'Gas purification', 'Resistive Plate Chamber', 'Streamer mode', '']"
+7006790820,35240572900,2009,4,"['CMS', 'Resistive plate chamber', 'RPC efficiency', 'RPC noise', 'Algorithm', 'CMS', 'Cosmic muon', 'RPC', 'Technical trigger', 'Tracking', 'CMS', 'Detector', 'Muon system', 'RPC', 'Trigger', 'CMS', 'MTCC', 'Resistive Plate Chamber', 'RPC']"
+7006790820,35240572900,2010,3,"['Optimization', 'Positron Emission Tomography', 'Resistive Plate Chambers', 'CMS', 'Detectors', 'LHC', 'Muon system', 'RPC', 'RPC']"
+7006790820,35240572900,2013,1,['']
+7006790820,35240572900,2014,2,"['', '']"
+7006790820,35240572900,2015,1,"['Electron multipliers (gas)', 'Gaseous detectors', 'Particle tracking detectors', 'Particle tracking detectors (Gaseous detectors)']"
+7006790820,35240572900,2016,2,"['', '']"
+7006790820,35240572900,2017,1,"['Acceleration', 'Co-processors', 'Hybrid architecture', 'Multithreading', 'Particle-matter interactions', 'Simulations']"
+7006790820,35240572900,2012,1,['']
+7101600969,35240572900,2004,1,['']
+7101600969,35240572900,2005,1,['']
+7101600969,35240572900,2007,1,['']
+7101600969,35240572900,2008,2,"['Avalanche mode', 'Bakelite resistivity', 'Closed loop gas circulation', 'CMS', 'Gas purification', 'Resistive Plate Chamber', 'Streamer mode', '']"
+7101600969,35240572900,2009,4,"['CMS', 'Resistive plate chamber', 'RPC efficiency', 'RPC noise', 'Algorithm', 'CMS', 'Cosmic muon', 'RPC', 'Technical trigger', 'Tracking', 'CMS', 'Detector', 'Muon system', 'RPC', 'Trigger', 'CMS', 'MTCC', 'Resistive Plate Chamber', 'RPC']"
+7101600969,35240572900,2010,2,"['CMS', 'Detectors', 'LHC', 'Muon system', 'RPC', 'RPC']"
+7101600969,35240572900,2013,1,['']
+35228119200,7101600969,2007,1,['']
+35228119200,7101600969,2008,2,"['Avalanche mode', 'Bakelite resistivity', 'Closed loop gas circulation', 'CMS', 'Gas purification', 'Resistive Plate Chamber', 'Streamer mode', '']"
+35228119200,7101600969,2009,3,"['CMS', 'Resistive plate chamber', 'RPC efficiency', 'RPC noise', 'CMS', 'Detector', 'Muon system', 'RPC', 'Trigger', 'CMS', 'MTCC', 'Resistive Plate Chamber', 'RPC']"
+35228119200,7101600969,2010,2,"['CMS', 'Detectors', 'LHC', 'Muon system', 'RPC', 'RPC']"
+35228119200,7101600969,2013,1,['']
+35228119200,35240572900,2007,1,['']
+35228119200,35240572900,2008,2,"['Avalanche mode', 'Bakelite resistivity', 'Closed loop gas circulation', 'CMS', 'Gas purification', 'Resistive Plate Chamber', 'Streamer mode', '']"
+35228119200,35240572900,2009,3,"['CMS', 'Resistive plate chamber', 'RPC efficiency', 'RPC noise', 'CMS', 'Detector', 'Muon system', 'RPC', 'Trigger', 'CMS', 'MTCC', 'Resistive Plate Chamber', 'RPC']"
+35228119200,35240572900,2010,2,"['CMS', 'Detectors', 'LHC', 'Muon system', 'RPC', 'RPC']"
+35228119200,35240572900,2013,1,['']
+7101600969,35240572900,2004,1,['']
+7101600969,35240572900,2005,1,['']
+7101600969,35240572900,2007,1,['']
+7101600969,35240572900,2008,2,"['Avalanche mode', 'Bakelite resistivity', 'Closed loop gas circulation', 'CMS', 'Gas purification', 'Resistive Plate Chamber', 'Streamer mode', '']"
+7101600969,35240572900,2009,4,"['CMS', 'Resistive plate chamber', 'RPC efficiency', 'RPC noise', 'Algorithm', 'CMS', 'Cosmic muon', 'RPC', 'Technical trigger', 'Tracking', 'CMS', 'Detector', 'Muon system', 'RPC', 'Trigger', 'CMS', 'MTCC', 'Resistive Plate Chamber', 'RPC']"
+7101600969,35240572900,2010,2,"['CMS', 'Detectors', 'LHC', 'Muon system', 'RPC', 'RPC']"
+7101600969,35240572900,2013,1,['']
+7101600969,35240572900,2004,1,['']
+7101600969,35240572900,2005,1,['']
+7101600969,35240572900,2007,1,['']
+7101600969,35240572900,2008,2,"['Avalanche mode', 'Bakelite resistivity', 'Closed loop gas circulation', 'CMS', 'Gas purification', 'Resistive Plate Chamber', 'Streamer mode', '']"
+7101600969,35240572900,2009,4,"['CMS', 'Resistive plate chamber', 'RPC efficiency', 'RPC noise', 'Algorithm', 'CMS', 'Cosmic muon', 'RPC', 'Technical trigger', 'Tracking', 'CMS', 'Detector', 'Muon system', 'RPC', 'Trigger', 'CMS', 'MTCC', 'Resistive Plate Chamber', 'RPC']"
+7101600969,35240572900,2010,2,"['CMS', 'Detectors', 'LHC', 'Muon system', 'RPC', 'RPC']"
+7101600969,35240572900,2013,1,['']
+36143231500,7101600969,2007,1,"['CMS', 'MTCC', 'Resistive plate chambers']"
+36143231500,7101600969,2010,2,"['CMS', 'Detectors', 'LHC', 'Muon system', 'RPC', 'RPC']"
+36143231500,7101600969,2013,1,['']
+36143231500,35240572900,2007,1,"['CMS', 'MTCC', 'Resistive plate chambers']"
+36143231500,35240572900,2010,2,"['CMS', 'Detectors', 'LHC', 'Muon system', 'RPC', 'RPC']"
+36143231500,35240572900,2013,1,['']
+36143231500,35240572900,2014,2,"['', '']"
+36143231500,35240572900,2015,1,"['Electron multipliers (gas)', 'Gaseous detectors', 'Particle tracking detectors', 'Particle tracking detectors (Gaseous detectors)']"
+36143231500,35240572900,2016,2,"['', '']"
+7101600969,35240572900,2004,1,['']
+7101600969,35240572900,2005,1,['']
+7101600969,35240572900,2007,1,['']
+7101600969,35240572900,2008,2,"['Avalanche mode', 'Bakelite resistivity', 'Closed loop gas circulation', 'CMS', 'Gas purification', 'Resistive Plate Chamber', 'Streamer mode', '']"
+7101600969,35240572900,2009,4,"['CMS', 'Resistive plate chamber', 'RPC efficiency', 'RPC noise', 'Algorithm', 'CMS', 'Cosmic muon', 'RPC', 'Technical trigger', 'Tracking', 'CMS', 'Detector', 'Muon system', 'RPC', 'Trigger', 'CMS', 'MTCC', 'Resistive Plate Chamber', 'RPC']"
+7101600969,35240572900,2010,2,"['CMS', 'Detectors', 'LHC', 'Muon system', 'RPC', 'RPC']"
+7101600969,35240572900,2013,1,['']
+36143231500,7006790820,2007,1,"['CMS', 'MTCC', 'Resistive plate chambers']"
+36143231500,7006790820,2010,2,"['CMS', 'Detectors', 'LHC', 'Muon system', 'RPC', 'RPC']"
+36143231500,7006790820,2013,1,['']
+36143231500,7006790820,2014,2,"['', '']"
+36143231500,7006790820,2015,1,"['Electron multipliers (gas)', 'Gaseous detectors', 'Particle tracking detectors', 'Particle tracking detectors (Gaseous detectors)']"
+36143231500,7006790820,2016,2,"['', '']"
+36143231500,7101600969,2007,1,"['CMS', 'MTCC', 'Resistive plate chambers']"
+36143231500,7101600969,2010,2,"['CMS', 'Detectors', 'LHC', 'Muon system', 'RPC', 'RPC']"
+36143231500,7101600969,2013,1,['']
+36143231500,35240572900,2007,1,"['CMS', 'MTCC', 'Resistive plate chambers']"
+36143231500,35240572900,2010,2,"['CMS', 'Detectors', 'LHC', 'Muon system', 'RPC', 'RPC']"
+36143231500,35240572900,2013,1,['']
+36143231500,35240572900,2014,2,"['', '']"
+36143231500,35240572900,2015,1,"['Electron multipliers (gas)', 'Gaseous detectors', 'Particle tracking detectors', 'Particle tracking detectors (Gaseous detectors)']"
+36143231500,35240572900,2016,2,"['', '']"
+7006790820,7101600969,2007,1,['']
+7006790820,7101600969,2008,2,"['Avalanche mode', 'Bakelite resistivity', 'Closed loop gas circulation', 'CMS', 'Gas purification', 'Resistive Plate Chamber', 'Streamer mode', '']"
+7006790820,7101600969,2009,4,"['CMS', 'Resistive plate chamber', 'RPC efficiency', 'RPC noise', 'Algorithm', 'CMS', 'Cosmic muon', 'RPC', 'Technical trigger', 'Tracking', 'CMS', 'Detector', 'Muon system', 'RPC', 'Trigger', 'CMS', 'MTCC', 'Resistive Plate Chamber', 'RPC']"
+7006790820,7101600969,2010,2,"['CMS', 'Detectors', 'LHC', 'Muon system', 'RPC', 'RPC']"
+7006790820,7101600969,2013,1,['']
+7006790820,35240572900,2007,1,['']
+7006790820,35240572900,2008,2,"['Avalanche mode', 'Bakelite resistivity', 'Closed loop gas circulation', 'CMS', 'Gas purification', 'Resistive Plate Chamber', 'Streamer mode', '']"
+7006790820,35240572900,2009,4,"['CMS', 'Resistive plate chamber', 'RPC efficiency', 'RPC noise', 'Algorithm', 'CMS', 'Cosmic muon', 'RPC', 'Technical trigger', 'Tracking', 'CMS', 'Detector', 'Muon system', 'RPC', 'Trigger', 'CMS', 'MTCC', 'Resistive Plate Chamber', 'RPC']"
+7006790820,35240572900,2010,3,"['Optimization', 'Positron Emission Tomography', 'Resistive Plate Chambers', 'CMS', 'Detectors', 'LHC', 'Muon system', 'RPC', 'RPC']"
+7006790820,35240572900,2013,1,['']
+7006790820,35240572900,2014,2,"['', '']"
+7006790820,35240572900,2015,1,"['Electron multipliers (gas)', 'Gaseous detectors', 'Particle tracking detectors', 'Particle tracking detectors (Gaseous detectors)']"
+7006790820,35240572900,2016,2,"['', '']"
+7006790820,35240572900,2017,1,"['Acceleration', 'Co-processors', 'Hybrid architecture', 'Multithreading', 'Particle-matter interactions', 'Simulations']"
+7006790820,35240572900,2012,1,['']
+7101600969,35240572900,2004,1,['']
+7101600969,35240572900,2005,1,['']
+7101600969,35240572900,2007,1,['']
+7101600969,35240572900,2008,2,"['Avalanche mode', 'Bakelite resistivity', 'Closed loop gas circulation', 'CMS', 'Gas purification', 'Resistive Plate Chamber', 'Streamer mode', '']"
+7101600969,35240572900,2009,4,"['CMS', 'Resistive plate chamber', 'RPC efficiency', 'RPC noise', 'Algorithm', 'CMS', 'Cosmic muon', 'RPC', 'Technical trigger', 'Tracking', 'CMS', 'Detector', 'Muon system', 'RPC', 'Trigger', 'CMS', 'MTCC', 'Resistive Plate Chamber', 'RPC']"
+7101600969,35240572900,2010,2,"['CMS', 'Detectors', 'LHC', 'Muon system', 'RPC', 'RPC']"
+7101600969,35240572900,2013,1,['']
+36143231500,7006790820,2007,1,"['CMS', 'MTCC', 'Resistive plate chambers']"
+36143231500,7006790820,2010,2,"['CMS', 'Detectors', 'LHC', 'Muon system', 'RPC', 'RPC']"
+36143231500,7006790820,2013,1,['']
+36143231500,7006790820,2014,2,"['', '']"
+36143231500,7006790820,2015,1,"['Electron multipliers (gas)', 'Gaseous detectors', 'Particle tracking detectors', 'Particle tracking detectors (Gaseous detectors)']"
+36143231500,7006790820,2016,2,"['', '']"
+36143231500,35240572900,2007,1,"['CMS', 'MTCC', 'Resistive plate chambers']"
+36143231500,35240572900,2010,2,"['CMS', 'Detectors', 'LHC', 'Muon system', 'RPC', 'RPC']"
+36143231500,35240572900,2013,1,['']
+36143231500,35240572900,2014,2,"['', '']"
+36143231500,35240572900,2015,1,"['Electron multipliers (gas)', 'Gaseous detectors', 'Particle tracking detectors', 'Particle tracking detectors (Gaseous detectors)']"
+36143231500,35240572900,2016,2,"['', '']"
+7006790820,35240572900,2007,1,['']
+7006790820,35240572900,2008,2,"['Avalanche mode', 'Bakelite resistivity', 'Closed loop gas circulation', 'CMS', 'Gas purification', 'Resistive Plate Chamber', 'Streamer mode', '']"
+7006790820,35240572900,2009,4,"['CMS', 'Resistive plate chamber', 'RPC efficiency', 'RPC noise', 'Algorithm', 'CMS', 'Cosmic muon', 'RPC', 'Technical trigger', 'Tracking', 'CMS', 'Detector', 'Muon system', 'RPC', 'Trigger', 'CMS', 'MTCC', 'Resistive Plate Chamber', 'RPC']"
+7006790820,35240572900,2010,3,"['Optimization', 'Positron Emission Tomography', 'Resistive Plate Chambers', 'CMS', 'Detectors', 'LHC', 'Muon system', 'RPC', 'RPC']"
+7006790820,35240572900,2013,1,['']
+7006790820,35240572900,2014,2,"['', '']"
+7006790820,35240572900,2015,1,"['Electron multipliers (gas)', 'Gaseous detectors', 'Particle tracking detectors', 'Particle tracking detectors (Gaseous detectors)']"
+7006790820,35240572900,2016,2,"['', '']"
+7006790820,35240572900,2017,1,"['Acceleration', 'Co-processors', 'Hybrid architecture', 'Multithreading', 'Particle-matter interactions', 'Simulations']"
+7006790820,35240572900,2012,1,['']
+56159886900,7004704739,2007,2,"['Bimetallic catalysts', 'Characterization', 'Coke', 'Dry reforming', 'Nickel', 'Platinum', 'Bimetallic PtNi catalysts', 'Characterization', 'Dry reforming']"
+56159886900,7004704739,2008,1,"['Ceria-zirconia oxides', 'DRS', 'FTIR', 'Raman', 'TPR', 'XPS', 'XRD']"
+56159886900,7004704739,2009,2,"['Ceria-zirconia substrates', 'Dry reforming', 'Methane', 'Pt catalysts', 'Zirconia', 'Bimetallic PdNi catalysts', 'Characterization', 'Coke', 'Dry CH reforming 4']"
+56159886900,7004704739,2011,1,"['Alumina modified with phosphorus', 'Bimetallic PdNi catalysts', 'Characterization', 'Dry reforming of CH 4']"
+56159886900,7004704739,2012,1,"['Characterization', 'Nickel catalysts', 'Reforming of methane with CO 2']"
+56159886900,7004704739,2014,1,"['Dry methane reforming', 'Pt catalysts']"
+36143231500,7006790820,2007,1,"['CMS', 'MTCC', 'Resistive plate chambers']"
+36143231500,7006790820,2010,2,"['CMS', 'Detectors', 'LHC', 'Muon system', 'RPC', 'RPC']"
+36143231500,7006790820,2013,1,['']
+36143231500,7006790820,2014,2,"['', '']"
+36143231500,7006790820,2015,1,"['Electron multipliers (gas)', 'Gaseous detectors', 'Particle tracking detectors', 'Particle tracking detectors (Gaseous detectors)']"
+36143231500,7006790820,2016,2,"['', '']"
+36143231500,7101600969,2007,1,"['CMS', 'MTCC', 'Resistive plate chambers']"
+36143231500,7101600969,2010,2,"['CMS', 'Detectors', 'LHC', 'Muon system', 'RPC', 'RPC']"
+36143231500,7101600969,2013,1,['']
+36143231500,36170537200,2013,1,['']
+36143231500,36170537200,2014,2,"['', '']"
+36143231500,36170537200,2015,1,"['Electron multipliers (gas)', 'Gaseous detectors', 'Particle tracking detectors', 'Particle tracking detectors (Gaseous detectors)']"
+36143231500,36170537200,2016,2,"['', '']"
+36143231500,35240572900,2007,1,"['CMS', 'MTCC', 'Resistive plate chambers']"
+36143231500,35240572900,2010,2,"['CMS', 'Detectors', 'LHC', 'Muon system', 'RPC', 'RPC']"
+36143231500,35240572900,2013,1,['']
+36143231500,35240572900,2014,2,"['', '']"
+36143231500,35240572900,2015,1,"['Electron multipliers (gas)', 'Gaseous detectors', 'Particle tracking detectors', 'Particle tracking detectors (Gaseous detectors)']"
+36143231500,35240572900,2016,2,"['', '']"
+7006790820,7101600969,2007,1,['']
+7006790820,7101600969,2008,2,"['Avalanche mode', 'Bakelite resistivity', 'Closed loop gas circulation', 'CMS', 'Gas purification', 'Resistive Plate Chamber', 'Streamer mode', '']"
+7006790820,7101600969,2009,4,"['CMS', 'Resistive plate chamber', 'RPC efficiency', 'RPC noise', 'Algorithm', 'CMS', 'Cosmic muon', 'RPC', 'Technical trigger', 'Tracking', 'CMS', 'Detector', 'Muon system', 'RPC', 'Trigger', 'CMS', 'MTCC', 'Resistive Plate Chamber', 'RPC']"
+7006790820,7101600969,2010,2,"['CMS', 'Detectors', 'LHC', 'Muon system', 'RPC', 'RPC']"
+7006790820,7101600969,2013,1,['']
+7006790820,36170537200,2013,1,['']
+7006790820,36170537200,2014,2,"['', '']"
+7006790820,36170537200,2015,1,"['Electron multipliers (gas)', 'Gaseous detectors', 'Particle tracking detectors', 'Particle tracking detectors (Gaseous detectors)']"
+7006790820,36170537200,2016,2,"['', '']"
+7006790820,35240572900,2007,1,['']
+7006790820,35240572900,2008,2,"['Avalanche mode', 'Bakelite resistivity', 'Closed loop gas circulation', 'CMS', 'Gas purification', 'Resistive Plate Chamber', 'Streamer mode', '']"
+7006790820,35240572900,2009,4,"['CMS', 'Resistive plate chamber', 'RPC efficiency', 'RPC noise', 'Algorithm', 'CMS', 'Cosmic muon', 'RPC', 'Technical trigger', 'Tracking', 'CMS', 'Detector', 'Muon system', 'RPC', 'Trigger', 'CMS', 'MTCC', 'Resistive Plate Chamber', 'RPC']"
+7006790820,35240572900,2010,3,"['Optimization', 'Positron Emission Tomography', 'Resistive Plate Chambers', 'CMS', 'Detectors', 'LHC', 'Muon system', 'RPC', 'RPC']"
+7006790820,35240572900,2013,1,['']
+7006790820,35240572900,2014,2,"['', '']"
+7006790820,35240572900,2015,1,"['Electron multipliers (gas)', 'Gaseous detectors', 'Particle tracking detectors', 'Particle tracking detectors (Gaseous detectors)']"
+7006790820,35240572900,2016,2,"['', '']"
+7006790820,35240572900,2017,1,"['Acceleration', 'Co-processors', 'Hybrid architecture', 'Multithreading', 'Particle-matter interactions', 'Simulations']"
+7006790820,35240572900,2012,1,['']
+7101600969,36170537200,2013,1,['']
+7101600969,35240572900,2004,1,['']
+7101600969,35240572900,2005,1,['']
+7101600969,35240572900,2007,1,['']
+7101600969,35240572900,2008,2,"['Avalanche mode', 'Bakelite resistivity', 'Closed loop gas circulation', 'CMS', 'Gas purification', 'Resistive Plate Chamber', 'Streamer mode', '']"
+7101600969,35240572900,2009,4,"['CMS', 'Resistive plate chamber', 'RPC efficiency', 'RPC noise', 'Algorithm', 'CMS', 'Cosmic muon', 'RPC', 'Technical trigger', 'Tracking', 'CMS', 'Detector', 'Muon system', 'RPC', 'Trigger', 'CMS', 'MTCC', 'Resistive Plate Chamber', 'RPC']"
+7101600969,35240572900,2010,2,"['CMS', 'Detectors', 'LHC', 'Muon system', 'RPC', 'RPC']"
+7101600969,35240572900,2013,1,['']
+36170537200,35240572900,2013,1,['']
+36170537200,35240572900,2014,2,"['', '']"
+36170537200,35240572900,2015,1,"['Electron multipliers (gas)', 'Gaseous detectors', 'Particle tracking detectors', 'Particle tracking detectors (Gaseous detectors)']"
+36170537200,35240572900,2016,2,"['', '']"
+36143231500,7006790820,2007,1,"['CMS', 'MTCC', 'Resistive plate chambers']"
+36143231500,7006790820,2010,2,"['CMS', 'Detectors', 'LHC', 'Muon system', 'RPC', 'RPC']"
+36143231500,7006790820,2013,1,['']
+36143231500,7006790820,2014,2,"['', '']"
+36143231500,7006790820,2015,1,"['Electron multipliers (gas)', 'Gaseous detectors', 'Particle tracking detectors', 'Particle tracking detectors (Gaseous detectors)']"
+36143231500,7006790820,2016,2,"['', '']"
+36143231500,7101600969,2007,1,"['CMS', 'MTCC', 'Resistive plate chambers']"
+36143231500,7101600969,2010,2,"['CMS', 'Detectors', 'LHC', 'Muon system', 'RPC', 'RPC']"
+36143231500,7101600969,2013,1,['']
+36143231500,35240572900,2007,1,"['CMS', 'MTCC', 'Resistive plate chambers']"
+36143231500,35240572900,2010,2,"['CMS', 'Detectors', 'LHC', 'Muon system', 'RPC', 'RPC']"
+36143231500,35240572900,2013,1,['']
+36143231500,35240572900,2014,2,"['', '']"
+36143231500,35240572900,2015,1,"['Electron multipliers (gas)', 'Gaseous detectors', 'Particle tracking detectors', 'Particle tracking detectors (Gaseous detectors)']"
+36143231500,35240572900,2016,2,"['', '']"
+7006790820,7101600969,2007,1,['']
+7006790820,7101600969,2008,2,"['Avalanche mode', 'Bakelite resistivity', 'Closed loop gas circulation', 'CMS', 'Gas purification', 'Resistive Plate Chamber', 'Streamer mode', '']"
+7006790820,7101600969,2009,4,"['CMS', 'Resistive plate chamber', 'RPC efficiency', 'RPC noise', 'Algorithm', 'CMS', 'Cosmic muon', 'RPC', 'Technical trigger', 'Tracking', 'CMS', 'Detector', 'Muon system', 'RPC', 'Trigger', 'CMS', 'MTCC', 'Resistive Plate Chamber', 'RPC']"
+7006790820,7101600969,2010,2,"['CMS', 'Detectors', 'LHC', 'Muon system', 'RPC', 'RPC']"
+7006790820,7101600969,2013,1,['']
+7006790820,35240572900,2007,1,['']
+7006790820,35240572900,2008,2,"['Avalanche mode', 'Bakelite resistivity', 'Closed loop gas circulation', 'CMS', 'Gas purification', 'Resistive Plate Chamber', 'Streamer mode', '']"
+7006790820,35240572900,2009,4,"['CMS', 'Resistive plate chamber', 'RPC efficiency', 'RPC noise', 'Algorithm', 'CMS', 'Cosmic muon', 'RPC', 'Technical trigger', 'Tracking', 'CMS', 'Detector', 'Muon system', 'RPC', 'Trigger', 'CMS', 'MTCC', 'Resistive Plate Chamber', 'RPC']"
+7006790820,35240572900,2010,3,"['Optimization', 'Positron Emission Tomography', 'Resistive Plate Chambers', 'CMS', 'Detectors', 'LHC', 'Muon system', 'RPC', 'RPC']"
+7006790820,35240572900,2013,1,['']
+7006790820,35240572900,2014,2,"['', '']"
+7006790820,35240572900,2015,1,"['Electron multipliers (gas)', 'Gaseous detectors', 'Particle tracking detectors', 'Particle tracking detectors (Gaseous detectors)']"
+7006790820,35240572900,2016,2,"['', '']"
+7006790820,35240572900,2017,1,"['Acceleration', 'Co-processors', 'Hybrid architecture', 'Multithreading', 'Particle-matter interactions', 'Simulations']"
+7006790820,35240572900,2012,1,['']
+7101600969,35240572900,2004,1,['']
+7101600969,35240572900,2005,1,['']
+7101600969,35240572900,2007,1,['']
+7101600969,35240572900,2008,2,"['Avalanche mode', 'Bakelite resistivity', 'Closed loop gas circulation', 'CMS', 'Gas purification', 'Resistive Plate Chamber', 'Streamer mode', '']"
+7101600969,35240572900,2009,4,"['CMS', 'Resistive plate chamber', 'RPC efficiency', 'RPC noise', 'Algorithm', 'CMS', 'Cosmic muon', 'RPC', 'Technical trigger', 'Tracking', 'CMS', 'Detector', 'Muon system', 'RPC', 'Trigger', 'CMS', 'MTCC', 'Resistive Plate Chamber', 'RPC']"
+7101600969,35240572900,2010,2,"['CMS', 'Detectors', 'LHC', 'Muon system', 'RPC', 'RPC']"
+7101600969,35240572900,2013,1,['']
+36143231500,7006790820,2007,1,"['CMS', 'MTCC', 'Resistive plate chambers']"
+36143231500,7006790820,2010,2,"['CMS', 'Detectors', 'LHC', 'Muon system', 'RPC', 'RPC']"
+36143231500,7006790820,2013,1,['']
+36143231500,7006790820,2014,2,"['', '']"
+36143231500,7006790820,2015,1,"['Electron multipliers (gas)', 'Gaseous detectors', 'Particle tracking detectors', 'Particle tracking detectors (Gaseous detectors)']"
+36143231500,7006790820,2016,2,"['', '']"
+36143231500,7101600969,2007,1,"['CMS', 'MTCC', 'Resistive plate chambers']"
+36143231500,7101600969,2010,2,"['CMS', 'Detectors', 'LHC', 'Muon system', 'RPC', 'RPC']"
+36143231500,7101600969,2013,1,['']
+36143231500,36170537200,2013,1,['']
+36143231500,36170537200,2014,2,"['', '']"
+36143231500,36170537200,2015,1,"['Electron multipliers (gas)', 'Gaseous detectors', 'Particle tracking detectors', 'Particle tracking detectors (Gaseous detectors)']"
+36143231500,36170537200,2016,2,"['', '']"
+36143231500,35240572900,2007,1,"['CMS', 'MTCC', 'Resistive plate chambers']"
+36143231500,35240572900,2010,2,"['CMS', 'Detectors', 'LHC', 'Muon system', 'RPC', 'RPC']"
+36143231500,35240572900,2013,1,['']
+36143231500,35240572900,2014,2,"['', '']"
+36143231500,35240572900,2015,1,"['Electron multipliers (gas)', 'Gaseous detectors', 'Particle tracking detectors', 'Particle tracking detectors (Gaseous detectors)']"
+36143231500,35240572900,2016,2,"['', '']"
+7006790820,7101600969,2007,1,['']
+7006790820,7101600969,2008,2,"['Avalanche mode', 'Bakelite resistivity', 'Closed loop gas circulation', 'CMS', 'Gas purification', 'Resistive Plate Chamber', 'Streamer mode', '']"
+7006790820,7101600969,2009,4,"['CMS', 'Resistive plate chamber', 'RPC efficiency', 'RPC noise', 'Algorithm', 'CMS', 'Cosmic muon', 'RPC', 'Technical trigger', 'Tracking', 'CMS', 'Detector', 'Muon system', 'RPC', 'Trigger', 'CMS', 'MTCC', 'Resistive Plate Chamber', 'RPC']"
+7006790820,7101600969,2010,2,"['CMS', 'Detectors', 'LHC', 'Muon system', 'RPC', 'RPC']"
+7006790820,7101600969,2013,1,['']
+7006790820,36170537200,2013,1,['']
+7006790820,36170537200,2014,2,"['', '']"
+7006790820,36170537200,2015,1,"['Electron multipliers (gas)', 'Gaseous detectors', 'Particle tracking detectors', 'Particle tracking detectors (Gaseous detectors)']"
+7006790820,36170537200,2016,2,"['', '']"
+7006790820,35240572900,2007,1,['']
+7006790820,35240572900,2008,2,"['Avalanche mode', 'Bakelite resistivity', 'Closed loop gas circulation', 'CMS', 'Gas purification', 'Resistive Plate Chamber', 'Streamer mode', '']"
+7006790820,35240572900,2009,4,"['CMS', 'Resistive plate chamber', 'RPC efficiency', 'RPC noise', 'Algorithm', 'CMS', 'Cosmic muon', 'RPC', 'Technical trigger', 'Tracking', 'CMS', 'Detector', 'Muon system', 'RPC', 'Trigger', 'CMS', 'MTCC', 'Resistive Plate Chamber', 'RPC']"
+7006790820,35240572900,2010,3,"['Optimization', 'Positron Emission Tomography', 'Resistive Plate Chambers', 'CMS', 'Detectors', 'LHC', 'Muon system', 'RPC', 'RPC']"
+7006790820,35240572900,2013,1,['']
+7006790820,35240572900,2014,2,"['', '']"
+7006790820,35240572900,2015,1,"['Electron multipliers (gas)', 'Gaseous detectors', 'Particle tracking detectors', 'Particle tracking detectors (Gaseous detectors)']"
+7006790820,35240572900,2016,2,"['', '']"
+7006790820,35240572900,2017,1,"['Acceleration', 'Co-processors', 'Hybrid architecture', 'Multithreading', 'Particle-matter interactions', 'Simulations']"
+7006790820,35240572900,2012,1,['']
+7101600969,36170537200,2013,1,['']
+7101600969,35240572900,2004,1,['']
+7101600969,35240572900,2005,1,['']
+7101600969,35240572900,2007,1,['']
+7101600969,35240572900,2008,2,"['Avalanche mode', 'Bakelite resistivity', 'Closed loop gas circulation', 'CMS', 'Gas purification', 'Resistive Plate Chamber', 'Streamer mode', '']"
+7101600969,35240572900,2009,4,"['CMS', 'Resistive plate chamber', 'RPC efficiency', 'RPC noise', 'Algorithm', 'CMS', 'Cosmic muon', 'RPC', 'Technical trigger', 'Tracking', 'CMS', 'Detector', 'Muon system', 'RPC', 'Trigger', 'CMS', 'MTCC', 'Resistive Plate Chamber', 'RPC']"
+7101600969,35240572900,2010,2,"['CMS', 'Detectors', 'LHC', 'Muon system', 'RPC', 'RPC']"
+7101600969,35240572900,2013,1,['']
+36170537200,35240572900,2013,1,['']
+36170537200,35240572900,2014,2,"['', '']"
+36170537200,35240572900,2015,1,"['Electron multipliers (gas)', 'Gaseous detectors', 'Particle tracking detectors', 'Particle tracking detectors (Gaseous detectors)']"
+36170537200,35240572900,2016,2,"['', '']"
+7003942919,7005969222,2018,1,"['Antibacterial activity', 'Antioxidant capacity', 'Caffeic acid phenethyl ester', 'Electrospinning', 'Poly(3-hydroxybutyrate)', 'Polyvinylpyrrolidone', 'Solubility enhancement']"
+6602752124,6602076814,2012,1,"['Chemical indices', 'Polluted and non-polluted areas', 'Rapana thomasiana']"
+6602752124,6602076814,2015,1,"['Cholesterol spectrum', 'Contaminated and noncontaminated areas', 'Fluorescence', 'Mass spectra', 'Rapana venosa', 'Rats', 'Total antioxidant capacity']"
+56026466500,7005349576,2007,3,"['Chemometrics', 'Heavy metal', 'Lake sediment', 'Organic pollutant', 'Multivariate statistics', 'Natural waters', 'Sediments', 'Toxicity', 'Water quality', 'Air pollution', 'Bioindication', 'Environmetrics', 'Modeling', 'Sphagnum palustre', 'Trace metals']"
+56026466500,7005349576,2009,1,['']
+56026466500,7005349576,2010,4,"['Chemical composition', 'PAHs', 'PCBs', 'Roof runoff', 'Self-organizing maps', 'Chemometrics', 'Environmental pollution', 'Kremikovtzi', 'Kriging', 'Semivariogram analysis', 'Source apportionment modeling', 'Chlorinated solvents', 'PAHs', 'Pollution tracers', 'Self-organizing maps', 'Chemometrics', 'Hasse diagram technique', 'Self-organizing maps', 'Sensitivity analysis', 'Water quality']"
+56026466500,7005349576,2011,1,"['Chemometric methods', 'Pollution', 'Risk assessment', 'Sediment samples']"
+56026466500,7005349576,2012,3,"['Alcohol abuse', 'Chemometrics', 'Clinical data', 'Modeling', 'Hasse diagram technique', 'Quality assessment', 'Self-organizing maps', 'Surface water', 'Chemometrics', 'Heavy metals', 'Risk assessment', 'Soil pollution']"
+56026466500,7005349576,2013,1,['']
+56026466500,7005349576,2014,3,"['Data mining', 'Environmental monitoring', 'Heavy metal pollution', 'Risk assessment', 'Surface water pollution', 'Chemometrics', 'Core sediments', 'Metals', 'Shipwreck risk assessment', 'Toxicity', 'Trace organic pollutants', 'Chemical analysis', 'Green analytical chemistry', 'Organic pollutants', 'Self-organizing maps']"
+56026466500,7005349576,2015,1,['']
+56026466500,7005349576,2016,6,"['Airborne particles', 'Back trajectories', 'Fraction size', 'Multivariate statistics', 'Outliers', 'Urban air quality', 'Benzo[a]pyrene', 'Chemometrics', 'Green chemistry', 'Greenness assessment', 'Multivariate statistics', 'Biotests', 'Chemometrics', 'Ecotoxicity', 'Environmental stressors removal', 'Wastewater treatment plants', 'Hormones', 'Interactions modeling', 'Microtox®', 'Pharmaceuticals', 'XenoScreen YES/YAS®', 'Arctic', 'Metals', 'Svalbard', 'TOC', 'Trace elements', 'Volcanic eruption', 'chemometric analysis', 'Poland', 'Principal Components Analysis', 'snow chemistry', 'Sudety Moutains']"
+56026466500,7005349576,2018,3,"['Ecotoxicity', 'Endocrine potential', 'Mixtures toxicity modelling', 'Model deviation ratio (MDR)', 'Pharmaceuticals', 'Endocrine potential', 'Experimental design', 'Extraction', 'FTIR', 'MANOVA', 'Modeling', 'Packaging materials', 'Toxicity', 'Chemometric methods', ""Children's toys"", 'Ecotoxicity', 'Endocrine potential', 'TVOC']"
+56026466500,57185731800,2016,3,"['Airborne particles', 'Back trajectories', 'Fraction size', 'Multivariate statistics', 'Outliers', 'Urban air quality', 'Biotests', 'Chemometrics', 'Ecotoxicity', 'Environmental stressors removal', 'Wastewater treatment plants', 'Hormones', 'Interactions modeling', 'Microtox®', 'Pharmaceuticals', 'XenoScreen YES/YAS®']"
+56026466500,57185731800,2017,1,"['biotest', 'extraction', 'food packaging', 'Microtox ®', 'migration', 'toxicity']"
+56026466500,57185731800,2018,2,"['Ecotoxicity', 'Endocrine potential', 'Mixtures toxicity modelling', 'Model deviation ratio (MDR)', 'Pharmaceuticals', 'Endocrine potential', 'Experimental design', 'Extraction', 'FTIR', 'MANOVA', 'Modeling', 'Packaging materials', 'Toxicity']"
+56026466500,55467311500,2016,1,"['Hormones', 'Interactions modeling', 'Microtox®', 'Pharmaceuticals', 'XenoScreen YES/YAS®']"
+56026466500,55467311500,2018,1,"['Endocrine potential', 'Experimental design', 'Extraction', 'FTIR', 'MANOVA', 'Modeling', 'Packaging materials', 'Toxicity']"
+7005349576,57185731800,2016,3,"['Airborne particles', 'Back trajectories', 'Fraction size', 'Multivariate statistics', 'Outliers', 'Urban air quality', 'Biotests', 'Chemometrics', 'Ecotoxicity', 'Environmental stressors removal', 'Wastewater treatment plants', 'Hormones', 'Interactions modeling', 'Microtox®', 'Pharmaceuticals', 'XenoScreen YES/YAS®']"
+7005349576,57185731800,2018,2,"['Ecotoxicity', 'Endocrine potential', 'Mixtures toxicity modelling', 'Model deviation ratio (MDR)', 'Pharmaceuticals', 'Endocrine potential', 'Experimental design', 'Extraction', 'FTIR', 'MANOVA', 'Modeling', 'Packaging materials', 'Toxicity']"
+7005349576,55467311500,2016,1,"['Hormones', 'Interactions modeling', 'Microtox®', 'Pharmaceuticals', 'XenoScreen YES/YAS®']"
+7005349576,55467311500,2017,1,"['Morphological analysis', 'Multivariate statistical classification', 'Onobrychis pindicola']"
+7005349576,55467311500,2018,3,"['Endocrine potential', 'Experimental design', 'Extraction', 'FTIR', 'MANOVA', 'Modeling', 'Packaging materials', 'Toxicity', 'Boric acid', 'Organic-inorganic hydrogels', 'Poly(ethylene glycol)', 'Poly(vinyl alcohol)', 'Polymer-borate hybrid films', 'Assessment of extracts', 'Best-fit function', 'Canned food', 'Chemometrics', 'Ecotoxicity', 'Food packaging']"
+57185731800,55467311500,2016,1,"['Hormones', 'Interactions modeling', 'Microtox®', 'Pharmaceuticals', 'XenoScreen YES/YAS®']"
+57185731800,55467311500,2018,1,"['Endocrine potential', 'Experimental design', 'Extraction', 'FTIR', 'MANOVA', 'Modeling', 'Packaging materials', 'Toxicity']"
+55929958000,24081488100,2014,2,"['Cell Load Balancing', 'HetNet', 'LTE-A', 'SINR', 'carrier aggregation', 'Game theory', 'heterogeneous network', 'Q-learning']"
+55929958000,24081488100,2015,2,"['Heterogeneous Networks', 'Inter-Cell Interference', 'LTE', 'Uplink Power Control', 'Heuristic Algorithms', 'Inter-Cell Interference', 'Long Term Evolution', 'Uplink Power Control']"
+55929958000,24081488100,2016,1,"['Ad-hoc networks', 'MANET', 'Routing protocols', 'Wireless communication']"
+55929958000,24081488100,2017,2,"['autonomic load balancing', 'machine learning', 'Self-organisation', '']"
+55929958000,24081488100,2018,1,"['Access Network', 'Antenna Tilt', 'Heat Maps', 'Heterogeneous Wireless Networks', 'Neural Networks']"
+35753172700,12755591400,2010,1,['']
+35753172700,12755591400,2009,1,"['Diode pumped lasers', 'Passive mode-locking', 'Periodically-poled crystals', 'Quasi-phase matching']"
+35753172700,12755591400,2011,3,"['', '', '']"
+35753172700,12755591400,2012,5,"['', '', '', '', '']"
+35753172700,12755591400,2013,7,"['', '', '', '', '', '', '']"
+35753172700,12755591400,2014,1,['']
+35753172700,12755591400,2016,1,['']
+35753172700,12755591400,2018,1,['']
+35753172700,23667015400,2011,3,"['', '', '']"
+35753172700,23667015400,2012,5,"['', '', '', '', '']"
+35753172700,23667015400,2013,5,"['', '', '', '', '']"
+35753172700,55925974400,2013,2,"['', '']"
+35753172700,55925974400,2014,1,['']
+35753172700,55925974400,2016,1,['']
+35753172700,55925974400,2018,1,['']
+35753172700,16304463800,2010,1,['']
+35753172700,16304463800,2009,1,"['Diode pumped lasers', 'Passive mode-locking', 'Periodically-poled crystals', 'Quasi-phase matching']"
+35753172700,16304463800,2014,6,"['', '', '', '', '', '']"
+12755591400,23667015400,2007,1,['']
+12755591400,23667015400,2008,1,['']
+12755591400,23667015400,2010,1,['']
+12755591400,23667015400,2009,3,"['Bismuth triborate', 'Femtosecond pulses', 'Optical parametric amplifiers', 'Optical parametric generators', 'Parametric gain bandwidth', 'Pulse compression', 'White light continuum generation and amplification', 'High energy', 'Nanosecond', 'Rod and slab amplification', 'Solid state lasers', 'Mode locking', 'Negative feedback', 'Nonlinear mirror', 'Pulsed Nd:YAG laser']"
+12755591400,23667015400,2011,3,"['', '', '']"
+12755591400,23667015400,2012,5,"['', '', '', '', '']"
+12755591400,23667015400,2013,5,"['', '', '', '', '']"
+12755591400,55925974400,2013,6,"['', '', '', '', '', '']"
+12755591400,55925974400,2014,2,"['', '']"
+12755591400,55925974400,2015,1,"['Diode-pumped', 'infrared laser', 'Q-switched', 'solid state']"
+12755591400,55925974400,2016,1,['']
+12755591400,55925974400,2017,2,"['', '']"
+12755591400,55925974400,2018,1,['']
+12755591400,16304463800,2010,2,"['', '']"
+12755591400,16304463800,2009,1,"['Diode pumped lasers', 'Passive mode-locking', 'Periodically-poled crystals', 'Quasi-phase matching']"
+12755591400,16304463800,2011,4,"['', '', '', '']"
+12755591400,16304463800,2012,1,"['Neodymium lasers', 'Single-walled carbon nanotubes', 'Words: Mode-locked lasers']"
+12755591400,16304463800,2013,1,['']
+12755591400,16304463800,2014,4,"['', '', '', '']"
+12755591400,16304463800,2015,2,"['', 'Cavity resonators', 'Crystals', 'Laser beams', 'Laser excitation', 'Measurement by laser beam', 'Mirrors', 'Power generation']"
+23667015400,55925974400,2013,2,"['', '']"
+55925974400,16304463800,2013,4,"['', '', '', '']"
+55925974400,16304463800,2014,6,"['', '', '', '', '', '']"
+55225780900,6504683311,2012,1,"['Athyrium filix-femina', 'Dryopteris affinis', 'Dryopteris filix-mas', 'Leaves', 'Microorganism', 'Pathogen', 'Saprophyte']"
+55225780900,55226103100,2012,1,"['Athyrium filix-femina', 'Dryopteris affinis', 'Dryopteris filix-mas', 'Leaves', 'Microorganism', 'Pathogen', 'Saprophyte']"
+55225780900,55396653900,2012,1,"['Athyrium filix-femina', 'Dryopteris affinis', 'Dryopteris filix-mas', 'Leaves', 'Microorganism', 'Pathogen', 'Saprophyte']"
+6504683311,55226103100,2012,1,"['Athyrium filix-femina', 'Dryopteris affinis', 'Dryopteris filix-mas', 'Leaves', 'Microorganism', 'Pathogen', 'Saprophyte']"
+6504683311,55396653900,2012,1,"['Athyrium filix-femina', 'Dryopteris affinis', 'Dryopteris filix-mas', 'Leaves', 'Microorganism', 'Pathogen', 'Saprophyte']"
+55226103100,55396653900,2012,1,"['Athyrium filix-femina', 'Dryopteris affinis', 'Dryopteris filix-mas', 'Leaves', 'Microorganism', 'Pathogen', 'Saprophyte']"
+8543563100,57195100645,2008,2,"['Genomic signals', 'Neural networks', 'Nucleotide sequences', 'Sequence prediction', 'Time series prediction', 'Genomic signals', 'Neural networks', 'PCA', 'Sequence prediction', 'Time series prediction']"
+8543563100,7003839730,2008,2,"['Genomic signals', 'Neural networks', 'Nucleotide sequences', 'Sequence prediction', 'Time series prediction', 'Genomic signals', 'Neural networks', 'PCA', 'Sequence prediction', 'Time series prediction']"
+8543563100,7003839730,2018,1,"['Ambient Assisted Living', 'Context awareness', 'Intelligent decision support system', 'Sleep monitoring', 'Sleep quality']"
+57195100645,7003839730,2008,2,"['Genomic signals', 'Neural networks', 'Nucleotide sequences', 'Sequence prediction', 'Time series prediction', 'Genomic signals', 'Neural networks', 'PCA', 'Sequence prediction', 'Time series prediction']"
+6508340889,8448941100,2013,1,['']
+6508340889,8448941100,2014,2,"['Key words', 'Maintenance decision making', 'Mathematical modelling', 'Peirce-Smith converter (PSC)', 'Rule-based reasoning (RBR)', 'Supervisory control', 'Threshold based maintenance', 'Case-based reasoning', 'Data driven models', 'Nonlinear hybrid control', 'Peirce-Smith converter', 'Rule-based reasoning']"
+6508340889,8448941100,2016,1,"['degrading performance', 'hierarchical control', 'model predictive control', 'Peirce-Smith converter']"
+6508340889,8448941100,2018,1,['']
+6603222558,22334129300,2008,4,"['', '', 'Mimo radar system', 'Randomly Arriving Impulse Interference (RAII)', 'Track-Before-Detect (TBD) with Polar Hough Transform (PHT)', '']"
+6603222558,22334129300,2009,2,"['', 'Bayesian', 'Canny edge detection', 'CFAR for GPR', 'Extended Kalman filtering', 'FPGA implementation', 'Hough transform', 'Interacting Multiple Model filtering', 'Modeling and estimation', 'Stepped frequency GPR imaging', 'UXO signal detection']"
+6603222558,22334129300,2015,3,"['detection and estimation', 'FS effect', 'FSR', 'GPS', '', '']"
+6603222558,22334129300,2007,2,"['Data association', 'Multiradar system', 'Polar hough transform', 'Randomly arriving impulse interference', 'Signal processing', 'Track-before-detect (TBD)', '']"
+6603222558,22334129300,2016,1,"['FSR', 'GPS', 'Parameter estimation']"
+6603222558,22334129300,2017,2,"['', '']"
+6603222558,36246175200,2015,3,"['detection and estimation', 'FS effect', 'FSR', 'GPS', '', '']"
+6603222558,36246175200,2016,1,"['FSR', 'GPS', 'Parameter estimation']"
+6603222558,36246175200,2017,2,"['', '']"
+6603222558,7005149671,2017,1,['']
+6603222558,7007165939,2007,1,['']
+6603222558,7007165939,2008,2,"['', '']"
+6603222558,7007165939,2009,1,"['Bayesian', 'Canny edge detection', 'CFAR for GPR', 'Extended Kalman filtering', 'FPGA implementation', 'Hough transform', 'Interacting Multiple Model filtering', 'Modeling and estimation', 'Stepped frequency GPR imaging', 'UXO signal detection']"
+6603222558,7007165939,2015,3,"['detection and estimation', 'FS effect', 'FSR', 'GPS', '', '']"
+6603222558,7007165939,2016,1,"['FSR', 'GPS', 'Parameter estimation']"
+6603222558,7007165939,2017,2,"['', '']"
+22334129300,23990643100,2017,1,"['Asteroid', 'Detection', 'Forward scatter effect', 'Pulsar']"
+22334129300,23990643100,2018,1,"['FSR', 'GPS', 'Signal Separation']"
+22334129300,36246175200,2015,3,"['detection and estimation', 'FS effect', 'FSR', 'GPS', '', '']"
+22334129300,36246175200,2016,1,"['FSR', 'GPS', 'Parameter estimation']"
+22334129300,36246175200,2017,3,"['', '', 'Asteroid', 'Detection', 'Forward scatter effect', 'Pulsar']"
+22334129300,36246175200,2018,1,"['FSR', 'GPS', 'Signal Separation']"
+22334129300,7005149671,2017,1,['']
+22334129300,7007165939,2008,1,['']
+22334129300,7007165939,2009,1,"['Bayesian', 'Canny edge detection', 'CFAR for GPR', 'Extended Kalman filtering', 'FPGA implementation', 'Hough transform', 'Interacting Multiple Model filtering', 'Modeling and estimation', 'Stepped frequency GPR imaging', 'UXO signal detection']"
+22334129300,7007165939,2015,3,"['detection and estimation', 'FS effect', 'FSR', 'GPS', '', '']"
+22334129300,7007165939,2016,1,"['FSR', 'GPS', 'Parameter estimation']"
+22334129300,7007165939,2017,3,"['', '', 'Asteroid', 'Detection', 'Forward scatter effect', 'Pulsar']"
+22334129300,7007165939,2018,1,"['FSR', 'GPS', 'Signal Separation']"
+23990643100,36246175200,2017,1,"['Asteroid', 'Detection', 'Forward scatter effect', 'Pulsar']"
+23990643100,36246175200,2018,1,"['FSR', 'GPS', 'Signal Separation']"
+23990643100,7007165939,2017,1,"['Asteroid', 'Detection', 'Forward scatter effect', 'Pulsar']"
+23990643100,7007165939,2018,1,"['FSR', 'GPS', 'Signal Separation']"
+36246175200,7005149671,2017,1,['']
+36246175200,7007165939,2015,3,"['detection and estimation', 'FS effect', 'FSR', 'GPS', '', '']"
+36246175200,7007165939,2016,1,"['FSR', 'GPS', 'Parameter estimation']"
+36246175200,7007165939,2017,3,"['', '', 'Asteroid', 'Detection', 'Forward scatter effect', 'Pulsar']"
+36246175200,7007165939,2018,1,"['FSR', 'GPS', 'Signal Separation']"
+7005149671,7007165939,2017,1,['']

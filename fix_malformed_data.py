@@ -4,6 +4,7 @@ from models import *
 import pprint as pp
 import peewee as pw
 import logging
+import timeit
 # logger = logging.getLogger()
 # logger.setLevel(logging.DEBUG)
 # logger.addHandler(logging.StreamHandler())
@@ -68,15 +69,43 @@ def fix_malformed_date():
         
         print(Colour.OKGREEN + 'Fixed date for ' + str(row.abs_id) + ', from ' + str(row.published) + ' to ' + str(date) + Colour.END)
 
+
+def get_article_data(id):
+    payload = {
+        'field': 'authors,prism:coverDate,citedby-count,authkeywords,message'
+    }
+    p = Request('GET', 'https://api.elsevier.com/content/abstract/scopus_id/' + str(id), params=payload).prepare()
+    article = AbsDoc(uri=p.url)
+
+    if article.read(client):
+        return article.data
+    else:
+        return None
+
 def fullfil_collaboration_authors():
-    collaborations = Collaboration.select(Collaboration.abs_id).where(Collaboration.message.is_null(True)).limit(100)
+    print('Find malformed collaboration in db...')
+    collaborations = Collaboration.select(Collaboration.abs_id).where(Collaboration.authors.is_null(True))
+    print('Found some malformed data')
+    print('Starting process of fixing, one by one...')
 
     for row in collaborations:
-        article = AbsDoc(scp_id=row.abs_id)
-        if article.read(client):
-            pp.pprint(pp.pformat(article.data))
-        else:
-            pp.pprint('Insuccess for article ' + str(row.abs_id))
+        try:
+            print(str(row.abs_id) + '...', end="")
+            article = get_article_data(row.abs_id)
+            if article:
+                row.authors = article.get('author')
+                row.affiliation = article.get('affiliation')
+                row.cited_by = article.get('citedby-count')
+                row.published = article.get('prism:coverDate')
+                row.keywords = article.get('authkeywords')
+                row.message = article.get('message')
+                row.save()
+                print('saved')
+            else:
+                print('not found')
+        except Exception as e:
+            print(e)
+            
 
 def update_category():
     saved_phys = Coauthors.select()

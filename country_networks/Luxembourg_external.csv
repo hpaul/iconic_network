@@ -1,0 +1,953 @@
+Country,Source,Target,Year,Weight,Keywords
+Italy,24376631300,6701920016,2009,1,"['α-Isoforms', 'Antihelmintics', 'Caenorhabditis elegans', 'Carbonic anhydrase', 'Sulfonamide', 'Thiabendazole']"
+Italy,24376631300,6701920016,2010,1,"['β-Class enzyme', 'Candida albicans', 'Carbonic anhydrase', 'Cryptococcus neoformans', 'Indole-5-sulfonamides', 'Sulfonamide']"
+Italy,24376631300,6701920016,2012,1,"['Beta-class enzyme', 'Candida albicans', 'Candida glabrata', 'Carbonic anhydrase', 'Cryptococcus neoformans', 'Dithiocarbamate', 'Inhibitor']"
+Italy,8089976900,6701920016,2011,1,"['β-Class enzyme', 'Antifungals', 'Candida albicans', 'Carbonic anhydrase', 'Carboxylate', 'Cryptococcus neoformans', 'Inhibitor']"
+Italy,8089976900,6701920016,2012,1,"['Beta-class enzyme', 'Candida albicans', 'Candida glabrata', 'Carbonic anhydrase', 'Cryptococcus neoformans', 'Dithiocarbamate', 'Inhibitor']"
+Italy,7007008860,6701920016,2012,1,"['Beta-class enzyme', 'Candida albicans', 'Candida glabrata', 'Carbonic anhydrase', 'Cryptococcus neoformans', 'Dithiocarbamate', 'Inhibitor']"
+Italy,26643472000,6701920016,2008,2,"['C. elegans', 'Carbonic anhydrase', 'Environmental pH', 'Global transcriptional analysis', 'β-Carbonic anhydrases', 'Anions', 'Can2', 'Candida albicans', 'Cryptococcus neoformans', 'Fungal pathogens', 'Nce103']"
+Italy,26643472000,6701920016,2009,5,"['Aliphatic carboxylate', 'Aromatic carboxylate', 'Beta-class', 'Can2', 'Candida albicans', 'Carbonic anhydrase', 'Cryptococcus neoformans', 'Nce103', 'Caenorhabditis elegans', 'Carbonic anhydrase', 'Indole-5-sulfonamide', 'Nematode', 'Sulfonamides', 'Beta-class enzyme', 'Boronic acid', 'Can2', 'Candida albicans', 'Carbonic anhydrase', 'Cryptococcus neoformans', 'Nce103', 'β-Class enzymes', 'Can2', 'Candida albicans', 'Carbonic anhydrase', 'Cryptococcus neoformans', 'Nce103', 'Sulfonamide', 'Anion', 'Antifungals', 'Bicarbonate', 'Candida albicans', 'Candida glabrata', 'Carbonic anhydrase', 'Zinc-binding group']"
+Italy,26643472000,6701920016,2010,2,"['β-Class enzymes', 'Amine', 'Amino acid', 'Candida albicans', 'Carbonic anhydrase', 'Cryptococcus neoformans', 'Enzyme-activator', 'Activator', 'Amine', 'Amino acid', 'Candida glabrata', 'Carbonic anhydrase']"
+Italy,26643472000,6701920016,2011,2,"['', 'β-Class enzyme', 'Antifungals', 'Candida albicans', 'Carbonic anhydrase', 'Carboxylate', 'Cryptococcus neoformans', 'Inhibitor']"
+Italy,35413953700,6701920016,2008,2,"['C. elegans', 'Carbonic anhydrase', 'Environmental pH', 'Global transcriptional analysis', 'β-Carbonic anhydrases', 'Anions', 'Can2', 'Candida albicans', 'Cryptococcus neoformans', 'Fungal pathogens', 'Nce103']"
+Italy,35413953700,6701920016,2009,4,"['α-Isoforms', 'Antihelmintics', 'Caenorhabditis elegans', 'Carbonic anhydrase', 'Sulfonamide', 'Thiabendazole', 'Caenorhabditis elegans', 'Carbonic anhydrase', 'Indole-5-sulfonamide', 'Nematode', 'Sulfonamides', 'Beta-class enzyme', 'Boronic acid', 'Can2', 'Candida albicans', 'Carbonic anhydrase', 'Cryptococcus neoformans', 'Nce103', 'β-Class enzymes', 'Can2', 'Candida albicans', 'Carbonic anhydrase', 'Cryptococcus neoformans', 'Nce103', 'Sulfonamide']"
+Italy,35413953700,6701920016,2010,3,"['β-Class enzymes', 'Amine', 'Amino acid', 'Candida albicans', 'Carbonic anhydrase', 'Cryptococcus neoformans', 'Enzyme-activator', 'Activator', 'Amine', 'Amino acid', 'Candida glabrata', 'Carbonic anhydrase', 'β-Class enzyme', 'Candida albicans', 'Carbonic anhydrase', 'Cryptococcus neoformans', 'Indole-5-sulfonamides', 'Sulfonamide']"
+Italy,35413953700,6701920016,2011,1,"['β-Class enzyme', 'Antifungals', 'Candida albicans', 'Carbonic anhydrase', 'Carboxylate', 'Cryptococcus neoformans', 'Inhibitor']"
+Italy,35413953700,6701920016,2012,1,"['Beta-class enzyme', 'Candida albicans', 'Candida glabrata', 'Carbonic anhydrase', 'Cryptococcus neoformans', 'Dithiocarbamate', 'Inhibitor']"
+Italy,6602185425,6701920016,2008,1,"['C. elegans', 'Carbonic anhydrase', 'Environmental pH', 'Global transcriptional analysis']"
+Italy,6602185425,6701920016,2009,1,"['β-class carbonic anhydrase', 'Cryptococcus neoformans', 'crystal structure', 'inhibition', 'sulfonamide']"
+Italy,6602185425,6701920016,2011,1,['']
+Italy,6701920016,6701385619,2009,1,"['Anion', 'Antifungals', 'Bicarbonate', 'Candida albicans', 'Candida glabrata', 'Carbonic anhydrase', 'Zinc-binding group']"
+Italy,6701920016,6701385619,2010,1,"['β-Class enzyme', 'Candida albicans', 'Carbonic anhydrase', 'Cryptococcus neoformans', 'Indole-5-sulfonamides', 'Sulfonamide']"
+Italy,6701920016,57201126356,2012,1,"['Beta-class enzyme', 'Candida albicans', 'Candida glabrata', 'Carbonic anhydrase', 'Cryptococcus neoformans', 'Dithiocarbamate', 'Inhibitor']"
+Italy,7006491219,7005552282,2006,1,"['Adjuvant treatment', 'Chemotherapy', 'Gastric cancer', 'Radiotherapy']"
+Italy,7006491219,7005552282,2008,1,"['Chemotherapy', 'Radiotherapy', 'Rectal cancer', 'Surgery']"
+Italy,7006491219,7005552282,2009,1,"['Chemoembolisation', 'Hepatocellular carcinoma', 'Liver transplantation', 'Sorafenib']"
+Italy,7006491219,7005552282,2010,1,['']
+Italy,7006491219,7005552282,2011,1,['']
+Italy,56992899600,6602631729,2018,1,"['antiretroviral therapy-experienced patients', 'antiretroviral therapy-naïve patients', 'atazanavir/ritonavir', 'darunavir/ritonavir', 'lopinavir/ritonavir']"
+Italy,56992899600,54949157100,2018,1,"['antiretroviral therapy-experienced patients', 'antiretroviral therapy-naïve patients', 'atazanavir/ritonavir', 'darunavir/ritonavir', 'lopinavir/ritonavir']"
+Italy,56992899600,7003565501,2018,1,"['antiretroviral therapy-experienced patients', 'antiretroviral therapy-naïve patients', 'atazanavir/ritonavir', 'darunavir/ritonavir', 'lopinavir/ritonavir']"
+Italy,6602631729,7005513302,2018,1,"['antiretroviral therapy-experienced patients', 'antiretroviral therapy-naïve patients', 'atazanavir/ritonavir', 'darunavir/ritonavir', 'lopinavir/ritonavir']"
+Italy,7005513302,54949157100,2018,1,"['antiretroviral therapy-experienced patients', 'antiretroviral therapy-naïve patients', 'atazanavir/ritonavir', 'darunavir/ritonavir', 'lopinavir/ritonavir']"
+Italy,7005513302,7003565501,2018,1,"['antiretroviral therapy-experienced patients', 'antiretroviral therapy-naïve patients', 'atazanavir/ritonavir', 'darunavir/ritonavir', 'lopinavir/ritonavir']"
+Italy,56992899600,35267988000,2018,1,"['antiretroviral therapy-experienced patients', 'antiretroviral therapy-naïve patients', 'atazanavir/ritonavir', 'darunavir/ritonavir', 'lopinavir/ritonavir']"
+Italy,56992899600,6602631729,2018,1,"['antiretroviral therapy-experienced patients', 'antiretroviral therapy-naïve patients', 'atazanavir/ritonavir', 'darunavir/ritonavir', 'lopinavir/ritonavir']"
+Italy,56992899600,54949157100,2018,1,"['antiretroviral therapy-experienced patients', 'antiretroviral therapy-naïve patients', 'atazanavir/ritonavir', 'darunavir/ritonavir', 'lopinavir/ritonavir']"
+Italy,56992899600,7003565501,2018,1,"['antiretroviral therapy-experienced patients', 'antiretroviral therapy-naïve patients', 'atazanavir/ritonavir', 'darunavir/ritonavir', 'lopinavir/ritonavir']"
+Italy,56992899600,7006842875,2018,1,"['antiretroviral therapy-experienced patients', 'antiretroviral therapy-naïve patients', 'atazanavir/ritonavir', 'darunavir/ritonavir', 'lopinavir/ritonavir']"
+Italy,35267988000,7005513302,2018,1,"['antiretroviral therapy-experienced patients', 'antiretroviral therapy-naïve patients', 'atazanavir/ritonavir', 'darunavir/ritonavir', 'lopinavir/ritonavir']"
+Italy,6602631729,7005513302,2018,1,"['antiretroviral therapy-experienced patients', 'antiretroviral therapy-naïve patients', 'atazanavir/ritonavir', 'darunavir/ritonavir', 'lopinavir/ritonavir']"
+Italy,7005513302,54949157100,2018,1,"['antiretroviral therapy-experienced patients', 'antiretroviral therapy-naïve patients', 'atazanavir/ritonavir', 'darunavir/ritonavir', 'lopinavir/ritonavir']"
+Italy,7005513302,7003565501,2018,1,"['antiretroviral therapy-experienced patients', 'antiretroviral therapy-naïve patients', 'atazanavir/ritonavir', 'darunavir/ritonavir', 'lopinavir/ritonavir']"
+Italy,7005513302,7006842875,2018,1,"['antiretroviral therapy-experienced patients', 'antiretroviral therapy-naïve patients', 'atazanavir/ritonavir', 'darunavir/ritonavir', 'lopinavir/ritonavir']"
+Italy,7004852561,55346159500,1995,1,"['age of onset', 'Childhood IDDM', 'seasonability']"
+Italy,56186726200,14031056700,2009,2,"['', '']"
+Italy,56186726200,6603404158,2009,1,['']
+Italy,56186726200,6604005772,2009,2,"['', '']"
+Italy,57193325611,57194056913,2017,1,"['Mobile crowdsensing', 'simulations', 'smart cities']"
+Italy,57193325611,55193453400,2018,1,"['data collection framework', 'energy efficiency', 'mobile crowdsensing']"
+Italy,57193325611,6701655006,2017,1,"['Mobile crowdsensing', 'simulations', 'smart cities']"
+Italy,57193325611,6701655006,2018,1,"['data collection framework', 'energy efficiency', 'mobile crowdsensing']"
+Italy,55675224182,8726069400,2016,1,"['energy efficiency', 'Green ICT', 'network protocols', 'TCP']"
+Italy,55675224182,8726069400,2017,1,"['energy efficiency', 'green ICT', 'network protocols', 'TCP']"
+Italy,8726069400,57194056913,2017,2,"['Mobile crowdsensing', 'simulations', 'smart cities', '']"
+Italy,8726069400,55193453400,2018,1,"['data collection framework', 'energy efficiency', 'mobile crowdsensing']"
+Italy,8726069400,6604005772,2016,1,"['energy efficiency', 'Green ICT', 'network protocols', 'TCP']"
+Italy,8726069400,6604005772,2017,1,"['energy efficiency', 'green ICT', 'network protocols', 'TCP']"
+Italy,8726069400,55206301100,2013,1,"['Cloud computing', 'data replication', 'energy efficiency']"
+Italy,8726069400,55206301100,2015,2,"['Cloud computing', 'Data replication', 'Energy efficiency', 'Cloud computing', 'Data replication', 'Energy efficiency']"
+Italy,8726069400,55979134900,2013,2,"['cloud computing', 'data center', 'energy efficiency', 'energy efficient scheduling', 'load variation', 'Cloud computing', 'Data centers', 'Energy-efficient scheduling', 'Load balancing']"
+Italy,8726069400,6701655006,2013,1,['']
+Italy,8726069400,6701655006,2015,1,"['Cloud computing data centers', 'Data replication', 'Energy consumption optimization', 'Job scheduling', 'Load balancing', 'Virtual machine placement']"
+Italy,8726069400,6701655006,2016,1,"['energy efficiency', 'Green ICT', 'network protocols', 'TCP']"
+Italy,8726069400,6701655006,2017,2,"['Mobile crowdsensing', 'simulations', 'smart cities', '']"
+Italy,8726069400,6701655006,2018,1,"['data collection framework', 'energy efficiency', 'mobile crowdsensing']"
+Italy,57194056913,6603573094,2017,1,"['Mobile crowdsensing', 'simulations', 'smart cities']"
+Italy,6603573094,6701655006,2017,1,"['Mobile crowdsensing', 'simulations', 'smart cities']"
+United Kingdom,26326205500,6701920016,2008,2,"['C. elegans', 'Carbonic anhydrase', 'Environmental pH', 'Global transcriptional analysis', 'β-Carbonic anhydrases', 'Anions', 'Can2', 'Candida albicans', 'Cryptococcus neoformans', 'Fungal pathogens', 'Nce103']"
+United Kingdom,26326205500,6701920016,2009,8,"['β-class carbonic anhydrase', 'Cryptococcus neoformans', 'crystal structure', 'inhibition', 'sulfonamide', 'α-Isoforms', 'Antihelmintics', 'Caenorhabditis elegans', 'Carbonic anhydrase', 'Sulfonamide', 'Thiabendazole', '', 'Aliphatic carboxylate', 'Aromatic carboxylate', 'Beta-class', 'Can2', 'Candida albicans', 'Carbonic anhydrase', 'Cryptococcus neoformans', 'Nce103', 'Caenorhabditis elegans', 'Carbonic anhydrase', 'Indole-5-sulfonamide', 'Nematode', 'Sulfonamides', 'Beta-class enzyme', 'Boronic acid', 'Can2', 'Candida albicans', 'Carbonic anhydrase', 'Cryptococcus neoformans', 'Nce103', 'β-Class enzymes', 'Can2', 'Candida albicans', 'Carbonic anhydrase', 'Cryptococcus neoformans', 'Nce103', 'Sulfonamide', 'Carbonic anhydrase inhibitors as antifungals', 'Fungal and nematode carbonic anhydrases and drug design inhibition', 'Fungal carbonic anhydrases']"
+United Kingdom,26326205500,6701920016,2010,4,"['', 'β-Class enzymes', 'Amine', 'Amino acid', 'Candida albicans', 'Carbonic anhydrase', 'Cryptococcus neoformans', 'Enzyme-activator', 'β-Class enzyme', 'Candida albicans', 'Carbonic anhydrase', 'Cryptococcus neoformans', 'Indole-5-sulfonamides', 'Sulfonamide', '']"
+United Kingdom,26326205500,6701920016,2011,3,"['', 'β-Class enzyme', 'Antifungals', 'Candida albicans', 'Carbonic anhydrase', 'Carboxylate', 'Cryptococcus neoformans', 'Inhibitor', '']"
+United Kingdom,7006491219,7003592433,2008,1,"['Chemotherapy', 'Radiotherapy', 'Rectal cancer', 'Surgery']"
+United Kingdom,7006491219,7003592433,2010,1,['']
+United Kingdom,7006491219,7003592433,2011,1,['']
+United Kingdom,7006491219,25931607500,2002,1,"['Adjuvant chemotherapy', 'Adjuvant radiotherapy', 'Colon cancer', 'Rectal cancer']"
+United Kingdom,7006491219,25931607500,2007,1,"['Adjuvant treatment', 'Chemotherapy', 'Pancreatic cancer', 'Radiotherapy']"
+United Kingdom,7006491219,25931607500,2008,1,"['Chemotherapy', 'Radiotherapy', 'Rectal cancer', 'Surgery']"
+United Kingdom,7006491219,25931607500,2009,1,"['Chemoembolisation', 'Hepatocellular carcinoma', 'Liver transplantation', 'Sorafenib']"
+United Kingdom,7006491219,25931607500,2011,1,['']
+United Kingdom,7102183040,7003551007,2007,1,"['Elderly', 'Encephalopathy', 'Epilepsy', 'Older people', 'Valproate', 'Valproic acid']"
+United Kingdom,7102183040,7003551007,2008,1,"['Comorbidity', 'Complex partial status epilepticus', 'Epilepsy', 'Nonconvulsive status epilepticus', 'Seizures', 'Status epilepticus']"
+United Kingdom,7102183040,7003551007,2009,2,"['Co-morbidity', 'Elderly', 'Epilepsy', 'Intravenous levetiracetam', 'Older people', 'Seizure', 'Status epilepticus', 'Antiepileptic drugs', 'Epilepsy', 'Maculopathy', 'Ocular side effects', 'Retina', 'Topiramate', 'Toxicity', 'Vision', 'Visual field']"
+United Kingdom,56992899600,7006513758,2018,1,['']
+United Kingdom,56992899600,7006513758,2018,1,['']
+United Kingdom,7005826606,12139371400,2007,1,"['Chemical vapour deposition', 'Thin films', 'Vanadium diselenide']"
+United Kingdom,24923462200,12139371400,2018,1,"['atmospheric plasma', 'conductive copper', 'copper precursors', 'inkjet printing', 'plasma-assisted inkjet printing']"
+United Kingdom,56119704200,12139371400,2017,1,['']
+United Kingdom,14423940600,12139371400,2008,1,['']
+United Kingdom,7006435054,12139371400,2007,1,"['Antiferromagnet', 'Chemical vapour synthesis', 'Chromium oxyselenide']"
+United Kingdom,7006435054,12139371400,2008,1,['']
+United Kingdom,7202862388,12139371400,2007,1,['']
+United Kingdom,7003437916,12139371400,2007,2,"['Chemical vapour deposition', 'Thin films', 'Vanadium diselenide', 'Antiferromagnet', 'Chemical vapour synthesis', 'Chromium oxyselenide']"
+United Kingdom,7003437916,12139371400,2008,2,"['', 'Chemical vapour deposition', 'Light absorbing layer', 'Thin film', 'Tin selenide']"
+United Kingdom,7003437916,12139371400,2010,1,"['Atmospheric pressure', 'Composite film', 'CVD', 'Metal selenide']"
+United Kingdom,7003437916,12139371400,2016,1,"['atmospheric pressure chemical vapor deposition (APCVD)', 'enhancement of average crystal size', 'interstitial boron-doped TiO 2', 'photoactive thin films']"
+United Kingdom,7003437916,12139371400,2017,1,['']
+United Kingdom,8227436900,12139371400,2007,1,"['Antiferromagnet', 'Chemical vapour synthesis', 'Chromium oxyselenide']"
+United Kingdom,8227436900,12139371400,2008,1,"['Chemical vapour deposition', 'Light absorbing layer', 'Thin film', 'Tin selenide']"
+United Kingdom,7004024772,8302767100,2008,1,['']
+United Kingdom,8366745800,24512061400,2010,1,['']
+France,6701781699,6701920016,2009,1,"['Beta-class enzyme', 'Boronic acid', 'Can2', 'Candida albicans', 'Carbonic anhydrase', 'Cryptococcus neoformans', 'Nce103']"
+France,7102486596,7006491219,2002,1,"['Adjuvant chemotherapy', 'Adjuvant radiotherapy', 'Colon cancer', 'Rectal cancer']"
+France,7102486596,7006491219,2006,1,"['Adjuvant treatment', 'Chemotherapy', 'Gastric cancer', 'Radiotherapy']"
+France,7102486596,7006491219,2007,1,"['Adjuvant treatment', 'Chemotherapy', 'Pancreatic cancer', 'Radiotherapy']"
+France,7102486596,7006491219,2008,1,"['Chemotherapy', 'Radiotherapy', 'Rectal cancer', 'Surgery']"
+France,7102486596,7006491219,2009,1,"['Chemoembolisation', 'Hepatocellular carcinoma', 'Liver transplantation', 'Sorafenib']"
+France,7102486596,7006491219,2010,1,['']
+France,7102486596,7006491219,2011,1,['']
+France,7006491219,14026962100,2002,1,"['Adjuvant chemotherapy', 'Adjuvant radiotherapy', 'Colon cancer', 'Rectal cancer']"
+France,7006491219,14026962100,2006,1,"['Adjuvant treatment', 'Chemotherapy', 'Gastric cancer', 'Radiotherapy']"
+France,7006491219,14026962100,2007,1,"['Adjuvant treatment', 'Chemotherapy', 'Pancreatic cancer', 'Radiotherapy']"
+France,7006491219,14026962100,2008,1,"['Chemotherapy', 'Radiotherapy', 'Rectal cancer', 'Surgery']"
+France,7006491219,14026962100,2009,1,"['Chemoembolisation', 'Hepatocellular carcinoma', 'Liver transplantation', 'Sorafenib']"
+France,7006491219,14026962100,2010,1,['']
+France,7006491219,14026962100,2011,1,['']
+France,7006491219,7101766379,2002,1,"['Adjuvant chemotherapy', 'Adjuvant radiotherapy', 'Colon cancer', 'Rectal cancer']"
+France,7006491219,7101766379,2006,1,"['Adjuvant treatment', 'Chemotherapy', 'Gastric cancer', 'Radiotherapy']"
+France,7006491219,7101766379,2007,1,"['Adjuvant treatment', 'Chemotherapy', 'Pancreatic cancer', 'Radiotherapy']"
+France,7006491219,7101766379,2008,1,"['Chemotherapy', 'Radiotherapy', 'Rectal cancer', 'Surgery']"
+France,7006491219,7101766379,2009,1,"['Chemoembolisation', 'Hepatocellular carcinoma', 'Liver transplantation', 'Sorafenib']"
+France,7006491219,7101766379,2010,1,['']
+France,7006491219,7101766379,2011,1,['']
+France,56992899600,7201899176,2018,1,"['antiretroviral therapy-experienced patients', 'antiretroviral therapy-naïve patients', 'atazanavir/ritonavir', 'darunavir/ritonavir', 'lopinavir/ritonavir']"
+France,56992899600,7006656190,2018,1,"['antiretroviral therapy-experienced patients', 'antiretroviral therapy-naïve patients', 'atazanavir/ritonavir', 'darunavir/ritonavir', 'lopinavir/ritonavir']"
+France,56992899600,7007005000,2018,1,"['antiretroviral therapy-experienced patients', 'antiretroviral therapy-naïve patients', 'atazanavir/ritonavir', 'darunavir/ritonavir', 'lopinavir/ritonavir']"
+France,7005513302,7201899176,2018,1,"['antiretroviral therapy-experienced patients', 'antiretroviral therapy-naïve patients', 'atazanavir/ritonavir', 'darunavir/ritonavir', 'lopinavir/ritonavir']"
+France,7005513302,7006656190,2018,1,"['antiretroviral therapy-experienced patients', 'antiretroviral therapy-naïve patients', 'atazanavir/ritonavir', 'darunavir/ritonavir', 'lopinavir/ritonavir']"
+France,7005513302,7007005000,2018,1,"['antiretroviral therapy-experienced patients', 'antiretroviral therapy-naïve patients', 'atazanavir/ritonavir', 'darunavir/ritonavir', 'lopinavir/ritonavir']"
+France,56992899600,7201899176,2018,1,"['antiretroviral therapy-experienced patients', 'antiretroviral therapy-naïve patients', 'atazanavir/ritonavir', 'darunavir/ritonavir', 'lopinavir/ritonavir']"
+France,56992899600,7006656190,2018,1,"['antiretroviral therapy-experienced patients', 'antiretroviral therapy-naïve patients', 'atazanavir/ritonavir', 'darunavir/ritonavir', 'lopinavir/ritonavir']"
+France,56992899600,7007005000,2018,1,"['antiretroviral therapy-experienced patients', 'antiretroviral therapy-naïve patients', 'atazanavir/ritonavir', 'darunavir/ritonavir', 'lopinavir/ritonavir']"
+France,7005513302,7201899176,2018,1,"['antiretroviral therapy-experienced patients', 'antiretroviral therapy-naïve patients', 'atazanavir/ritonavir', 'darunavir/ritonavir', 'lopinavir/ritonavir']"
+France,7005513302,7006656190,2018,1,"['antiretroviral therapy-experienced patients', 'antiretroviral therapy-naïve patients', 'atazanavir/ritonavir', 'darunavir/ritonavir', 'lopinavir/ritonavir']"
+France,7005513302,7007005000,2018,1,"['antiretroviral therapy-experienced patients', 'antiretroviral therapy-naïve patients', 'atazanavir/ritonavir', 'darunavir/ritonavir', 'lopinavir/ritonavir']"
+France,23098235400,6701668267,2015,1,"['Genetic Algorithm', 'Inverse Folding Problem', 'Multi-objectivisation', 'Protein design']"
+France,23098235400,13007977900,2015,1,"['Genetic Algorithm', 'Inverse Folding Problem', 'Multi-objectivisation', 'Protein design']"
+France,14834051600,55853916800,2016,2,"['Cooperative UAV', 'Decisional autonomy', 'Mobility model', 'Multilevel swarm', 'ACO', 'Chaotic systems', 'Cooperative UAVs', 'Mobility models', 'Multilevel swarms']"
+France,14834051600,55853916800,2017,3,"['', 'Automatic processing and detection', 'Decisional autonomy', 'High level data fusion', 'Mobility management', 'Multilevel UAV swarm', 'Smart mission management', 'ant colony optimization', 'chaotic dynamics', 'cooperative UAV', 'mobility model', 'multilevel swarm']"
+France,14834051600,55853916800,2018,1,"['ACO', 'Chaotic dynamics', 'First return map', 'Global optimization', 'Mobility model', 'Swarm of UAVs']"
+France,14834051600,6508125036,2016,2,"['Cooperative UAV', 'Decisional autonomy', 'Mobility model', 'Multilevel swarm', 'ACO', 'Chaotic systems', 'Cooperative UAVs', 'Mobility models', 'Multilevel swarms']"
+France,14834051600,6508125036,2017,3,"['', 'Automatic processing and detection', 'Decisional autonomy', 'High level data fusion', 'Mobility management', 'Multilevel UAV swarm', 'Smart mission management', 'ant colony optimization', 'chaotic dynamics', 'cooperative UAV', 'mobility model', 'multilevel swarm']"
+France,14834051600,6508125036,2018,1,"['ACO', 'Chaotic dynamics', 'First return map', 'Global optimization', 'Mobility model', 'Swarm of UAVs']"
+France,14834051600,15061114300,2017,1,"['ant colony optimization', 'chaotic dynamics', 'cooperative UAV', 'mobility model', 'multilevel swarm']"
+France,55822858800,13007977900,2014,2,"['fault tolerance', 'newscast', 'peer-to-peer', 'Fault Tolerance', 'Newscast', 'Peer-to-Peer']"
+France,26424773700,54384685900,2012,1,"['genetic algorithms', 'intelligent transportation systems', 'mobility traces', 'realistic vehicular mobility models', 'traffic simulation', 'Vehicular ad hoc networks']"
+France,26424773700,6508125036,2010,1,['']
+France,26424773700,6508125036,2011,2,"['Intelligent Transportation Systems', 'Mobility Models', 'Simulations', 'Traffic Management', 'Vehicular Ad Hoc Networks', 'Intelligent transportation systems', 'Mobility models', 'Sensibility analysis', 'Simulations', 'Traffic management', 'Vehicular Ad soc networks']"
+France,26424773700,6508125036,2012,1,"['genetic algorithms', 'intelligent transportation systems', 'mobility traces', 'realistic vehicular mobility models', 'traffic simulation', 'Vehicular ad hoc networks']"
+France,26424773700,6508125036,2014,1,['']
+France,26967680600,55853916800,2017,2,"['', 'Automatic processing and detection', 'Decisional autonomy', 'High level data fusion', 'Mobility management', 'Multilevel UAV swarm', 'Smart mission management']"
+France,26967680600,6508125036,2017,2,"['', 'Automatic processing and detection', 'Decisional autonomy', 'High level data fusion', 'Mobility management', 'Multilevel UAV swarm', 'Smart mission management']"
+France,15058427500,7102762128,2013,2,"['', '']"
+France,15058427500,7102762128,2014,1,['']
+France,15058427500,6701668267,2013,2,"['', 'distributed and agent model', 'energy efficiency', 'Gaussian mixture model', 'Open-stack', 'power-aware']"
+France,15058427500,7004048888,2013,2,"['', '']"
+France,55853916800,57193608341,2017,2,"['', 'Automatic processing and detection', 'Decisional autonomy', 'High level data fusion', 'Mobility management', 'Multilevel UAV swarm', 'Smart mission management']"
+France,19639537800,7102762128,2013,2,"['', '']"
+France,19639537800,7102762128,2014,1,['']
+France,19639537800,7004048888,2013,2,"['', '']"
+France,6503955598,7005540528,2009,1,['']
+France,57193608341,6508125036,2017,2,"['', 'Automatic processing and detection', 'Decisional autonomy', 'High level data fusion', 'Mobility management', 'Multilevel UAV swarm', 'Smart mission management']"
+France,8726069400,7004084918,2015,1,"['Data center network architectures', 'Energy consumption', 'Hardware infrastructure', 'Heat control']"
+France,8726069400,7005278913,2015,1,"['Data center network architectures', 'Energy consumption', 'Hardware infrastructure', 'Heat control']"
+France,8726069400,7006363369,2015,1,"['Data center network architectures', 'Energy consumption', 'Hardware infrastructure', 'Heat control']"
+France,55369226400,6701668267,2015,2,"['Genetic Algorithm', 'Inverse Folding Problem', 'Multi-objectivisation', 'Protein design', 'Benchmark function', 'Genetic algorithm', 'Landscape analysis', 'NK landscape']"
+France,55369226400,13007977900,2015,1,"['Genetic Algorithm', 'Inverse Folding Problem', 'Multi-objectivisation', 'Protein design']"
+France,55369226400,13007977900,2014,1,['']
+France,35198141100,6602524667,2011,1,['']
+France,7005540528,6508125036,2014,1,['']
+France,7004084918,57202960579,2015,1,"['Energy efficiency', 'High-performance computing (HPC)', 'Resource and job management system (RJMS)', 'Virtual machines (VMs)']"
+France,7004084918,35729032500,2015,1,"['Energy efficiency', 'High-performance computing (HPC)', 'Resource and job management system (RJMS)', 'Virtual machines (VMs)']"
+France,7005278913,57202960579,2015,1,"['Energy efficiency', 'High-performance computing (HPC)', 'Resource and job management system (RJMS)', 'Virtual machines (VMs)']"
+France,7005278913,35729032500,2015,1,"['Energy efficiency', 'High-performance computing (HPC)', 'Resource and job management system (RJMS)', 'Virtual machines (VMs)']"
+France,57202960579,7006363369,2015,1,"['Energy efficiency', 'High-performance computing (HPC)', 'Resource and job management system (RJMS)', 'Virtual machines (VMs)']"
+France,57202960579,13007977900,2014,2,"['fault tolerance', 'newscast', 'peer-to-peer', 'Fault Tolerance', 'Newscast', 'Peer-to-Peer']"
+France,7006363369,35729032500,2015,1,"['Energy efficiency', 'High-performance computing (HPC)', 'Resource and job management system (RJMS)', 'Virtual machines (VMs)']"
+France,7006363369,6508125036,2014,1,['']
+France,56511418100,55944396200,2016,1,"['Co-evolutionary algorithms', 'Constraints handling', 'Problem decomposition']"
+France,56511418100,55944396200,2017,4,"['Adaptive ε-constraint', 'Bi-objective optimization', 'Integer linear programming', 'Satellite payload optimization', '', 'Bayesian optimization', 'Bi-level programming', 'co-evolutionary algorithms', 'Constraint handling', 'decomposition methods']"
+France,56511418100,6701668267,2015,1,"['Evolutionary algorithms', 'Multi-objective optimization', 'Satellite payload optimization']"
+France,55123978500,6701668267,2014,1,"['Hybrid metaheuristics', 'Optimisation', 'Satellite payload configuration']"
+France,55123978500,6701668267,2015,2,"['Evolutionary algorithms', 'Multi-objective optimization', 'Satellite payload optimization', 'exact optimization', 'integer linear programming', 'satellite payload reconfiguration']"
+France,55123812100,6701668267,2014,1,"['Hybrid metaheuristics', 'Optimisation', 'Satellite payload configuration']"
+France,55123812100,6701668267,2015,2,"['Evolutionary algorithms', 'Multi-objective optimization', 'Satellite payload optimization', 'exact optimization', 'integer linear programming', 'satellite payload reconfiguration']"
+France,56389512500,13007977900,2015,1,['']
+France,55921940800,6508125036,2007,1,['']
+France,55921940800,6508125036,2008,1,['']
+France,6603031878,6508125036,2010,1,"['Evolutionary Algorithms', 'Multi-Agent Systems', 'Organizational Model']"
+France,36496723300,55944396200,2016,1,"['Co-evolutionary algorithms', 'Constraints handling', 'Problem decomposition']"
+France,36496723300,6701668267,2015,1,['']
+France,6508125036,55944396200,2016,1,"['Co-evolutionary algorithms', 'Constraints handling', 'Problem decomposition']"
+France,6508125036,55944396200,2017,4,"['Adaptive ε-constraint', 'Bi-objective optimization', 'Integer linear programming', 'Satellite payload optimization', '', 'Bayesian optimization', 'Bi-level programming', 'co-evolutionary algorithms', 'Constraint handling', 'decomposition methods']"
+France,6508125036,6701668267,2014,1,"['Hybrid metaheuristics', 'Optimisation', 'Satellite payload configuration']"
+France,6508125036,6701668267,2015,5,"['Evolutionary algorithms', 'Multi-objective optimization', 'Satellite payload optimization', 'Genetic Algorithm', 'Inverse Folding Problem', 'Multi-objectivisation', 'Protein design', 'exact optimization', 'integer linear programming', 'satellite payload reconfiguration', 'Benchmark function', 'Genetic algorithm', 'Landscape analysis', 'NK landscape', 'Australia', 'Biology', 'Computer science', 'Conferences', 'Distributed processing', 'Electronic mail', 'Parallel processing']"
+France,6508125036,13007977900,2015,2,"['', 'Genetic Algorithm', 'Inverse Folding Problem', 'Multi-objectivisation', 'Protein design']"
+France,6508125036,13007977900,2014,1,['']
+France,6508125036,6602524667,2008,1,['']
+France,6701668267,55822636000,2013,2,"['', 'distributed and agent model', 'energy efficiency', 'Gaussian mixture model', 'Open-stack', 'power-aware']"
+France,6701668267,55822636000,2015,1,"['cloud broker', 'meta-heuristic optimization', 'multi-cloud computing', 'Uncertainty']"
+Turkey Italy,14013150400,6701920016,2009,1,"['Caenorhabditis elegans', 'Carbonic anhydrase', 'Indole-5-sulfonamide', 'Nematode', 'Sulfonamides']"
+Turkey Italy,14013150400,6701920016,2010,1,"['β-Class enzyme', 'Candida albicans', 'Carbonic anhydrase', 'Cryptococcus neoformans', 'Indole-5-sulfonamides', 'Sulfonamide']"
+Australia,6701920016,7102974294,2011,1,['']
+Australia,7006491219,7005883541,2007,1,"['Adjuvant treatment', 'Chemotherapy', 'Pancreatic cancer', 'Radiotherapy']"
+Australia,7006491219,7005883541,2008,1,"['Chemotherapy', 'Radiotherapy', 'Rectal cancer', 'Surgery']"
+Australia,7006491219,7005883541,2011,1,['']
+Australia,15058427500,7006300487,2014,1,['']
+Australia,15058427500,7006300487,2013,2,"['', '']"
+Australia,19639537800,7006300487,2014,1,['']
+Australia,19639537800,7006300487,2013,2,"['', '']"
+Australia,6503955598,7005128430,2009,1,['']
+Australia,6503955598,7005128430,2011,1,['']
+Australia,8726069400,7005128430,2013,4,"['Cluster computing', 'Energy efficiency', 'Power management', 'Survey', 'Resource allocation', 'Resource management', 'Scheduling', 'Cloud computing', 'communication awareness', 'resource allocation', 'scheduling', 'Cloud computing', 'data replication', 'energy efficiency']"
+Australia,8726069400,7005128430,2015,3,"['Cloud computing', 'Data replication', 'Energy efficiency', 'cellular networks', 'Mobile cloud computing', 'network awareness', 'traffic offloading', 'Cloud computing', 'Data center', 'Performance and energy efficiency metrics']"
+Australia,8726069400,7005128430,2016,1,"['cellular networks', 'content distribution', 'Network coding']"
+Australia,8726069400,7005128430,2014,1,"['Cellular networks', 'Content distribution', 'Network coding']"
+Australia,8726069400,7005128430,2017,1,"['Cloud computing', 'Data center', 'Performance and energy efficiency metrics']"
+Australia,57202960579,7005128430,2017,1,['']
+Australia,7005128430,35729032500,2011,1,['']
+Australia,7005128430,35729032500,2013,2,"['Cluster computing', 'Energy efficiency', 'Power management', 'Survey', 'Resource allocation', 'Resource management', 'Scheduling']"
+Australia,7005128430,36496723300,2012,1,['']
+Australia,7005128430,6508125036,2011,1,['']
+Australia,7005128430,6508125036,2014,1,['']
+Australia,7005128430,6508125036,2015,1,"['Australia', 'Biology', 'Computer science', 'Conferences', 'Distributed processing', 'Electronic mail', 'Parallel processing']"
+,6701920016,6506213856,2010,1,"['Activator', 'Amine', 'Amino acid', 'Candida glabrata', 'Carbonic anhydrase']"
+,15726017400,55555422100,2015,1,"['Glutamine', 'Hepatic encephalopathy', 'Metabolic zonation', 'Oxidative stress', 'RNA oxidation']"
+,6503955598,25931955700,2011,1,"['distributed computing', 'energy optimization', 'Green computing', 'scheduling']"
+Netherlands,6701920016,6507909092,2009,1,"['α-Isoforms', 'Antihelmintics', 'Caenorhabditis elegans', 'Carbonic anhydrase', 'Sulfonamide', 'Thiabendazole']"
+Netherlands,7006491219,57202638098,2006,1,"['Adjuvant treatment', 'Chemotherapy', 'Gastric cancer', 'Radiotherapy']"
+Netherlands,7006491219,57202638098,2007,1,"['Adjuvant treatment', 'Chemotherapy', 'Pancreatic cancer', 'Radiotherapy']"
+Netherlands,7006491219,57202638098,2008,1,"['Chemotherapy', 'Radiotherapy', 'Rectal cancer', 'Surgery']"
+Netherlands,7006491219,57202638098,2009,1,"['Chemoembolisation', 'Hepatocellular carcinoma', 'Liver transplantation', 'Sorafenib']"
+Netherlands,7006491219,57202638098,2011,1,['']
+Netherlands,6604034408,7801642430,2009,1,"['F-specific phages', 'Fresh water sediment', 'Inactivation', 'Somatic coliphages']"
+Netherlands,8936946100,7801642430,2009,1,"['F-specific phages', 'Fresh water sediment', 'Inactivation', 'Somatic coliphages']"
+Netherlands,14033942100,15058427500,2013,2,"['', '']"
+Netherlands,14033942100,19639537800,2013,2,"['', '']"
+Netherlands,15058427500,36940750700,2013,2,"['', '']"
+Netherlands,19639537800,36940750700,2013,2,"['', '']"
+United States,7103258134,7006491219,2002,1,"['Adjuvant chemotherapy', 'Adjuvant radiotherapy', 'Colon cancer', 'Rectal cancer']"
+United States,7103258134,7006491219,2006,1,"['Adjuvant treatment', 'Chemotherapy', 'Gastric cancer', 'Radiotherapy']"
+United States,7103258134,7006491219,2007,1,"['Adjuvant treatment', 'Chemotherapy', 'Pancreatic cancer', 'Radiotherapy']"
+United States,7103258134,7006491219,2008,1,"['Chemotherapy', 'Radiotherapy', 'Rectal cancer', 'Surgery']"
+United States,7103258134,7006491219,2009,1,"['Chemoembolisation', 'Hepatocellular carcinoma', 'Liver transplantation', 'Sorafenib']"
+United States,7103258134,7006491219,2010,1,['']
+United States,7103258134,7006491219,2011,1,['']
+United States,54391080500,36604808800,2013,1,"['Hepatitis', 'Liver cell damage', 'ROS', 'Virus']"
+United States,54391080500,36604808800,2014,1,"['BATF', 'hepatitis', 'immunopathology', 'IRF4', 'LCMV']"
+United States,54391080500,36604808800,2015,2,"['Chronic infection', 'Humoral immunity', 'LCMV', 'STAT3', 'T follicular helper cells', '']"
+United States,54391080500,36629310200,2012,2,"['', 'Effector T cells', 'NK cell activation', 'Regulatory innate immunity', 'Virus elimination', 'Virus persistence']"
+United States,54391080500,36629310200,2013,1,"['Hepatitis', 'Liver cell damage', 'ROS', 'Virus']"
+United States,36604808800,8920285000,2013,1,"['Hepatitis', 'Liver cell damage', 'ROS', 'Virus']"
+United States,36604808800,8920285000,2016,1,"['Innate immunity', 'IRF7', 'RAIDD', 'TLR']"
+United States,36604808800,55555422100,2013,2,"['LPS', 'ROS', 'Sepsis', 'Hepatitis', 'Liver cell damage', 'ROS', 'Virus']"
+United States,36604808800,55555422100,2014,1,"['BATF', 'hepatitis', 'immunopathology', 'IRF4', 'LCMV']"
+United States,36604808800,55555422100,2015,1,"['Chronic infection', 'Humoral immunity', 'LCMV', 'STAT3', 'T follicular helper cells']"
+United States,36604808800,55555422100,2016,1,"['Innate immunity', 'IRF7', 'RAIDD', 'TLR']"
+United States,36629310200,8920285000,2013,2,"['Hepatitis', 'Liver cell damage', 'ROS', 'Virus', 'CD8 T cells', 'dendritic cells', 'diabetes', 'Type I interferon', 'virus', 'Wiskott-Aldrich syndrome', 'Wiskott-Aldrich syndrome protein']"
+United States,36629310200,8920285000,2015,1,['']
+United States,36629310200,8920285000,2018,1,"['Innate immunity', 'Innate immunity', 'Interferon', 'Interferons', 'MALT1', 'NF-κB', 'TNF', 'Tumor necrosis factor']"
+United States,36629310200,55555422100,2013,2,"['LPS', 'ROS', 'Sepsis', 'Hepatitis', 'Liver cell damage', 'ROS', 'Virus']"
+United States,36629310200,55555422100,2018,1,"['Innate immunity', 'Innate immunity', 'Interferon', 'Interferons', 'MALT1', 'NF-κB', 'TNF', 'Tumor necrosis factor']"
+United States,7003551007,36870723900,2009,2,"['', '']"
+United States,7004920065,7007005676,2008,1,['']
+United States,7004920065,7007005676,2007,1,['']
+United States,7004920065,7007005676,2009,4,"['Collaborative beamforming', 'MIMO', 'Relay', '', 'Collaborative beamforming', 'MIMO', 'Relay', 'Collaborative beamforming', 'Distributed implementation', 'Relay']"
+United States,24475438800,7006704921,2008,1,['']
+United States,24475438800,7006704921,2010,2,"['Fluorescence collector', 'Intermediate reflector', 'Light trapping', 'Photon management', 'Photonic crystals', 'Solar cells', '']"
+United States,7006131734,55822858800,2015,1,"['Algorithm-based fault tolerance', 'Evolutionary algorithm', 'Extreme data', 'Fault tolerance', 'High performance computing', 'Ultrascale computing system']"
+United States,7006131734,8726069400,2015,1,"['Data center network architectures', 'Energy consumption', 'Hardware infrastructure', 'Heat control']"
+United States,7006131734,57202960579,2015,1,"['Algorithm-based fault tolerance', 'Evolutionary algorithm', 'Extreme data', 'Fault tolerance', 'High performance computing', 'Ultrascale computing system']"
+United States,57190409773,8726069400,2016,1,"['Crowdsensing', 'Gamification', 'Reputation systems', 'Subgame perfect equilibrium (SPE)', 'User incentives']"
+United States,57190409773,8726069400,2017,1,"['Ambient intelligence', 'crowd-sensing', 'data acquisition', 'data analysis', 'distributed computing', 'game theory', 'gamification', 'intelligent sensors', 'Internet of Things', 'mobile computing']"
+United States,35069740100,8726069400,2013,1,"['Cluster computing', 'Energy efficiency', 'Power management', 'Survey']"
+United States,35069740100,35729032500,2013,1,"['Cluster computing', 'Energy efficiency', 'Power management', 'Survey']"
+United States,7404043399,6503955598,2010,2,"['Distributed systems', 'Energy-aware', 'Meta-heuristics', 'Optimization', 'Scheduling', 'Contention', 'Green computing', 'Memory-aware', 'Multi-core processors', 'Operating systems', 'Scheduling']"
+United States,7404043399,6503955598,2011,6,"['energy-efficient', 'heuristic', 'makespan', 'Scheduling', 'sensitivity analysis', 'energy efficiency', 'Heterogeneous computing systems', 'optimization', 'scheduling', 'Energy-efficiency', 'Performance of system', 'Scalable architectures', 'Task profiling', 'Energy conservation', 'Heterogenous computing systems', 'Performance of systems', 'Scalability', 'Scheduling', '', 'distributed computing', 'energy optimization', 'Green computing', 'scheduling']"
+United States,7404043399,8726069400,2010,2,"['Cloud computing simulations', 'Data centers', 'Energy efficiency', 'Next geneartion networks', 'Cloud computing', 'Congestion', 'Data center', 'Energy-efficient', 'Network-aware scheduling']"
+United States,7404043399,8726069400,2012,1,"['cloud communications', 'Cloud computing', 'data centers', 'energy efficiency', 'simulator']"
+United States,7404043399,8726069400,2013,4,"['Resource allocation', 'Resource management', 'Scheduling', 'cloud computing', 'data center', 'energy efficiency', 'energy efficient scheduling', 'load variation', 'Cloud computing', 'Data centers', 'Energy-efficient scheduling', 'Load balancing', 'Cloud computing', 'communication awareness', 'resource allocation', 'scheduling']"
+United States,7404043399,8726069400,2016,1,"['Cloud computing', 'Communication awareness', 'Resource allocation', 'Scheduling']"
+United States,7404043399,8726069400,2015,1,"['Data center network architectures', 'Energy consumption', 'Hardware infrastructure', 'Heat control']"
+United States,7404043399,57202960579,2012,2,"['Algorithmic based fault tolerance', 'Convergence proof', 'Desktop grids and volunteer computing systems', 'Evolutionary algorithms', '']"
+United States,7404043399,35729032500,2010,1,"['Contention', 'Green computing', 'Memory-aware', 'Multi-core processors', 'Operating systems', 'Scheduling']"
+United States,7404043399,35729032500,2011,3,"['energy-efficient', 'heuristic', 'makespan', 'Scheduling', 'sensitivity analysis', 'Energy-efficiency', 'Performance of system', 'Scalable architectures', 'Task profiling', '']"
+United States,7404043399,35729032500,2013,3,"['Cluster computing', 'Energy efficiency', 'Power management', 'Survey', 'Energy-efficiency', 'Heuristic', 'Millicomputing', 'Sensitivity analysis', 'Task mapping', 'Resource allocation', 'Resource management', 'Scheduling']"
+United States,7404043399,35729032500,2014,1,"['Cellular Genetic Algorithm', 'Parallelism']"
+United States,7404043399,54384685900,2015,1,['']
+United States,7404043399,36496723300,2010,1,"['Distributed systems', 'Energy-aware', 'Meta-heuristics', 'Optimization', 'Scheduling']"
+United States,7404043399,36496723300,2011,2,"['energy efficiency', 'Heterogeneous computing systems', 'optimization', 'scheduling', 'Energy conservation', 'Heterogenous computing systems', 'Performance of systems', 'Scalability', 'Scheduling']"
+United States,7404043399,6508125036,2011,1,"['energy efficiency', 'Heterogeneous computing systems', 'optimization', 'scheduling']"
+United States,7404043399,6508125036,2012,1,['']
+United States,7404043399,6508125036,2015,1,['']
+United States,7404043399,6508125036,2014,1,['']
+United States,7404043399,6505849246,2015,1,['']
+United States,8726069400,49865171100,2013,2,"['Cluster computing', 'Energy efficiency', 'Power management', 'Survey', 'Resource allocation', 'Resource management', 'Scheduling']"
+United States,8726069400,55600419500,2013,2,"['Cluster computing', 'Energy efficiency', 'Power management', 'Survey', 'Resource allocation', 'Resource management', 'Scheduling']"
+United States,8726069400,13806609600,2013,2,"['Cluster computing', 'Energy efficiency', 'Power management', 'Survey', 'Resource allocation', 'Resource management', 'Scheduling']"
+United States,8726069400,6505867034,2016,1,"['Crowdsensing', 'Gamification', 'Reputation systems', 'Subgame perfect equilibrium (SPE)', 'User incentives']"
+United States,8726069400,6505867034,2017,1,"['Ambient intelligence', 'crowd-sensing', 'data acquisition', 'data analysis', 'distributed computing', 'game theory', 'gamification', 'intelligent sensors', 'Internet of Things', 'mobile computing']"
+United States,8726069400,9735116100,2013,2,"['Cluster computing', 'Energy efficiency', 'Power management', 'Survey', 'Resource allocation', 'Resource management', 'Scheduling']"
+United States,8726069400,7003653015,2013,2,"['Cluster computing', 'Energy efficiency', 'Power management', 'Survey', 'Resource allocation', 'Resource management', 'Scheduling']"
+United States,8726069400,57189946349,2013,2,"['Cluster computing', 'Energy efficiency', 'Power management', 'Survey', 'Resource allocation', 'Resource management', 'Scheduling']"
+United States,49865171100,35729032500,2013,2,"['Cluster computing', 'Energy efficiency', 'Power management', 'Survey', 'Resource allocation', 'Resource management', 'Scheduling']"
+United States,55600419500,35729032500,2013,2,"['Cluster computing', 'Energy efficiency', 'Power management', 'Survey', 'Resource allocation', 'Resource management', 'Scheduling']"
+United States,13806609600,35729032500,2013,2,"['Cluster computing', 'Energy efficiency', 'Power management', 'Survey', 'Resource allocation', 'Resource management', 'Scheduling']"
+United States,35729032500,9735116100,2013,2,"['Cluster computing', 'Energy efficiency', 'Power management', 'Survey', 'Resource allocation', 'Resource management', 'Scheduling']"
+United States,35729032500,7003653015,2013,2,"['Cluster computing', 'Energy efficiency', 'Power management', 'Survey', 'Resource allocation', 'Resource management', 'Scheduling']"
+United States,35729032500,57189946349,2013,2,"['Cluster computing', 'Energy efficiency', 'Power management', 'Survey', 'Resource allocation', 'Resource management', 'Scheduling']"
+Germany,7101936160,7006491219,2002,1,"['Adjuvant chemotherapy', 'Adjuvant radiotherapy', 'Colon cancer', 'Rectal cancer']"
+Germany,7101936160,7006491219,2006,1,"['Adjuvant treatment', 'Chemotherapy', 'Gastric cancer', 'Radiotherapy']"
+Germany,7101936160,7006491219,2007,1,"['Adjuvant treatment', 'Chemotherapy', 'Pancreatic cancer', 'Radiotherapy']"
+Germany,7101936160,7006491219,2008,1,"['Chemotherapy', 'Radiotherapy', 'Rectal cancer', 'Surgery']"
+Germany,7101936160,7006491219,2009,1,"['Chemoembolisation', 'Hepatocellular carcinoma', 'Liver transplantation', 'Sorafenib']"
+Germany,7101936160,7006491219,2010,1,['']
+Germany,7101936160,7006491219,2011,1,['']
+Germany,55022707200,54391080500,2015,1,['']
+Germany,55022707200,8920285000,2015,1,['']
+Germany,7003812908,55555422100,2015,1,"['Glutamine', 'Hepatic encephalopathy', 'Metabolic zonation', 'Oxidative stress', 'RNA oxidation']"
+Germany,7003812908,55555422100,2017,1,['']
+Germany,24339193900,54391080500,2012,1,['']
+Germany,24339193900,8920285000,2018,1,"['Innate immunity', 'Innate immunity', 'Interferon', 'Interferons', 'MALT1', 'NF-κB', 'TNF', 'Tumor necrosis factor']"
+Germany,24339193900,55555422100,2018,1,"['Innate immunity', 'Innate immunity', 'Interferon', 'Interferons', 'MALT1', 'NF-κB', 'TNF', 'Tumor necrosis factor']"
+Germany,23470880300,8920285000,2013,1,"['EGFR', 'Interleukin 6', 'Interleukin 6 receptor', 'mTOR', 'SASP', 'Senescence']"
+Germany,6601980467,55555422100,2017,1,['']
+Germany,54391080500,7006882444,2012,1,['']
+Germany,54391080500,7006882444,2014,1,"['BATF', 'hepatitis', 'immunopathology', 'IRF4', 'LCMV']"
+Germany,54391080500,16643674800,2013,1,"['Hepatitis', 'Liver cell damage', 'ROS', 'Virus']"
+Germany,54391080500,16643674800,2014,2,"['BATF', 'hepatitis', 'immunopathology', 'IRF4', 'LCMV', '']"
+Germany,54391080500,16643674800,2015,1,['']
+Germany,54391080500,54936187100,2012,1,"['Effector T cells', 'NK cell activation', 'Regulatory innate immunity', 'Virus elimination', 'Virus persistence']"
+Germany,54391080500,54936187100,2013,1,"['Hepatitis', 'Liver cell damage', 'ROS', 'Virus']"
+Germany,54391080500,54936187100,2014,2,"['BATF', 'hepatitis', 'immunopathology', 'IRF4', 'LCMV', '']"
+Germany,54391080500,54936187100,2015,2,"['Chronic infection', 'Humoral immunity', 'LCMV', 'STAT3', 'T follicular helper cells', '']"
+Germany,54391080500,56519567100,2015,2,"['Chronic infection', 'Humoral immunity', 'LCMV', 'STAT3', 'T follicular helper cells', '']"
+Germany,54391080500,55589416200,2015,1,['']
+Germany,54391080500,35518571800,2014,1,"['BATF', 'hepatitis', 'immunopathology', 'IRF4', 'LCMV']"
+Germany,54391080500,7006140206,2014,1,"['BATF', 'hepatitis', 'immunopathology', 'IRF4', 'LCMV']"
+Germany,54391080500,7202094490,2012,2,"['', 'Effector T cells', 'NK cell activation', 'Regulatory innate immunity', 'Virus elimination', 'Virus persistence']"
+Germany,54391080500,7202094490,2013,2,"['Hepatitis', 'Liver cell damage', 'ROS', 'Virus', '']"
+Germany,54391080500,7202094490,2014,3,"['BATF', 'hepatitis', 'immunopathology', 'IRF4', 'LCMV', '', '']"
+Germany,54391080500,7202094490,2015,2,"['Chronic infection', 'Humoral immunity', 'LCMV', 'STAT3', 'T follicular helper cells', '']"
+Germany,54391080500,7202094490,2017,2,"['Gclc', 'glutathione', 'glycolysis', 'GSH', 'metabolic reprogramming', 'metabolism', 'mTOR', 'Myc', 'NFAT', 'reactive oxygen species', 'ROS', 'T cells', '']"
+Germany,54391080500,36087752600,2014,1,"['BATF', 'hepatitis', 'immunopathology', 'IRF4', 'LCMV']"
+Germany,54391080500,36087752600,2015,1,['']
+Germany,54391080500,15848778200,2013,1,"['Hepatitis', 'Liver cell damage', 'ROS', 'Virus']"
+Germany,54391080500,15848778200,2014,1,"['BATF', 'hepatitis', 'immunopathology', 'IRF4', 'LCMV']"
+Germany,54391080500,7201529819,2012,2,"['', 'Effector T cells', 'NK cell activation', 'Regulatory innate immunity', 'Virus elimination', 'Virus persistence']"
+Germany,54391080500,7201529819,2013,1,"['Hepatitis', 'Liver cell damage', 'ROS', 'Virus']"
+Germany,54391080500,7201529819,2014,2,"['BATF', 'hepatitis', 'immunopathology', 'IRF4', 'LCMV', '']"
+Germany,54391080500,7201529819,2015,2,"['Chronic infection', 'Humoral immunity', 'LCMV', 'STAT3', 'T follicular helper cells', '']"
+Germany,54391080500,7004160478,2012,1,['']
+Germany,54391080500,7004600303,2014,1,['']
+Germany,54391080500,36196539900,2012,1,['']
+Germany,54391080500,36196539900,2013,1,"['Hepatitis', 'Liver cell damage', 'ROS', 'Virus']"
+Germany,37091009100,8920285000,2015,1,['']
+Germany,37091009100,55555422100,2013,1,"['LPS', 'ROS', 'Sepsis']"
+Germany,6701639269,55555422100,2016,1,"['Apoptosis', 'Calcium', 'Cell volume', 'Eryptosis', 'Phosphatidylserine', 'Scrambling']"
+Germany,35315882100,55555422100,2015,1,"['Glutamine', 'Hepatic encephalopathy', 'Metabolic zonation', 'Oxidative stress', 'RNA oxidation']"
+Germany,35315882100,55555422100,2016,1,"['Apoptosis', 'Calcium', 'Cell volume', 'Eryptosis', 'Phosphatidylserine', 'Scrambling']"
+Germany,35315882100,55555422100,2017,1,['']
+Germany,7006882444,8920285000,2018,1,"['Innate immunity', 'Innate immunity', 'Interferon', 'Interferons', 'MALT1', 'NF-κB', 'TNF', 'Tumor necrosis factor']"
+Germany,7006882444,55555422100,2014,1,"['BATF', 'hepatitis', 'immunopathology', 'IRF4', 'LCMV']"
+Germany,7006882444,55555422100,2018,1,"['Innate immunity', 'Innate immunity', 'Interferon', 'Interferons', 'MALT1', 'NF-κB', 'TNF', 'Tumor necrosis factor']"
+Germany,7006882444,55555422100,2017,1,['']
+Germany,16643674800,8920285000,2013,1,"['Hepatitis', 'Liver cell damage', 'ROS', 'Virus']"
+Germany,16643674800,8920285000,2015,1,['']
+Germany,16643674800,8920285000,2016,1,"['Innate immunity', 'IRF7', 'RAIDD', 'TLR']"
+Germany,16643674800,8920285000,2018,1,"['Innate immunity', 'Innate immunity', 'Interferon', 'Interferons', 'MALT1', 'NF-κB', 'TNF', 'Tumor necrosis factor']"
+Germany,16643674800,55555422100,2013,2,"['LPS', 'ROS', 'Sepsis', 'Hepatitis', 'Liver cell damage', 'ROS', 'Virus']"
+Germany,16643674800,55555422100,2014,1,"['BATF', 'hepatitis', 'immunopathology', 'IRF4', 'LCMV']"
+Germany,16643674800,55555422100,2016,1,"['Innate immunity', 'IRF7', 'RAIDD', 'TLR']"
+Germany,16643674800,55555422100,2018,1,"['Innate immunity', 'Innate immunity', 'Interferon', 'Interferons', 'MALT1', 'NF-κB', 'TNF', 'Tumor necrosis factor']"
+Germany,6506255555,55555422100,2015,1,"['Glutamine', 'Hepatic encephalopathy', 'Metabolic zonation', 'Oxidative stress', 'RNA oxidation']"
+Germany,6506255555,55555422100,2017,1,['']
+Germany,54936187100,8920285000,2013,1,"['Hepatitis', 'Liver cell damage', 'ROS', 'Virus']"
+Germany,54936187100,8920285000,2015,1,['']
+Germany,54936187100,8920285000,2016,1,"['Innate immunity', 'IRF7', 'RAIDD', 'TLR']"
+Germany,54936187100,8920285000,2018,1,"['Innate immunity', 'Innate immunity', 'Interferon', 'Interferons', 'MALT1', 'NF-κB', 'TNF', 'Tumor necrosis factor']"
+Germany,54936187100,55555422100,2013,1,"['Hepatitis', 'Liver cell damage', 'ROS', 'Virus']"
+Germany,54936187100,55555422100,2014,1,"['BATF', 'hepatitis', 'immunopathology', 'IRF4', 'LCMV']"
+Germany,54936187100,55555422100,2015,1,"['Chronic infection', 'Humoral immunity', 'LCMV', 'STAT3', 'T follicular helper cells']"
+Germany,54936187100,55555422100,2016,2,"['Calcium', 'Cell volume', 'Erythropoietin', 'Phosphatidylserine', 'Red blood cell concentrates', 'Innate immunity', 'IRF7', 'RAIDD', 'TLR']"
+Germany,54936187100,55555422100,2018,1,"['Innate immunity', 'Innate immunity', 'Interferon', 'Interferons', 'MALT1', 'NF-κB', 'TNF', 'Tumor necrosis factor']"
+Germany,56519567100,8920285000,2018,1,"['Innate immunity', 'Innate immunity', 'Interferon', 'Interferons', 'MALT1', 'NF-κB', 'TNF', 'Tumor necrosis factor']"
+Germany,56519567100,55555422100,2015,1,"['Chronic infection', 'Humoral immunity', 'LCMV', 'STAT3', 'T follicular helper cells']"
+Germany,56519567100,55555422100,2016,1,"['Calcium', 'Cell volume', 'Erythropoietin', 'Phosphatidylserine', 'Red blood cell concentrates']"
+Germany,56519567100,55555422100,2018,1,"['Innate immunity', 'Innate immunity', 'Interferon', 'Interferons', 'MALT1', 'NF-κB', 'TNF', 'Tumor necrosis factor']"
+Germany,56519567100,55555422100,2017,1,['']
+Germany,8419684100,8920285000,2016,1,"['Innate immunity', 'IRF7', 'RAIDD', 'TLR']"
+Germany,8419684100,55555422100,2016,1,"['Innate immunity', 'IRF7', 'RAIDD', 'TLR']"
+Germany,55589416200,8920285000,2015,1,['']
+Germany,55589416200,55555422100,2013,1,"['LPS', 'ROS', 'Sepsis']"
+Germany,35518571800,8920285000,2016,1,"['Innate immunity', 'IRF7', 'RAIDD', 'TLR']"
+Germany,35518571800,55555422100,2014,1,"['BATF', 'hepatitis', 'immunopathology', 'IRF4', 'LCMV']"
+Germany,35518571800,55555422100,2015,1,"['Glutamine', 'Hepatic encephalopathy', 'Metabolic zonation', 'Oxidative stress', 'RNA oxidation']"
+Germany,35518571800,55555422100,2016,1,"['Innate immunity', 'IRF7', 'RAIDD', 'TLR']"
+Germany,7006140206,8920285000,2013,1,"['CD8 T cells', 'dendritic cells', 'diabetes', 'Type I interferon', 'virus', 'Wiskott-Aldrich syndrome', 'Wiskott-Aldrich syndrome protein']"
+Germany,7006140206,8920285000,2018,1,"['Innate immunity', 'Innate immunity', 'Interferon', 'Interferons', 'MALT1', 'NF-κB', 'TNF', 'Tumor necrosis factor']"
+Germany,7006140206,55555422100,2014,1,"['BATF', 'hepatitis', 'immunopathology', 'IRF4', 'LCMV']"
+Germany,7006140206,55555422100,2018,1,"['Innate immunity', 'Innate immunity', 'Interferon', 'Interferons', 'MALT1', 'NF-κB', 'TNF', 'Tumor necrosis factor']"
+Germany,8920285000,7202094490,2012,2,"['', '']"
+Germany,8920285000,7202094490,2013,3,"['Hepatitis', 'Liver cell damage', 'ROS', 'Virus', 'CD8 T cells', 'dendritic cells', 'diabetes', 'Type I interferon', 'virus', 'Wiskott-Aldrich syndrome', 'Wiskott-Aldrich syndrome protein', 'EGFR', 'Interleukin 6', 'Interleukin 6 receptor', 'mTOR', 'SASP', 'Senescence']"
+Germany,8920285000,7202094490,2014,1,"['Inflammation', 'Th1/Th17 cells']"
+Germany,8920285000,7202094490,2015,2,"['', '']"
+Germany,8920285000,7202094490,2016,1,"['Innate immunity', 'IRF7', 'RAIDD', 'TLR']"
+Germany,8920285000,7202094490,2017,3,"['', 'Gclc', 'glutathione', 'glycolysis', 'GSH', 'metabolic reprogramming', 'metabolism', 'mTOR', 'Myc', 'NFAT', 'reactive oxygen species', 'ROS', 'T cells', '']"
+Germany,8920285000,7202094490,2018,1,"['Innate immunity', 'Innate immunity', 'Interferon', 'Interferons', 'MALT1', 'NF-κB', 'TNF', 'Tumor necrosis factor']"
+Germany,8920285000,36087752600,2016,1,"['Innate immunity', 'IRF7', 'RAIDD', 'TLR']"
+Germany,8920285000,36087752600,2018,1,"['Innate immunity', 'Innate immunity', 'Interferon', 'Interferons', 'MALT1', 'NF-κB', 'TNF', 'Tumor necrosis factor']"
+Germany,8920285000,15848778200,2013,1,"['Hepatitis', 'Liver cell damage', 'ROS', 'Virus']"
+Germany,8920285000,7201529819,2013,2,"['Hepatitis', 'Liver cell damage', 'ROS', 'Virus', 'CD8 T cells', 'dendritic cells', 'diabetes', 'Type I interferon', 'virus', 'Wiskott-Aldrich syndrome', 'Wiskott-Aldrich syndrome protein']"
+Germany,8920285000,7201529819,2014,1,"['Inflammation', 'Th1/Th17 cells']"
+Germany,8920285000,7201529819,2015,1,['']
+Germany,8920285000,7201529819,2016,1,"['Innate immunity', 'IRF7', 'RAIDD', 'TLR']"
+Germany,8920285000,7201529819,2017,1,['']
+Germany,8920285000,7201529819,2018,1,"['Innate immunity', 'Innate immunity', 'Interferon', 'Interferons', 'MALT1', 'NF-κB', 'TNF', 'Tumor necrosis factor']"
+Germany,8920285000,7004160478,2016,1,"['Innate immunity', 'IRF7', 'RAIDD', 'TLR']"
+Germany,8920285000,56363077100,2014,1,"['2,4- dinitro phenol', 'Energy depletion', 'Janus kinase 2', 'Jurkat T cells', 'Sodium azide', 'Sodium pump']"
+Germany,8920285000,56363077100,2015,1,['']
+Germany,8920285000,36196539900,2013,2,"['Hepatitis', 'Liver cell damage', 'ROS', 'Virus', 'CD8 T cells', 'dendritic cells', 'diabetes', 'Type I interferon', 'virus', 'Wiskott-Aldrich syndrome', 'Wiskott-Aldrich syndrome protein']"
+Germany,8920285000,36196539900,2015,1,['']
+Germany,8920285000,36196539900,2018,1,"['Innate immunity', 'Innate immunity', 'Interferon', 'Interferons', 'MALT1', 'NF-κB', 'TNF', 'Tumor necrosis factor']"
+Germany,55555422100,7202094490,2013,2,"['LPS', 'ROS', 'Sepsis', 'Hepatitis', 'Liver cell damage', 'ROS', 'Virus']"
+Germany,55555422100,7202094490,2014,1,"['BATF', 'hepatitis', 'immunopathology', 'IRF4', 'LCMV']"
+Germany,55555422100,7202094490,2015,2,"['Chronic infection', 'Humoral immunity', 'LCMV', 'STAT3', 'T follicular helper cells', 'Glutamine', 'Hepatic encephalopathy', 'Metabolic zonation', 'Oxidative stress', 'RNA oxidation']"
+Germany,55555422100,7202094490,2016,3,"['Apoptosis', 'Calcium', 'Cell volume', 'Eryptosis', 'Phosphatidylserine', 'Scrambling', 'Calcium', 'Cell volume', 'Erythropoietin', 'Phosphatidylserine', 'Red blood cell concentrates', 'Innate immunity', 'IRF7', 'RAIDD', 'TLR']"
+Germany,55555422100,7202094490,2018,1,"['Innate immunity', 'Innate immunity', 'Interferon', 'Interferons', 'MALT1', 'NF-κB', 'TNF', 'Tumor necrosis factor']"
+Germany,55555422100,7202094490,2017,1,['']
+Germany,55555422100,36087752600,2014,1,"['BATF', 'hepatitis', 'immunopathology', 'IRF4', 'LCMV']"
+Germany,55555422100,36087752600,2016,1,"['Innate immunity', 'IRF7', 'RAIDD', 'TLR']"
+Germany,55555422100,36087752600,2018,1,"['Innate immunity', 'Innate immunity', 'Interferon', 'Interferons', 'MALT1', 'NF-κB', 'TNF', 'Tumor necrosis factor']"
+Germany,55555422100,15848778200,2013,1,"['Hepatitis', 'Liver cell damage', 'ROS', 'Virus']"
+Germany,55555422100,15848778200,2014,1,"['BATF', 'hepatitis', 'immunopathology', 'IRF4', 'LCMV']"
+Germany,55555422100,15848778200,2015,1,"['Glutamine', 'Hepatic encephalopathy', 'Metabolic zonation', 'Oxidative stress', 'RNA oxidation']"
+Germany,55555422100,15848778200,2016,2,"['Apoptosis', 'Calcium', 'Cell volume', 'Eryptosis', 'Phosphatidylserine', 'Scrambling', 'Calcium', 'Cell volume', 'Erythropoietin', 'Phosphatidylserine', 'Red blood cell concentrates']"
+Germany,55555422100,7201529819,2013,2,"['LPS', 'ROS', 'Sepsis', 'Hepatitis', 'Liver cell damage', 'ROS', 'Virus']"
+Germany,55555422100,7201529819,2014,1,"['BATF', 'hepatitis', 'immunopathology', 'IRF4', 'LCMV']"
+Germany,55555422100,7201529819,2015,2,"['Chronic infection', 'Humoral immunity', 'LCMV', 'STAT3', 'T follicular helper cells', 'Glutamine', 'Hepatic encephalopathy', 'Metabolic zonation', 'Oxidative stress', 'RNA oxidation']"
+Germany,55555422100,7201529819,2016,3,"['Apoptosis', 'Calcium', 'Cell volume', 'Eryptosis', 'Phosphatidylserine', 'Scrambling', 'Calcium', 'Cell volume', 'Erythropoietin', 'Phosphatidylserine', 'Red blood cell concentrates', 'Innate immunity', 'IRF7', 'RAIDD', 'TLR']"
+Germany,55555422100,7201529819,2018,1,"['Innate immunity', 'Innate immunity', 'Interferon', 'Interferons', 'MALT1', 'NF-κB', 'TNF', 'Tumor necrosis factor']"
+Germany,55555422100,7004160478,2016,1,"['Innate immunity', 'IRF7', 'RAIDD', 'TLR']"
+Germany,55555422100,56363077100,2015,1,"['Glutamine', 'Hepatic encephalopathy', 'Metabolic zonation', 'Oxidative stress', 'RNA oxidation']"
+Germany,55555422100,56363077100,2016,2,"['Apoptosis', 'Calcium', 'Cell volume', 'Eryptosis', 'Phosphatidylserine', 'Scrambling', 'Calcium', 'Cell volume', 'Erythropoietin', 'Phosphatidylserine', 'Red blood cell concentrates']"
+Germany,55555422100,55646110700,2016,1,"['Apoptosis', 'Calcium', 'Cell volume', 'Eryptosis', 'Phosphatidylserine', 'Scrambling']"
+Germany,55555422100,36196539900,2013,2,"['LPS', 'ROS', 'Sepsis', 'Hepatitis', 'Liver cell damage', 'ROS', 'Virus']"
+Germany,55555422100,36196539900,2018,1,"['Innate immunity', 'Innate immunity', 'Interferon', 'Interferons', 'MALT1', 'NF-κB', 'TNF', 'Tumor necrosis factor']"
+Germany,7004934157,7003551007,2017,1,"['antiepileptic drug', 'epilepsy', 'epilepsy surgery', 'epileptic seizure', 'first seizure', 'guideline']"
+Germany,7006529554,7003551007,2009,2,"['', '']"
+Germany,7403511344,7003551007,2008,1,['']
+Germany,7403511344,7003551007,2010,1,['']
+Germany,7403511344,7003551007,2009,1,['']
+Germany,7403511344,7003551007,2012,1,"['50% seizure reduction', 'Antiepileptic drugs', 'Enzyme induction', 'Nonenzyme-inducing AEDs', 'Refractory epilepsy', 'Responder rate', 'Seizure-freedom']"
+Germany,7403511344,7003551007,2017,1,"['antiepileptic drug', 'epilepsy', 'epilepsy surgery', 'epileptic seizure', 'first seizure', 'guideline']"
+Germany,7005657179,7003551007,2009,2,"['', '']"
+Germany,55122734200,7003551007,2017,1,"['antiepileptic drug', 'epilepsy', 'epilepsy surgery', 'epileptic seizure', 'first seizure', 'guideline']"
+Germany,36101472900,7003551007,2017,1,"['antiepileptic drug', 'epilepsy', 'epilepsy surgery', 'epileptic seizure', 'first seizure', 'guideline']"
+Germany,24490797700,7003551007,2009,1,['']
+Germany,7006794889,7003551007,2009,2,"['', '']"
+Germany,13309695200,7003551007,2017,1,"['antiepileptic drug', 'epilepsy', 'epilepsy surgery', 'epileptic seizure', 'first seizure', 'guideline']"
+Germany,6603091177,7003551007,2009,2,"['', '']"
+Germany,6602823919,7003551007,2017,1,"['antiepileptic drug', 'epilepsy', 'epilepsy surgery', 'epileptic seizure', 'first seizure', 'guideline']"
+Germany,55553498900,7003551007,2017,1,"['antiepileptic drug', 'epilepsy', 'epilepsy surgery', 'epileptic seizure', 'first seizure', 'guideline']"
+Germany,7003551007,55572073800,2017,1,"['antiepileptic drug', 'epilepsy', 'epilepsy surgery', 'epileptic seizure', 'first seizure', 'guideline']"
+Germany,7003551007,6506980690,2009,2,"['', '']"
+Germany,7003551007,7004819806,2017,1,"['antiepileptic drug', 'epilepsy', 'epilepsy surgery', 'epileptic seizure', 'first seizure', 'guideline']"
+Germany,7003551007,6602126201,2009,2,"['', '']"
+Germany,7003551007,35355673000,2009,2,"['', '']"
+Germany,7003551007,7003263405,2009,1,['']
+Germany,7003551007,57203078114,2009,2,"['', '']"
+Germany,7003551007,7102634489,2009,2,"['', '']"
+Germany,56992899600,7005433029,2018,1,"['antiretroviral therapy-experienced patients', 'antiretroviral therapy-naïve patients', 'atazanavir/ritonavir', 'darunavir/ritonavir', 'lopinavir/ritonavir']"
+Germany,56992899600,56938116300,2018,1,"['antiretroviral therapy-experienced patients', 'antiretroviral therapy-naïve patients', 'atazanavir/ritonavir', 'darunavir/ritonavir', 'lopinavir/ritonavir']"
+Germany,56992899600,7005337295,2018,1,"['antiretroviral therapy-experienced patients', 'antiretroviral therapy-naïve patients', 'atazanavir/ritonavir', 'darunavir/ritonavir', 'lopinavir/ritonavir']"
+Germany,7005513302,7005433029,2018,1,"['antiretroviral therapy-experienced patients', 'antiretroviral therapy-naïve patients', 'atazanavir/ritonavir', 'darunavir/ritonavir', 'lopinavir/ritonavir']"
+Germany,7005513302,56938116300,2018,1,"['antiretroviral therapy-experienced patients', 'antiretroviral therapy-naïve patients', 'atazanavir/ritonavir', 'darunavir/ritonavir', 'lopinavir/ritonavir']"
+Germany,7005513302,7005337295,2018,1,"['antiretroviral therapy-experienced patients', 'antiretroviral therapy-naïve patients', 'atazanavir/ritonavir', 'darunavir/ritonavir', 'lopinavir/ritonavir']"
+Germany,6701839221,14421893600,2016,1,"['Aortic arch', 'Aortic surgery', 'Cerebral protection']"
+Germany,56992899600,7005433029,2018,1,"['antiretroviral therapy-experienced patients', 'antiretroviral therapy-naïve patients', 'atazanavir/ritonavir', 'darunavir/ritonavir', 'lopinavir/ritonavir']"
+Germany,56992899600,56938116300,2018,1,"['antiretroviral therapy-experienced patients', 'antiretroviral therapy-naïve patients', 'atazanavir/ritonavir', 'darunavir/ritonavir', 'lopinavir/ritonavir']"
+Germany,56992899600,7005337295,2018,1,"['antiretroviral therapy-experienced patients', 'antiretroviral therapy-naïve patients', 'atazanavir/ritonavir', 'darunavir/ritonavir', 'lopinavir/ritonavir']"
+Germany,56992899600,7005719945,2018,1,"['antiretroviral therapy-experienced patients', 'antiretroviral therapy-naïve patients', 'atazanavir/ritonavir', 'darunavir/ritonavir', 'lopinavir/ritonavir']"
+Germany,7005513302,7005433029,2018,1,"['antiretroviral therapy-experienced patients', 'antiretroviral therapy-naïve patients', 'atazanavir/ritonavir', 'darunavir/ritonavir', 'lopinavir/ritonavir']"
+Germany,7005513302,56938116300,2018,1,"['antiretroviral therapy-experienced patients', 'antiretroviral therapy-naïve patients', 'atazanavir/ritonavir', 'darunavir/ritonavir', 'lopinavir/ritonavir']"
+Germany,7005513302,7005337295,2018,1,"['antiretroviral therapy-experienced patients', 'antiretroviral therapy-naïve patients', 'atazanavir/ritonavir', 'darunavir/ritonavir', 'lopinavir/ritonavir']"
+Germany,7005513302,7005719945,2018,1,"['antiretroviral therapy-experienced patients', 'antiretroviral therapy-naïve patients', 'atazanavir/ritonavir', 'darunavir/ritonavir', 'lopinavir/ritonavir']"
+Germany,17343381000,7006704921,2007,2,"['', '']"
+Germany,17343381000,7006704921,2008,2,"['', '']"
+Germany,17343381000,7006704921,2009,1,['']
+Germany,17343381000,7006704921,2010,1,['']
+Germany,17343381000,7006704921,2013,2,"['Back reflector', 'Light trapping', 'Plasmonic', 'Thin-film solar cell', 'White paint', 'back reflector', 'light trapping', 'plasmonic', 'thin-film silicon']"
+Germany,17343381000,7006704921,2014,1,['']
+Germany,17343381000,7006704921,2015,1,"['Optical properties', 'Photon', 'Randomly textured surfaces', 'Thin-film solar cells']"
+Germany,55881159700,7006704921,2010,1,['']
+Germany,55881159700,7006704921,2012,1,"['Band tail slope', 'Electroluminescence', 'Hydrogenation', 'Microcrystalline Si', 'Photoluminescence', 'Simulation', 'Solar cells']"
+Germany,55881159700,7006704921,2014,1,"['Electroluminescence (EL)', 'Hydrogenated amorphous silicon (a-Si:H)', 'Hydrogenated microcrystalline silicon (μc-Si:H)', 'Quantum efficiency', 'Thin film solar cell']"
+Germany,7004076111,7006704921,2011,1,['']
+Germany,7004076111,7006704921,2012,1,['']
+Germany,7006095473,7006704921,2007,1,"['Amorph', 'Diffractive', 'ITO', 'Microcrystalline', 'Opal', 'Photonic', 'Photonmanagement', 'Photovoltaic', 'Silicon', 'Tandem']"
+Germany,7006095473,7006704921,2008,3,"['Amorphous silicon', 'Artificial opal', 'Microcrystalline silicon', 'Photonmanagement', 'Photovoltaic', 'Tandem solar cell', 'ZnO', '', '']"
+Germany,7006095473,7006704921,2009,1,"['Atomic layer deposition', 'Current matching', 'Electric transport', 'Inverted opal', 'Light trapping', 'Photon management', 'Photonic crystals', 'Tandem solar cells']"
+Germany,7006095473,7006704921,2010,1,['']
+Germany,7006095473,7006704921,2011,1,['']
+Germany,7006095473,7006704921,2012,1,['']
+Germany,7006095473,7006704921,2014,1,['']
+Germany,23027481200,7006704921,2008,2,"['', '']"
+Germany,23027481200,7006704921,2010,1,['']
+Germany,23027481200,7006704921,2011,1,['']
+Germany,23027481200,7006704921,2012,1,['']
+Germany,23027481200,7006704921,2015,1,"['Optical properties', 'Photon', 'Randomly textured surfaces', 'Thin-film solar cells']"
+Germany,55412828300,7006704921,2011,1,['']
+Germany,55412828300,7006704921,2012,1,['']
+Germany,18635568800,7006704921,2008,1,['']
+Germany,18635568800,7006704921,2010,1,"['Fluorescence collector', 'Intermediate reflector', 'Light trapping', 'Photon management', 'Photonic crystals', 'Solar cells']"
+Germany,18635568800,7006704921,2011,1,['']
+Germany,18635568800,7006704921,2012,1,['']
+Germany,7003388602,7006704921,2008,5,"['Light trapping', 'NSOM', 'Thin-film silicon solar cells', '', '', '', '']"
+Germany,7003388602,7006704921,2009,1,['']
+Germany,7006723282,7006704921,2010,1,"['Fluorescence collector', 'Intermediate reflector', 'Light trapping', 'Photon management', 'Photonic crystals', 'Solar cells']"
+Germany,7006723282,7006704921,2011,1,['']
+Germany,7006723282,7006704921,2012,1,['']
+Germany,7006723282,7006704921,2013,1,['']
+Germany,7006723282,7006704921,2014,2,"['amorphous silicon', 'printed electronics', 'solar cells', 'thin films', 'Electroluminescence (EL)', 'Hydrogenated amorphous silicon (a-Si:H)', 'Hydrogenated microcrystalline silicon (μc-Si:H)', 'Quantum efficiency', 'Thin film solar cell']"
+Germany,24069891800,7006704921,2007,1,"['Amorph', 'Diffractive', 'ITO', 'Microcrystalline', 'Opal', 'Photonic', 'Photonmanagement', 'Photovoltaic', 'Silicon', 'Tandem']"
+Germany,24069891800,7006704921,2008,3,"['Amorphous silicon', 'Artificial opal', 'Microcrystalline silicon', 'Photonmanagement', 'Photovoltaic', 'Tandem solar cell', 'ZnO', '', '']"
+Germany,24069891800,7006704921,2009,1,"['Atomic layer deposition', 'Current matching', 'Electric transport', 'Inverted opal', 'Light trapping', 'Photon management', 'Photonic crystals', 'Tandem solar cells']"
+Germany,24069891800,7006704921,2010,1,['']
+Germany,24069891800,7006704921,2011,1,"['amorphous silicon', 'inverted opal', 'photonic crystals', 'solar cells']"
+Germany,14033188600,7006704921,2007,2,"['', 'Amorph', 'Diffractive', 'ITO', 'Microcrystalline', 'Opal', 'Photonic', 'Photonmanagement', 'Photovoltaic', 'Silicon', 'Tandem']"
+Germany,14033188600,7006704921,2008,2,"['', '']"
+Germany,14033188600,7006704921,2009,1,['']
+Germany,14033188600,7006704921,2010,1,['']
+Germany,14033188600,7006704921,2011,1,['']
+Germany,14033188600,7006704921,2012,1,['']
+Germany,14033188600,7006704921,2015,1,"['Optical properties', 'Photon', 'Randomly textured surfaces', 'Thin-film solar cells']"
+Germany,24475607300,7006704921,2010,1,"['Fluorescence collector', 'Intermediate reflector', 'Light trapping', 'Photon management', 'Photonic crystals', 'Solar cells']"
+Germany,7006704921,56025429800,2014,1,['']
+Germany,7006704921,7004447638,2007,1,"['Amorph', 'Diffractive', 'ITO', 'Microcrystalline', 'Opal', 'Photonic', 'Photonmanagement', 'Photovoltaic', 'Silicon', 'Tandem']"
+Germany,7006704921,7004447638,2008,1,['']
+Germany,7006704921,7004447638,2010,1,"['Fluorescence collector', 'Intermediate reflector', 'Light trapping', 'Photon management', 'Photonic crystals', 'Solar cells']"
+Germany,7006704921,7004447638,2011,1,['']
+Germany,7006704921,7004447638,2012,1,['']
+Germany,7006704921,24475729900,2008,1,['']
+Germany,7006704921,24475729900,2009,1,"['Atomic layer deposition', 'Current matching', 'Electric transport', 'Inverted opal', 'Light trapping', 'Photon management', 'Photonic crystals', 'Tandem solar cells']"
+Germany,7006704921,24475729900,2010,1,['']
+Germany,7006704921,24475729900,2011,1,['']
+Germany,7006704921,24475729900,2012,1,['']
+Germany,7006704921,57193934847,2008,2,"['', '']"
+Germany,7006704921,57193934847,2010,1,['']
+Germany,7006704921,57193934847,2011,1,['']
+Germany,7006704921,57193934847,2012,1,['']
+Germany,7006704921,57193934847,2015,1,"['Optical properties', 'Photon', 'Randomly textured surfaces', 'Thin-film solar cells']"
+Germany,7005971535,7102741185,2010,1,"['Benchmarking', 'Core data set', 'Intensive care', 'Quality assurance']"
+Germany,56137414800,7102741185,2010,1,"['Benchmarking', 'Core data set', 'Intensive care', 'Quality assurance']"
+Germany,7004939811,7004024772,2002,1,"['Adenovirus', 'Fracture', 'Growth factors', 'Transfection']"
+Germany,12806675500,7004024772,2008,1,['']
+Germany,7003612315,7004024772,2002,1,"['Adenovirus', 'Fracture', 'Growth factors', 'Transfection']"
+Germany,6602646816,7004024772,2008,1,['']
+Germany,7004530495,7004024772,2002,1,"['Adenovirus', 'Fracture', 'Growth factors', 'Transfection']"
+Germany,7003794125,55346159500,2018,1,['']
+Germany,16022515200,56186726200,2009,1,"['CAPEX', 'FTTH', 'OPEX', 'Optical access networks', 'PON', 'Protection', 'Reliability']"
+Germany,15066204200,8726069400,2015,1,['']
+Germany,15066204200,8726069400,2017,1,['']
+Germany,55853916800,57196873890,2017,2,"['', 'Automatic processing and detection', 'Decisional autonomy', 'High level data fusion', 'Mobility management', 'Multilevel UAV swarm', 'Smart mission management']"
+Germany,55853916800,35146073400,2017,2,"['', 'Automatic processing and detection', 'Decisional autonomy', 'High level data fusion', 'Mobility management', 'Multilevel UAV swarm', 'Smart mission management']"
+Germany,55853916800,23980996500,2017,2,"['', 'Automatic processing and detection', 'Decisional autonomy', 'High level data fusion', 'Mobility management', 'Multilevel UAV swarm', 'Smart mission management']"
+Germany,57196873890,6508125036,2017,2,"['', 'Automatic processing and detection', 'Decisional autonomy', 'High level data fusion', 'Mobility management', 'Multilevel UAV swarm', 'Smart mission management']"
+Germany,35146073400,6508125036,2017,2,"['', 'Automatic processing and detection', 'Decisional autonomy', 'High level data fusion', 'Mobility management', 'Multilevel UAV swarm', 'Smart mission management']"
+Germany,6508125036,23980996500,2017,2,"['', 'Automatic processing and detection', 'Decisional autonomy', 'High level data fusion', 'Mobility management', 'Multilevel UAV swarm', 'Smart mission management']"
+Germany,26027235900,36474078600,2014,1,"['Induction machine', 'model reference adaptive system (MRAS)', 'predictive torque control (PTC)', 'Sensorless application']"
+Germany,50061450900,36474078600,2011,1,['']
+Germany,50061450900,36474078600,2013,2,"['', '']"
+Germany,50061450900,36474078600,2015,1,"['AC drives', 'deadbeat control', 'differential flatness', 'robust control']"
+Germany,15837418700,36474078600,2013,1,['']
+Germany,15837418700,36474078600,2015,1,"['AC drives', 'deadbeat control', 'differential flatness', 'robust control']"
+Germany,52363651300,36474078600,2011,1,"['Control of Drive', 'Optimal Control', 'Permanent Magnet Motor']"
+Germany,52363651300,36474078600,2012,1,"['Control of drive', 'Model predictive control', 'Optimal control', 'Synchronous motor']"
+Germany,52363651300,36474078600,2013,2,"['Calculus of variations', 'induction machines', 'loss minimization', 'nonlinear control', '']"
+Germany,36470794500,36474078600,2010,2,"['', '']"
+Germany,36470794500,36474078600,2011,3,"['', 'Reluctance Drive', 'Sensorless Control', 'Synchronous Motor', '']"
+Germany,36470794500,36474078600,2013,1,"['Estimation', 'observers', 'permanent magnet machines', 'synchronous machines']"
+Germany,36470617900,36474078600,2010,2,"['', '']"
+Germany,36470617900,36474078600,2011,1,['']
+Spain,7006000690,7006491219,2010,1,['']
+Spain,7006000690,7006491219,2011,1,['']
+Spain,7006491219,34572914800,2006,1,"['Adjuvant treatment', 'Chemotherapy', 'Gastric cancer', 'Radiotherapy']"
+Spain,7006491219,34572914800,2007,1,"['Adjuvant treatment', 'Chemotherapy', 'Pancreatic cancer', 'Radiotherapy']"
+Spain,7006491219,34572914800,2008,1,"['Chemotherapy', 'Radiotherapy', 'Rectal cancer', 'Surgery']"
+Spain,7006491219,34572914800,2009,1,"['Chemoembolisation', 'Hepatocellular carcinoma', 'Liver transplantation', 'Sorafenib']"
+Spain,7006491219,34572914800,2010,1,['']
+Spain,7006491219,34572914800,2011,1,['']
+Spain,7006491219,6701333643,2002,1,"['Adjuvant chemotherapy', 'Adjuvant radiotherapy', 'Colon cancer', 'Rectal cancer']"
+Spain,7006491219,6701333643,2006,1,"['Adjuvant treatment', 'Chemotherapy', 'Gastric cancer', 'Radiotherapy']"
+Spain,7006491219,6701333643,2007,1,"['Adjuvant treatment', 'Chemotherapy', 'Pancreatic cancer', 'Radiotherapy']"
+Spain,7006491219,6701333643,2008,1,"['Chemotherapy', 'Radiotherapy', 'Rectal cancer', 'Surgery']"
+Spain,7006491219,6701333643,2009,1,"['Chemoembolisation', 'Hepatocellular carcinoma', 'Liver transplantation', 'Sorafenib']"
+Spain,7006491219,6701333643,2010,1,['']
+Spain,7006491219,6701333643,2011,1,['']
+Spain,56992899600,7007168393,2018,1,"['antiretroviral therapy-experienced patients', 'antiretroviral therapy-naïve patients', 'atazanavir/ritonavir', 'darunavir/ritonavir', 'lopinavir/ritonavir']"
+Spain,7005513302,7007168393,2018,1,"['antiretroviral therapy-experienced patients', 'antiretroviral therapy-naïve patients', 'atazanavir/ritonavir', 'darunavir/ritonavir', 'lopinavir/ritonavir']"
+Spain,7007101440,6508125036,2007,1,['']
+Spain,7007101440,6508125036,2008,1,"['Genetic algorithms', 'Optimization', 'Performance analysis', 'Telecommunications']"
+Spain,7007101440,6505849246,2009,1,['']
+Spain,7007101440,15061114300,2007,1,"['Genetic algorithms', 'Optimization', 'Performance analysis', 'Telecommunications']"
+Spain,7007101440,12753413600,2007,1,"['Broadcasting', 'Cellular genetic algorithm', 'Mobile ad hoc networks', 'Multi-objective optimization']"
+Spain,57193325611,56543615300,2017,3,"['IoT', 'Mobile crowdsensing', 'sensing as a service', 'smart cities', 'Mobile crowdsensing', 'simulations', 'smart cities', '']"
+Spain,57193325611,56543615300,2018,1,"['data collection framework', 'energy efficiency', 'mobile crowdsensing']"
+Spain,35307821100,55880832100,2013,1,"['Multi-objective optimisation', 'small-world', 'VANETs']"
+Spain,35307821100,55880832100,2014,1,"['Multi-objective optimisation', 'Small-world', 'VANETs']"
+Spain,35307821100,35178719500,2011,1,"['Broadcasting algorithms', 'Community detection', 'Energy efficiency', 'Mobile ad-hoc networks', 'UAV networks']"
+Spain,55822858800,55880832100,2015,1,"['Byzantine Failure', 'CEA', 'Cellular Evolutionary Algorithm', 'Fault Tolerance']"
+Spain,55880832100,15058427500,2013,1,['']
+Spain,55880832100,6503955598,2010,1,"['Distributed systems', 'Energy-aware', 'Meta-heuristics', 'Optimization', 'Scheduling']"
+Spain,55880832100,6503955598,2011,1,['']
+Spain,55880832100,55369226400,2012,1,"['Asynchronous parallel design', 'Cooperative co-evolutionary EAs', 'Multi-objective optimization', 'Superlinear speedup']"
+Spain,55880832100,57202960579,2012,1,['']
+Spain,55880832100,57202960579,2015,1,"['Byzantine Failure', 'CEA', 'Cellular Evolutionary Algorithm', 'Fault Tolerance']"
+Spain,55880832100,56015368400,2016,1,['']
+Spain,55880832100,56015368400,2018,1,"['Coevolutionary', 'Cooperative', 'Metaheuristics', 'Parallelism', 'Particle swarm optimization']"
+Spain,55880832100,35729032500,2009,1,"['Decentralized population', 'DNA assembly', 'Genetic algorithms', 'Parallel']"
+Spain,55880832100,35729032500,2010,1,['']
+Spain,55880832100,35729032500,2011,1,['']
+Spain,55880832100,35729032500,2012,1,"['Broadcasting', 'Energy use optimisation', 'Mobile ad hoc networks', 'Multi-objective optimisation']"
+Spain,55880832100,35729032500,2013,2,"['Cellular genetic algorithm', 'GPU', 'Scheduling', 'Energy-efficiency', 'Heuristic', 'Millicomputing', 'Sensitivity analysis', 'Task mapping']"
+Spain,55880832100,35729032500,2014,1,"['Cellular Genetic Algorithm', 'Parallelism']"
+Spain,55880832100,35729032500,2018,1,"['Metaheuristics', 'Optimization', 'Scheduling', 'Supervised machine learning', 'Support vector machines']"
+Spain,55880832100,36496723300,2010,1,"['Distributed systems', 'Energy-aware', 'Meta-heuristics', 'Optimization', 'Scheduling']"
+Spain,55880832100,36496723300,2014,1,"['Dynamic voltage scaling', 'Energy efficiency', 'Evolutionary algorithms', 'Multi-objective optimization', 'Scheduling']"
+Spain,55880832100,6508125036,2009,3,"['', 'Cellular GAs', 'Cooperative coevolutionary GAs', 'Topology control', 'Cellular Genetic Algorithm', 'Multi-Objective Optimization', 'Vehicular Ad Hoc Networks']"
+Spain,55880832100,6508125036,2011,2,"['', '']"
+Spain,55880832100,6508125036,2012,1,['']
+Spain,55880832100,6508125036,2013,1,"['Cooperative coevolutionary EAs', 'Multi-objective optimization', 'Parallel algorithms']"
+Spain,55880832100,6508125036,2014,2,"['', 'Multi-objective optimisation', 'Small-world', 'VANETs']"
+Spain,55880832100,6508125036,2016,1,['']
+Spain,55880832100,6508125036,2018,1,"['Coevolutionary', 'Cooperative', 'Metaheuristics', 'Parallelism', 'Particle swarm optimization']"
+Spain,55880832100,55822636000,2013,1,['']
+Spain,55880832100,12753413600,2007,1,"['Broadcasting', 'Cellular genetic algorithm', 'Mobile ad hoc networks', 'Multi-objective optimization']"
+Spain,6508226668,6508125036,2011,1,['']
+Spain,6508226668,6508125036,2013,1,"['Cooperative coevolutionary EAs', 'Multi-objective optimization', 'Parallel algorithms']"
+Spain,6508226668,12753413600,2007,1,"['Broadcasting', 'Cellular genetic algorithm', 'Mobile ad hoc networks', 'Multi-objective optimization']"
+Spain,8726069400,56543615300,2015,3,"['cellular networks', 'Mobile cloud computing', 'network awareness', 'traffic offloading', 'Cloud computing', 'Data center', 'Performance and energy efficiency metrics', '']"
+Spain,8726069400,56543615300,2016,2,"['', 'Crowdsensing', 'Gamification', 'Reputation systems', 'Subgame perfect equilibrium (SPE)', 'User incentives']"
+Spain,8726069400,56543615300,2014,1,"['Cellular networks', 'Content distribution', 'Network coding']"
+Spain,8726069400,56543615300,2017,5,"['Mobile crowdsensing', 'simulations', 'smart cities', '', 'Ambient intelligence', 'crowd-sensing', 'data acquisition', 'data analysis', 'distributed computing', 'game theory', 'gamification', 'intelligent sensors', 'Internet of Things', 'mobile computing', 'Cloud computing', 'Data center', 'Performance and energy efficiency metrics', '']"
+Spain,8726069400,56543615300,2018,1,"['data collection framework', 'energy efficiency', 'mobile crowdsensing']"
+Spain,35198141100,35178719500,2011,1,"['Broadcasting algorithms', 'Community detection', 'Energy efficiency', 'Mobile ad-hoc networks', 'UAV networks']"
+Spain,6602405058,6508125036,2009,1,['']
+Spain,35178719500,35729032500,2012,1,"['Broadcasting', 'Energy use optimisation', 'Mobile ad hoc networks', 'Multi-objective optimisation']"
+Spain,35178719500,6508125036,2009,1,['']
+Spain,35178719500,6508125036,2014,1,['']
+Spain,56543615300,6603573094,2017,2,"['IoT', 'Mobile crowdsensing', 'sensing as a service', 'smart cities', 'Mobile crowdsensing', 'simulations', 'smart cities']"
+Spain,8717404100,12753413600,2007,1,"['Broadcasting', 'Cellular genetic algorithm', 'Mobile ad hoc networks', 'Multi-objective optimization']"
+Switzerland,7006491219,35413853800,2002,1,"['Adjuvant chemotherapy', 'Adjuvant radiotherapy', 'Colon cancer', 'Rectal cancer']"
+Switzerland,7006491219,35413853800,2006,1,"['Adjuvant treatment', 'Chemotherapy', 'Gastric cancer', 'Radiotherapy']"
+Switzerland,7006491219,35413853800,2007,1,"['Adjuvant treatment', 'Chemotherapy', 'Pancreatic cancer', 'Radiotherapy']"
+Switzerland,7006491219,35413853800,2011,1,['']
+Switzerland,54391080500,6602499065,2012,2,"['', 'Effector T cells', 'NK cell activation', 'Regulatory innate immunity', 'Virus elimination', 'Virus persistence']"
+Switzerland,54391080500,6602499065,2013,1,"['Hepatitis', 'Liver cell damage', 'ROS', 'Virus']"
+Switzerland,54391080500,6602499065,2015,1,['']
+Switzerland,8920285000,6602499065,2013,2,"['Hepatitis', 'Liver cell damage', 'ROS', 'Virus', 'CD8 T cells', 'dendritic cells', 'diabetes', 'Type I interferon', 'virus', 'Wiskott-Aldrich syndrome', 'Wiskott-Aldrich syndrome protein']"
+Switzerland,8920285000,6602499065,2015,1,['']
+Switzerland,55555422100,6602499065,2013,2,"['LPS', 'ROS', 'Sepsis', 'Hepatitis', 'Liver cell damage', 'ROS', 'Virus']"
+Switzerland,55535513800,7003551007,2017,1,"['antiepileptic drug', 'epilepsy', 'epilepsy surgery', 'epileptic seizure', 'first seizure', 'guideline']"
+Switzerland,35477957200,7004024772,2008,1,['']
+Switzerland,35477957200,7004024772,2014,1,"['Geriatrics', 'Knee fractures', 'Open reduction and internal fixation', 'Osteoporosis', 'Primary knee prosthesis implantation']"
+Sweden,7006491219,7102568587,2002,1,"['Adjuvant chemotherapy', 'Adjuvant radiotherapy', 'Colon cancer', 'Rectal cancer']"
+Sweden,7006491219,7102568587,2006,1,"['Adjuvant treatment', 'Chemotherapy', 'Gastric cancer', 'Radiotherapy']"
+Sweden,7006491219,7102568587,2007,1,"['Adjuvant treatment', 'Chemotherapy', 'Pancreatic cancer', 'Radiotherapy']"
+Sweden,7006491219,7102568587,2010,1,['']
+Sweden,7006018152,55346159500,2018,1,"['children', 'health service delivery', 'treatment targets']"
+Sweden,56186726200,7006089678,2008,1,['']
+Brazil,7006491219,7102206202,2007,1,"['Adjuvant treatment', 'Chemotherapy', 'Pancreatic cancer', 'Radiotherapy']"
+Brazil,7006491219,7102206202,2009,1,"['Chemoembolisation', 'Hepatocellular carcinoma', 'Liver transplantation', 'Sorafenib']"
+Belgium,7006491219,7005959932,2000,1,['']
+Belgium,7006491219,7005959932,2002,1,"['Adjuvant chemotherapy', 'Adjuvant radiotherapy', 'Colon cancer', 'Rectal cancer']"
+Belgium,7006491219,7005959932,2006,1,"['Adjuvant treatment', 'Chemotherapy', 'Gastric cancer', 'Radiotherapy']"
+Belgium,7006491219,7005959932,2007,1,"['Adjuvant treatment', 'Chemotherapy', 'Pancreatic cancer', 'Radiotherapy']"
+Belgium,7006491219,7005959932,2008,1,"['Chemotherapy', 'Radiotherapy', 'Rectal cancer', 'Surgery']"
+Belgium,7006491219,7005959932,2009,1,"['Adenoma-carcinoma sequence and large bowel adenocarcinoma', 'Enteropathy-associated T-cell lymphoma (EATL)', 'Exploratory laparotomy with intraoperative enteroscopy', 'Gastrointestinal stromal tumors (GISTs)', 'Helicobacter pylori eradication efficacy and intestinal MALT type lymphoma regression', ""Non-Hodgkin's lymphomas (NHLs)"", 'Small bowel tumors', 'Surveillance, Epidemiology and End-Results (SEER) registries', 'Video capsule endoscopy (CE)']"
+Belgium,7006491219,7005959932,2010,1,['']
+Belgium,7006491219,7005959932,2011,1,['']
+Belgium,56992899600,55666222200,2018,1,"['antiretroviral therapy-experienced patients', 'antiretroviral therapy-naïve patients', 'atazanavir/ritonavir', 'darunavir/ritonavir', 'lopinavir/ritonavir']"
+Belgium,7005513302,55666222200,2018,1,"['antiretroviral therapy-experienced patients', 'antiretroviral therapy-naïve patients', 'atazanavir/ritonavir', 'darunavir/ritonavir', 'lopinavir/ritonavir']"
+Belgium,6603133037,6507107585,2018,1,"['crazing', 'drawing', 'plasticization', 'polylactide', 'SAXS']"
+Belgium,6603133037,55745592300,2018,1,"['crazing', 'drawing', 'plasticization', 'polylactide', 'SAXS']"
+Belgium,56992899600,7103116821,2008,1,"['Genotypes', 'Hepatitis C virus', 'Luxembourg', 'Prisons', 'Risk factors', 'Substance abuse']"
+Belgium,56992899600,7103116821,2016,1,"['CCR5', 'CXCR4', 'Heavy-chain complementary determining region 3', 'HIV-1', 'Neutralizing antibody', 'Phage display', 'Viremic controller']"
+Belgium,56992899600,55666222200,2018,1,"['antiretroviral therapy-experienced patients', 'antiretroviral therapy-naïve patients', 'atazanavir/ritonavir', 'darunavir/ritonavir', 'lopinavir/ritonavir']"
+Belgium,56992899600,8522177300,2018,1,"['antiretroviral therapy-experienced patients', 'antiretroviral therapy-naïve patients', 'atazanavir/ritonavir', 'darunavir/ritonavir', 'lopinavir/ritonavir']"
+Belgium,7103116821,7005513302,2008,1,"['Genotypes', 'Hepatitis C virus', 'Luxembourg', 'Prisons', 'Risk factors', 'Substance abuse']"
+Belgium,7005513302,55666222200,2018,1,"['antiretroviral therapy-experienced patients', 'antiretroviral therapy-naïve patients', 'atazanavir/ritonavir', 'darunavir/ritonavir', 'lopinavir/ritonavir']"
+Belgium,7005513302,8522177300,2018,1,"['antiretroviral therapy-experienced patients', 'antiretroviral therapy-naïve patients', 'atazanavir/ritonavir', 'darunavir/ritonavir', 'lopinavir/ritonavir']"
+Belgium,8546260000,56186726200,2009,1,"['Access network', 'CapEx', 'OpEx', 'Optical', 'Wireless']"
+Belgium,8546260000,56186726200,2010,2,"['Access network', 'Methodology', 'Techno-economic analysis', '']"
+Belgium,8546260000,56186726200,2013,1,"['Cost estimation', 'Fibre to the home (FTTH)', 'Network models', 'Techno-economic', 'Topology']"
+Belgium,6701536842,56186726200,2009,1,"['Access network', 'CapEx', 'OpEx', 'Optical', 'Wireless']"
+Belgium,6701536842,56186726200,2010,1,"['Access network', 'Methodology', 'Techno-economic analysis']"
+Belgium,6701750037,56186726200,2009,1,"['Access network', 'CapEx', 'OpEx', 'Optical', 'Wireless']"
+Belgium,6701750037,56186726200,2010,1,"['Access network', 'Methodology', 'Techno-economic analysis']"
+Belgium,56186726200,14030984700,2009,1,"['Access network', 'CapEx', 'OpEx', 'Optical', 'Wireless']"
+Belgium,56186726200,14030984700,2010,2,"['Access network', 'Methodology', 'Techno-economic analysis', '']"
+Belgium,56186726200,14030984700,2013,1,"['Cost estimation', 'Fibre to the home (FTTH)', 'Network models', 'Techno-economic', 'Topology']"
+Austria,7006491219,7006122765,2008,1,"['Chemotherapy', 'Radiotherapy', 'Rectal cancer', 'Surgery']"
+Austria,7006491219,7006122765,2009,1,"['Chemoembolisation', 'Hepatocellular carcinoma', 'Liver transplantation', 'Sorafenib']"
+Austria,8920285000,36156186500,2013,1,"['CD8 T cells', 'dendritic cells', 'diabetes', 'Type I interferon', 'virus', 'Wiskott-Aldrich syndrome', 'Wiskott-Aldrich syndrome protein']"
+Austria,8920285000,36156186500,2015,1,['']
+Austria,36156186500,55555422100,2013,1,"['LPS', 'ROS', 'Sepsis']"
+Austria,7005513302,26427366300,2018,1,"['Epidemics', 'highly infectious diseases', 'isolation capabilities', 'Mediterranean Sea', 'outbreak', 'preparedness']"
+Austria,56992899600,56393151400,2018,1,"['antiretroviral therapy-experienced patients', 'antiretroviral therapy-naïve patients', 'atazanavir/ritonavir', 'darunavir/ritonavir', 'lopinavir/ritonavir']"
+Austria,7005513302,26427366300,2018,1,"['Epidemics', 'highly infectious diseases', 'isolation capabilities', 'Mediterranean Sea', 'outbreak', 'preparedness']"
+Austria,7005513302,56393151400,2018,1,"['antiretroviral therapy-experienced patients', 'antiretroviral therapy-naïve patients', 'atazanavir/ritonavir', 'darunavir/ritonavir', 'lopinavir/ritonavir']"
+Austria,57202960579,26868167100,2013,1,"['Critical infrastructures', 'Dependency analysis', 'Risk monitoring', 'Security modelling']"
+Austria,6505849246,26868167100,2013,2,"['', 'Critical infrastructures', 'Dependency analysis', 'Risk monitoring', 'Security modelling']"
+Austria,6505849246,26868167100,2014,1,"['Bayesian networks', 'Critical infrastructure modelling', 'Critical infrastructures', 'Dynamic Bayesian networks', 'Risk estimation', 'Risk prediction']"
+Canada,7006491219,55748792800,2007,1,"['Adjuvant treatment', 'Chemotherapy', 'Pancreatic cancer', 'Radiotherapy']"
+Canada,7006491219,55748792800,2008,1,"['Chemotherapy', 'Radiotherapy', 'Rectal cancer', 'Surgery']"
+Canada,7006491219,55748792800,2009,1,"['Chemoembolisation', 'Hepatocellular carcinoma', 'Liver transplantation', 'Sorafenib']"
+Canada,54391080500,7006493798,2012,1,"['Effector T cells', 'NK cell activation', 'Regulatory innate immunity', 'Virus elimination', 'Virus persistence']"
+Canada,54391080500,7006493798,2013,1,"['Hepatitis', 'Liver cell damage', 'ROS', 'Virus']"
+Canada,54391080500,7006493798,2014,2,"['BATF', 'hepatitis', 'immunopathology', 'IRF4', 'LCMV', '']"
+Canada,54391080500,7006493798,2015,1,['']
+Canada,54391080500,7401931099,2012,1,"['Effector T cells', 'NK cell activation', 'Regulatory innate immunity', 'Virus elimination', 'Virus persistence']"
+Canada,54391080500,7401931099,2013,1,"['Hepatitis', 'Liver cell damage', 'ROS', 'Virus']"
+Canada,54391080500,7401931099,2014,2,"['BATF', 'hepatitis', 'immunopathology', 'IRF4', 'LCMV', '']"
+Canada,54391080500,7401931099,2015,1,['']
+Canada,7006493798,8920285000,2010,1,['']
+Canada,7006493798,8920285000,2012,3,"['', '', '']"
+Canada,7006493798,8920285000,2013,2,"['Hepatitis', 'Liver cell damage', 'ROS', 'Virus', 'CD8 T cells', 'dendritic cells', 'diabetes', 'Type I interferon', 'virus', 'Wiskott-Aldrich syndrome', 'Wiskott-Aldrich syndrome protein']"
+Canada,7006493798,8920285000,2014,1,"['Inflammation', 'Th1/Th17 cells']"
+Canada,7006493798,8920285000,2015,3,"['', '', '']"
+Canada,7006493798,8920285000,2016,1,"['Innate immunity', 'IRF7', 'RAIDD', 'TLR']"
+Canada,7006493798,8920285000,2017,1,['']
+Canada,7006493798,55555422100,2013,2,"['LPS', 'ROS', 'Sepsis', 'Hepatitis', 'Liver cell damage', 'ROS', 'Virus']"
+Canada,7006493798,55555422100,2014,1,"['BATF', 'hepatitis', 'immunopathology', 'IRF4', 'LCMV']"
+Canada,7006493798,55555422100,2016,1,"['Innate immunity', 'IRF7', 'RAIDD', 'TLR']"
+Canada,8920285000,7401931099,2009,1,['']
+Canada,8920285000,7401931099,2010,1,['']
+Canada,8920285000,7401931099,2011,1,['']
+Canada,8920285000,7401931099,2012,4,"['', '', '', 'Autoimmunity', 'Calcium signaling']"
+Canada,8920285000,7401931099,2013,6,"['', 'Hepatitis', 'Liver cell damage', 'ROS', 'Virus', 'CD8 T cells', 'dendritic cells', 'diabetes', 'Type I interferon', 'virus', 'Wiskott-Aldrich syndrome', 'Wiskott-Aldrich syndrome protein', '', '', 'EGFR', 'Interleukin 6', 'Interleukin 6 receptor', 'mTOR', 'SASP', 'Senescence']"
+Canada,8920285000,7401931099,2014,2,"['Inflammation', 'Th1/Th17 cells', '2,4- dinitro phenol', 'Energy depletion', 'Janus kinase 2', 'Jurkat T cells', 'Sodium azide', 'Sodium pump']"
+Canada,8920285000,7401931099,2015,5,"['', '', '', '', '']"
+Canada,8920285000,7401931099,2016,2,"['Immunity', 'Inflammation', 'NADPH oxidase (NOX)', 'Necroptosis', 'Reactive oxygen species (ROS)', 'Tumor necrosis factor (TNF)', 'Innate immunity', 'IRF7', 'RAIDD', 'TLR']"
+Canada,7401931099,55555422100,2013,2,"['LPS', 'ROS', 'Sepsis', 'Hepatitis', 'Liver cell damage', 'ROS', 'Virus']"
+Canada,7401931099,55555422100,2014,1,"['BATF', 'hepatitis', 'immunopathology', 'IRF4', 'LCMV']"
+Canada,7401931099,55555422100,2016,1,"['Innate immunity', 'IRF7', 'RAIDD', 'TLR']"
+Canada,57193325611,15062778500,2017,1,"['Mobile crowdsensing', 'simulations', 'smart cities']"
+Canada,15062778500,8726069400,2016,2,"['', 'Crowdsensing', 'Gamification', 'Reputation systems', 'Subgame perfect equilibrium (SPE)', 'User incentives']"
+Canada,15062778500,8726069400,2017,2,"['Mobile crowdsensing', 'simulations', 'smart cities', 'Ambient intelligence', 'crowd-sensing', 'data acquisition', 'data analysis', 'distributed computing', 'game theory', 'gamification', 'intelligent sensors', 'Internet of Things', 'mobile computing']"
+Canada,15062778500,6603573094,2017,1,"['Mobile crowdsensing', 'simulations', 'smart cities']"
+Czech Republic,57202125317,56992899600,2018,1,"['antiretroviral therapy-experienced patients', 'antiretroviral therapy-naïve patients', 'atazanavir/ritonavir', 'darunavir/ritonavir', 'lopinavir/ritonavir']"
+Czech Republic,57202125317,7005513302,2018,1,"['antiretroviral therapy-experienced patients', 'antiretroviral therapy-naïve patients', 'atazanavir/ritonavir', 'darunavir/ritonavir', 'lopinavir/ritonavir']"
+Czech Republic,56992899600,6602134360,2018,1,"['antiretroviral therapy-experienced patients', 'antiretroviral therapy-naïve patients', 'atazanavir/ritonavir', 'darunavir/ritonavir', 'lopinavir/ritonavir']"
+Czech Republic,7005513302,6602134360,2018,1,"['antiretroviral therapy-experienced patients', 'antiretroviral therapy-naïve patients', 'atazanavir/ritonavir', 'darunavir/ritonavir', 'lopinavir/ritonavir']"
+Czech Republic,57202125317,56992899600,2018,1,"['antiretroviral therapy-experienced patients', 'antiretroviral therapy-naïve patients', 'atazanavir/ritonavir', 'darunavir/ritonavir', 'lopinavir/ritonavir']"
+Czech Republic,57202125317,7005513302,2018,1,"['antiretroviral therapy-experienced patients', 'antiretroviral therapy-naïve patients', 'atazanavir/ritonavir', 'darunavir/ritonavir', 'lopinavir/ritonavir']"
+Czech Republic,56992899600,6602134360,2018,1,"['antiretroviral therapy-experienced patients', 'antiretroviral therapy-naïve patients', 'atazanavir/ritonavir', 'darunavir/ritonavir', 'lopinavir/ritonavir']"
+Czech Republic,7005513302,6602134360,2018,1,"['antiretroviral therapy-experienced patients', 'antiretroviral therapy-naïve patients', 'atazanavir/ritonavir', 'darunavir/ritonavir', 'lopinavir/ritonavir']"
+Estonia,56992899600,6603989068,2018,1,"['antiretroviral therapy-experienced patients', 'antiretroviral therapy-naïve patients', 'atazanavir/ritonavir', 'darunavir/ritonavir', 'lopinavir/ritonavir']"
+Estonia,6603989068,7005513302,2018,1,"['antiretroviral therapy-experienced patients', 'antiretroviral therapy-naïve patients', 'atazanavir/ritonavir', 'darunavir/ritonavir', 'lopinavir/ritonavir']"
+Estonia,56992899600,6603989068,2018,1,"['antiretroviral therapy-experienced patients', 'antiretroviral therapy-naïve patients', 'atazanavir/ritonavir', 'darunavir/ritonavir', 'lopinavir/ritonavir']"
+Estonia,6603989068,7005513302,2018,1,"['antiretroviral therapy-experienced patients', 'antiretroviral therapy-naïve patients', 'atazanavir/ritonavir', 'darunavir/ritonavir', 'lopinavir/ritonavir']"
+Israel,56992899600,56427503700,2018,1,"['antiretroviral therapy-experienced patients', 'antiretroviral therapy-naïve patients', 'atazanavir/ritonavir', 'darunavir/ritonavir', 'lopinavir/ritonavir']"
+Israel,56992899600,7006787887,2018,1,"['antiretroviral therapy-experienced patients', 'antiretroviral therapy-naïve patients', 'atazanavir/ritonavir', 'darunavir/ritonavir', 'lopinavir/ritonavir']"
+Israel,56992899600,57202531663,2018,1,"['antiretroviral therapy-experienced patients', 'antiretroviral therapy-naïve patients', 'atazanavir/ritonavir', 'darunavir/ritonavir', 'lopinavir/ritonavir']"
+Israel,56427503700,7005513302,2018,1,"['antiretroviral therapy-experienced patients', 'antiretroviral therapy-naïve patients', 'atazanavir/ritonavir', 'darunavir/ritonavir', 'lopinavir/ritonavir']"
+Israel,7005513302,7006787887,2018,1,"['antiretroviral therapy-experienced patients', 'antiretroviral therapy-naïve patients', 'atazanavir/ritonavir', 'darunavir/ritonavir', 'lopinavir/ritonavir']"
+Israel,7005513302,57202531663,2018,1,"['antiretroviral therapy-experienced patients', 'antiretroviral therapy-naïve patients', 'atazanavir/ritonavir', 'darunavir/ritonavir', 'lopinavir/ritonavir']"
+Israel,56992899600,56427503700,2018,1,"['antiretroviral therapy-experienced patients', 'antiretroviral therapy-naïve patients', 'atazanavir/ritonavir', 'darunavir/ritonavir', 'lopinavir/ritonavir']"
+Israel,56992899600,7006787887,2018,1,"['antiretroviral therapy-experienced patients', 'antiretroviral therapy-naïve patients', 'atazanavir/ritonavir', 'darunavir/ritonavir', 'lopinavir/ritonavir']"
+Israel,56992899600,57202531663,2018,1,"['antiretroviral therapy-experienced patients', 'antiretroviral therapy-naïve patients', 'atazanavir/ritonavir', 'darunavir/ritonavir', 'lopinavir/ritonavir']"
+Israel,56427503700,7005513302,2018,1,"['antiretroviral therapy-experienced patients', 'antiretroviral therapy-naïve patients', 'atazanavir/ritonavir', 'darunavir/ritonavir', 'lopinavir/ritonavir']"
+Israel,7005513302,7006787887,2018,1,"['antiretroviral therapy-experienced patients', 'antiretroviral therapy-naïve patients', 'atazanavir/ritonavir', 'darunavir/ritonavir', 'lopinavir/ritonavir']"
+Israel,7005513302,57202531663,2018,1,"['antiretroviral therapy-experienced patients', 'antiretroviral therapy-naïve patients', 'atazanavir/ritonavir', 'darunavir/ritonavir', 'lopinavir/ritonavir']"
+Poland,56992899600,6603193957,2018,1,"['antiretroviral therapy-experienced patients', 'antiretroviral therapy-naïve patients', 'atazanavir/ritonavir', 'darunavir/ritonavir', 'lopinavir/ritonavir']"
+Poland,7005513302,6603193957,2018,1,"['antiretroviral therapy-experienced patients', 'antiretroviral therapy-naïve patients', 'atazanavir/ritonavir', 'darunavir/ritonavir', 'lopinavir/ritonavir']"
+Poland,7005513302,57200769993,2018,1,"['Epidemics', 'highly infectious diseases', 'isolation capabilities', 'Mediterranean Sea', 'outbreak', 'preparedness']"
+Poland,56992899600,6603193957,2018,1,"['antiretroviral therapy-experienced patients', 'antiretroviral therapy-naïve patients', 'atazanavir/ritonavir', 'darunavir/ritonavir', 'lopinavir/ritonavir']"
+Poland,7005513302,6603193957,2018,1,"['antiretroviral therapy-experienced patients', 'antiretroviral therapy-naïve patients', 'atazanavir/ritonavir', 'darunavir/ritonavir', 'lopinavir/ritonavir']"
+Poland,7005513302,57200769993,2018,1,"['Epidemics', 'highly infectious diseases', 'isolation capabilities', 'Mediterranean Sea', 'outbreak', 'preparedness']"
+Poland,6602380062,56186726200,2007,1,"['Network protection', 'Passive optical networks']"
+Poland,6602380062,56186726200,2009,3,"['Access network', 'CapEx', 'OpEx', 'Optical', 'Wireless', '', '']"
+Poland,6602380062,56186726200,2010,2,"['Access network', 'Methodology', 'Techno-economic analysis', '']"
+Poland,6602380062,56186726200,2013,1,"['Cost estimation', 'Fibre to the home (FTTH)', 'Network models', 'Techno-economic', 'Topology']"
+Poland,6602380062,56186726200,2008,1,['']
+Poland,36184609400,36496723300,2015,1,"['cloud brokering', 'cloud computing', 'data protection', 'data security', 'optimization']"
+Poland,36184609400,36496723300,2018,1,"['Communication-aware cloud computing', 'Computational complexity', 'Directed acyclic graphs', 'Models in cloud computing', 'NP-hardness in cloud computing']"
+Poland,36184609400,6508125036,2014,1,['']
+Poland,14034597000,8726069400,2017,2,"['Cloud Computing', 'Energy Saving', 'Virtual Desktop Infrastructure', 'Virtualization', 'Cloud Computing', 'Green Computing', 'Virtual Desktop Infrastructure', 'Virtualization']"
+Poland,14034597000,57202960579,2013,1,"['AMD Fusion', 'ARM Cortex A9', 'Energy-efficiency', 'HPC', 'Intel Atom', 'Intel Core I7', 'Intel Xeon E7', 'Performance evaluation']"
+Poland,14034597000,57202960579,2015,1,['']
+Poland,14034597000,57190845405,2017,2,"['Cloud Computing', 'Energy Saving', 'Virtual Desktop Infrastructure', 'Virtualization', 'Cloud Computing', 'Green Computing', 'Virtual Desktop Infrastructure', 'Virtualization']"
+Poland,12809666700,6603458224,2012,1,['']
+Poland,8726069400,26435260800,2013,2,"['Cluster computing', 'Energy efficiency', 'Power management', 'Survey', 'Resource allocation', 'Resource management', 'Scheduling']"
+Poland,6603458224,6603709905,2012,1,['']
+Poland,57202960579,55802207000,2013,1,"['AMD Fusion', 'ARM Cortex A9', 'Energy-efficiency', 'HPC', 'Intel Atom', 'Intel Core I7', 'Intel Xeon E7', 'Performance evaluation']"
+Poland,57202960579,55802207000,2015,1,['']
+Poland,6701836569,56389512500,2007,1,"['Anomaly detection problem', 'Artificial immune systems', 'Coevolutionary algorithms', 'Computer networks', 'Hyperrectangular detectors', 'Self-nonself space paradigm']"
+Poland,6701836569,56389512500,2008,3,"['', '', 'Denial of service', 'Idiotypic networks']"
+Poland,6701836569,56389512500,2009,1,"['Gene expression programming', 'Multiobjective classification']"
+Poland,6701836569,6508125036,2014,1,['']
+Poland,6701836569,6508125036,2015,1,"['Australia', 'Biology', 'Computer science', 'Conferences', 'Distributed processing', 'Electronic mail', 'Parallel processing']"
+Poland,35729032500,26435260800,2013,2,"['Cluster computing', 'Energy efficiency', 'Power management', 'Survey', 'Resource allocation', 'Resource management', 'Scheduling']"
+Poland,54384685900,6603709905,2007,1,['']
+Poland,54384685900,6603709905,2008,2,"['Ad hoc networks', 'Cooperation', 'Game theory', '']"
+Poland,36496723300,35586597300,2015,1,"['cloud brokering', 'cloud computing', 'data protection', 'data security', 'optimization']"
+Poland,36496723300,35586597300,2018,1,"['Communication-aware cloud computing', 'Computational complexity', 'Directed acyclic graphs', 'Models in cloud computing', 'NP-hardness in cloud computing']"
+Poland,6508125036,35586597300,2014,1,['']
+Greece,56992899600,56884347500,2018,1,"['antiretroviral therapy-experienced patients', 'antiretroviral therapy-naïve patients', 'atazanavir/ritonavir', 'darunavir/ritonavir', 'lopinavir/ritonavir']"
+Greece,7005513302,56884347500,2018,1,"['antiretroviral therapy-experienced patients', 'antiretroviral therapy-naïve patients', 'atazanavir/ritonavir', 'darunavir/ritonavir', 'lopinavir/ritonavir']"
+Greece,56992899600,57201621059,2018,1,"['antiretroviral therapy-experienced patients', 'antiretroviral therapy-naïve patients', 'atazanavir/ritonavir', 'darunavir/ritonavir', 'lopinavir/ritonavir']"
+Greece,56992899600,56884347500,2018,1,"['antiretroviral therapy-experienced patients', 'antiretroviral therapy-naïve patients', 'atazanavir/ritonavir', 'darunavir/ritonavir', 'lopinavir/ritonavir']"
+Greece,56992899600,55929742100,2018,1,"['antiretroviral therapy-experienced patients', 'antiretroviral therapy-naïve patients', 'atazanavir/ritonavir', 'darunavir/ritonavir', 'lopinavir/ritonavir']"
+Greece,57201621059,7005513302,2018,1,"['antiretroviral therapy-experienced patients', 'antiretroviral therapy-naïve patients', 'atazanavir/ritonavir', 'darunavir/ritonavir', 'lopinavir/ritonavir']"
+Greece,7005513302,56884347500,2018,1,"['antiretroviral therapy-experienced patients', 'antiretroviral therapy-naïve patients', 'atazanavir/ritonavir', 'darunavir/ritonavir', 'lopinavir/ritonavir']"
+Greece,7005513302,55929742100,2018,1,"['antiretroviral therapy-experienced patients', 'antiretroviral therapy-naïve patients', 'atazanavir/ritonavir', 'darunavir/ritonavir', 'lopinavir/ritonavir']"
+Denmark,56992899600,7006806129,2018,1,"['antiretroviral therapy-experienced patients', 'antiretroviral therapy-naïve patients', 'atazanavir/ritonavir', 'darunavir/ritonavir', 'lopinavir/ritonavir']"
+Denmark,56992899600,7005184715,2018,1,"['antiretroviral therapy-experienced patients', 'antiretroviral therapy-naïve patients', 'atazanavir/ritonavir', 'darunavir/ritonavir', 'lopinavir/ritonavir']"
+Denmark,56992899600,57202559296,2018,1,"['antiretroviral therapy-experienced patients', 'antiretroviral therapy-naïve patients', 'atazanavir/ritonavir', 'darunavir/ritonavir', 'lopinavir/ritonavir']"
+Denmark,56992899600,35307337700,2018,2,"['antiretroviral therapy-experienced patients', 'antiretroviral therapy-naïve patients', 'atazanavir/ritonavir', 'darunavir/ritonavir', 'lopinavir/ritonavir', '']"
+Denmark,7005513302,7006806129,2018,1,"['antiretroviral therapy-experienced patients', 'antiretroviral therapy-naïve patients', 'atazanavir/ritonavir', 'darunavir/ritonavir', 'lopinavir/ritonavir']"
+Denmark,7005513302,7005184715,2018,1,"['antiretroviral therapy-experienced patients', 'antiretroviral therapy-naïve patients', 'atazanavir/ritonavir', 'darunavir/ritonavir', 'lopinavir/ritonavir']"
+Denmark,7005513302,57202559296,2018,1,"['antiretroviral therapy-experienced patients', 'antiretroviral therapy-naïve patients', 'atazanavir/ritonavir', 'darunavir/ritonavir', 'lopinavir/ritonavir']"
+Denmark,7005513302,35307337700,2018,1,"['antiretroviral therapy-experienced patients', 'antiretroviral therapy-naïve patients', 'atazanavir/ritonavir', 'darunavir/ritonavir', 'lopinavir/ritonavir']"
+Denmark,7005723136,56992899600,2018,1,['']
+Denmark,56992899600,7006806129,2018,1,"['antiretroviral therapy-experienced patients', 'antiretroviral therapy-naïve patients', 'atazanavir/ritonavir', 'darunavir/ritonavir', 'lopinavir/ritonavir']"
+Denmark,56992899600,7005184715,2018,1,"['antiretroviral therapy-experienced patients', 'antiretroviral therapy-naïve patients', 'atazanavir/ritonavir', 'darunavir/ritonavir', 'lopinavir/ritonavir']"
+Denmark,56992899600,57202559296,2018,1,"['antiretroviral therapy-experienced patients', 'antiretroviral therapy-naïve patients', 'atazanavir/ritonavir', 'darunavir/ritonavir', 'lopinavir/ritonavir']"
+Denmark,56992899600,7004247877,2018,1,"['antiretroviral therapy-experienced patients', 'antiretroviral therapy-naïve patients', 'atazanavir/ritonavir', 'darunavir/ritonavir', 'lopinavir/ritonavir']"
+Denmark,56992899600,35307337700,2018,2,"['antiretroviral therapy-experienced patients', 'antiretroviral therapy-naïve patients', 'atazanavir/ritonavir', 'darunavir/ritonavir', 'lopinavir/ritonavir', '']"
+Denmark,7005513302,7006806129,2018,1,"['antiretroviral therapy-experienced patients', 'antiretroviral therapy-naïve patients', 'atazanavir/ritonavir', 'darunavir/ritonavir', 'lopinavir/ritonavir']"
+Denmark,7005513302,7005184715,2018,1,"['antiretroviral therapy-experienced patients', 'antiretroviral therapy-naïve patients', 'atazanavir/ritonavir', 'darunavir/ritonavir', 'lopinavir/ritonavir']"
+Denmark,7005513302,57202559296,2018,1,"['antiretroviral therapy-experienced patients', 'antiretroviral therapy-naïve patients', 'atazanavir/ritonavir', 'darunavir/ritonavir', 'lopinavir/ritonavir']"
+Denmark,7005513302,7004247877,2018,1,"['antiretroviral therapy-experienced patients', 'antiretroviral therapy-naïve patients', 'atazanavir/ritonavir', 'darunavir/ritonavir', 'lopinavir/ritonavir']"
+Denmark,7005513302,35307337700,2018,1,"['antiretroviral therapy-experienced patients', 'antiretroviral therapy-naïve patients', 'atazanavir/ritonavir', 'darunavir/ritonavir', 'lopinavir/ritonavir']"
+Ireland,56992899600,7005651577,2018,1,"['antiretroviral therapy-experienced patients', 'antiretroviral therapy-naïve patients', 'atazanavir/ritonavir', 'darunavir/ritonavir', 'lopinavir/ritonavir']"
+Ireland,7005513302,7005651577,2018,1,"['antiretroviral therapy-experienced patients', 'antiretroviral therapy-naïve patients', 'atazanavir/ritonavir', 'darunavir/ritonavir', 'lopinavir/ritonavir']"
+Ireland,56992899600,7005651577,2018,1,"['antiretroviral therapy-experienced patients', 'antiretroviral therapy-naïve patients', 'atazanavir/ritonavir', 'darunavir/ritonavir', 'lopinavir/ritonavir']"
+Ireland,7005513302,7005651577,2018,1,"['antiretroviral therapy-experienced patients', 'antiretroviral therapy-naïve patients', 'atazanavir/ritonavir', 'darunavir/ritonavir', 'lopinavir/ritonavir']"
+Norway,56992899600,7005165177,2018,1,"['antiretroviral therapy-experienced patients', 'antiretroviral therapy-naïve patients', 'atazanavir/ritonavir', 'darunavir/ritonavir', 'lopinavir/ritonavir']"
+Norway,56992899600,6603445217,2018,1,"['antiretroviral therapy-experienced patients', 'antiretroviral therapy-naïve patients', 'atazanavir/ritonavir', 'darunavir/ritonavir', 'lopinavir/ritonavir']"
+Norway,7005513302,7005165177,2018,1,"['antiretroviral therapy-experienced patients', 'antiretroviral therapy-naïve patients', 'atazanavir/ritonavir', 'darunavir/ritonavir', 'lopinavir/ritonavir']"
+Norway,7005513302,6603445217,2018,1,"['antiretroviral therapy-experienced patients', 'antiretroviral therapy-naïve patients', 'atazanavir/ritonavir', 'darunavir/ritonavir', 'lopinavir/ritonavir']"
+Norway,56992899600,7005165177,2018,1,"['antiretroviral therapy-experienced patients', 'antiretroviral therapy-naïve patients', 'atazanavir/ritonavir', 'darunavir/ritonavir', 'lopinavir/ritonavir']"
+Norway,56992899600,6603445217,2018,1,"['antiretroviral therapy-experienced patients', 'antiretroviral therapy-naïve patients', 'atazanavir/ritonavir', 'darunavir/ritonavir', 'lopinavir/ritonavir']"
+Norway,7005513302,7005165177,2018,1,"['antiretroviral therapy-experienced patients', 'antiretroviral therapy-naïve patients', 'atazanavir/ritonavir', 'darunavir/ritonavir', 'lopinavir/ritonavir']"
+Norway,7005513302,6603445217,2018,1,"['antiretroviral therapy-experienced patients', 'antiretroviral therapy-naïve patients', 'atazanavir/ritonavir', 'darunavir/ritonavir', 'lopinavir/ritonavir']"
+Belarus,56992899600,15832060600,2018,1,"['antiretroviral therapy-experienced patients', 'antiretroviral therapy-naïve patients', 'atazanavir/ritonavir', 'darunavir/ritonavir', 'lopinavir/ritonavir']"
+Belarus,7005513302,15832060600,2018,1,"['antiretroviral therapy-experienced patients', 'antiretroviral therapy-naïve patients', 'atazanavir/ritonavir', 'darunavir/ritonavir', 'lopinavir/ritonavir']"
+Belarus,56992899600,15832060600,2018,1,"['antiretroviral therapy-experienced patients', 'antiretroviral therapy-naïve patients', 'atazanavir/ritonavir', 'darunavir/ritonavir', 'lopinavir/ritonavir']"
+Belarus,7005513302,15832060600,2018,1,"['antiretroviral therapy-experienced patients', 'antiretroviral therapy-naïve patients', 'atazanavir/ritonavir', 'darunavir/ritonavir', 'lopinavir/ritonavir']"
+Belarus,7006595702,6508125036,2014,1,['']
+Argentina,56992899600,56785746500,2018,1,"['antiretroviral therapy-experienced patients', 'antiretroviral therapy-naïve patients', 'atazanavir/ritonavir', 'darunavir/ritonavir', 'lopinavir/ritonavir']"
+Argentina,56785746500,7005513302,2018,1,"['antiretroviral therapy-experienced patients', 'antiretroviral therapy-naïve patients', 'atazanavir/ritonavir', 'darunavir/ritonavir', 'lopinavir/ritonavir']"
+Finland,56992899600,6701816652,2018,1,"['antiretroviral therapy-experienced patients', 'antiretroviral therapy-naïve patients', 'atazanavir/ritonavir', 'darunavir/ritonavir', 'lopinavir/ritonavir']"
+Finland,7005513302,6701816652,2018,1,"['antiretroviral therapy-experienced patients', 'antiretroviral therapy-naïve patients', 'atazanavir/ritonavir', 'darunavir/ritonavir', 'lopinavir/ritonavir']"
+Finland,57202960579,6701703474,2013,1,"['Critical infrastructures', 'Dependency analysis', 'Risk monitoring', 'Security modelling']"
+Finland,6701703474,6505849246,2013,2,"['', 'Critical infrastructures', 'Dependency analysis', 'Risk monitoring', 'Security modelling']"
+Finland,6701703474,6505849246,2014,1,"['Bayesian networks', 'Critical infrastructure modelling', 'Critical infrastructures', 'Dynamic Bayesian networks', 'Risk estimation', 'Risk prediction']"
+Macedonia,55429036200,55346159500,2018,1,"['children', 'health service delivery', 'treatment targets']"
+China,9633457700,56186726200,2007,1,"['Network protection', 'Passive optical networks']"
+China,9633457700,56186726200,2008,1,['']
+China,9633457700,56186726200,2009,2,"['Access network', 'CapEx', 'OpEx', 'Optical', 'Wireless', 'CAPEX', 'FTTH', 'OPEX', 'Optical access networks', 'PON', 'Protection', 'Reliability']"
+China,9633457700,56186726200,2010,2,"['Access network', 'Methodology', 'Techno-economic analysis', '']"
+China,9633457700,56186726200,2013,1,"['Cost estimation', 'Fibre to the home (FTTH)', 'Network models', 'Techno-economic', 'Topology']"
+China,8726069400,23029267900,2013,2,"['Cluster computing', 'Energy efficiency', 'Power management', 'Survey', 'Resource allocation', 'Resource management', 'Scheduling']"
+China,35729032500,23029267900,2013,2,"['Cluster computing', 'Energy efficiency', 'Power management', 'Survey', 'Resource allocation', 'Resource management', 'Scheduling']"
+China,6508125036,23029267900,2014,1,['']
+China,55740459200,36474078600,2014,1,"['Induction machine', 'model reference adaptive system (MRAS)', 'predictive torque control (PTC)', 'Sensorless application']"
+China,55962337500,36474078600,2014,1,"['Induction machine', 'model reference adaptive system (MRAS)', 'predictive torque control (PTC)', 'Sensorless application']"
+Hungary,56186726200,15769550700,2010,2,"['Access network', 'Methodology', 'Techno-economic analysis', '']"
+Hungary,56186726200,15769550700,2013,1,"['Cost estimation', 'Fibre to the home (FTTH)', 'Network models', 'Techno-economic', 'Topology']"
+Slovenia,10440417300,17434167500,2011,1,['']
+Slovenia,7004215403,17434167500,2011,1,['']
+Slovenia,17434167500,7003264271,2009,1,['']
+Slovenia,17434167500,7003264271,2011,1,['']
+Slovenia,17434167500,7003264271,2012,2,"['Chemical solution deposition', 'EXAFS', 'Ferroelectric solid solutions', 'Potassium tantalate niobate', '']"
+Slovenia,17434167500,7003264271,2015,1,"['Computer simulation', 'ferroelectric thin films', 'finite-difference methods', 'finite-element analysis', 'method of moments (MoM)']"
+Slovenia,17434167500,7003264271,2016,1,['']
+Slovenia,17434167500,7003264271,2018,1,"['Chemical solution deposition', 'Dielectric properties', 'Ferroelectric thin films', 'Microstructural Zone Model', 'Microstructure']"
+Slovenia,17434167500,35607799700,2018,1,"['Chemical solution deposition', 'Dielectric properties', 'Ferroelectric thin films', 'Microstructural Zone Model', 'Microstructure']"
+Slovenia,17434167500,55397648800,2009,1,['']
+Slovenia,17434167500,55397648800,2011,1,['']
+Slovenia,17434167500,55397648800,2012,2,"['Chemical solution deposition', 'EXAFS', 'Ferroelectric solid solutions', 'Potassium tantalate niobate', '']"
+Russian Federation,56274803200,8726069400,2015,1,['']
+Russian Federation,56274803200,8726069400,2017,1,['']
+Russian Federation,56274803200,55998367200,2015,1,['']
+Russian Federation,8416831500,55999202600,2017,1,"['Bin packing', 'Call allocation', 'Cloud computing', 'Cloud Voice over IP', 'Quality of Service', 'Scheduling']"
+Russian Federation,8416831500,55999202600,2018,1,"['Bin packing', 'Call allocation', 'Cloud computing', 'Cloud voice over IP', 'Quality of service', 'Scheduling']"
+Russian Federation,55999202600,56308077400,2017,1,"['Bin packing', 'Call allocation', 'Cloud computing', 'Cloud Voice over IP', 'Quality of Service', 'Scheduling']"
+Russian Federation,55999202600,56308077400,2018,1,"['Bin packing', 'Call allocation', 'Cloud computing', 'Cloud voice over IP', 'Quality of service', 'Scheduling']"
+Mexico,6506067984,15058427500,2015,1,['']
+Mexico,6506067984,8726069400,2013,1,"['Cloud computing', 'communication awareness', 'resource allocation', 'scheduling']"
+Mexico,6506067984,8726069400,2014,1,"['Cloud computing', 'load balancing', 'power consumption', 'Voice over IP (VoIP)']"
+Mexico,6506067984,8726069400,2016,1,"['Cloud computing', 'Communication awareness', 'Resource allocation', 'Scheduling']"
+Mexico,6506067984,8726069400,2015,1,['']
+Mexico,6506067984,8726069400,2017,1,['']
+Mexico,6506067984,55999202600,2015,1,['']
+Mexico,6506067984,55999202600,2016,1,['']
+Mexico,6506067984,55999202600,2017,1,"['Bin packing', 'Call allocation', 'Cloud computing', 'Cloud Voice over IP', 'Quality of Service', 'Scheduling']"
+Mexico,6506067984,55999202600,2018,1,"['Bin packing', 'Call allocation', 'Cloud computing', 'Cloud voice over IP', 'Quality of service', 'Scheduling']"
+Mexico,6506067984,6508125036,2014,1,['']
+Mexico,6506067984,55998367200,2015,2,"['', '']"
+Mexico,7003514400,15058427500,2013,2,"['', '']"
+Mexico,7003514400,15058427500,2014,1,['']
+Mexico,7003514400,19639537800,2013,2,"['', '']"
+Mexico,7003514400,19639537800,2014,1,['']
+Mexico,56575100000,15058427500,2015,1,['']
+Mexico,56575100000,8726069400,2014,1,"['Cloud computing', 'load balancing', 'power consumption', 'Voice over IP (VoIP)']"
+Mexico,56575100000,8726069400,2015,1,['']
+Mexico,56575100000,8726069400,2017,1,['']
+Mexico,56575100000,55999202600,2015,1,['']
+Mexico,56575100000,55999202600,2016,1,['']
+Mexico,56575100000,55999202600,2017,1,"['Bin packing', 'Call allocation', 'Cloud computing', 'Cloud Voice over IP', 'Quality of Service', 'Scheduling']"
+Mexico,56575100000,55999202600,2018,1,"['Bin packing', 'Call allocation', 'Cloud computing', 'Cloud voice over IP', 'Quality of service', 'Scheduling']"
+Mexico,56575100000,55998367200,2015,2,"['', '']"
+Mexico,8726069400,57063472300,2015,1,['']
+Mexico,8726069400,57063472300,2017,1,['']
+Mexico,8726069400,35069168000,2015,1,['']
+Mexico,8726069400,35069168000,2017,1,['']
+Mexico,57063472300,55999202600,2016,1,['']
+Mexico,55999202600,35069168000,2016,1,['']
+Mexico,35069168000,55998367200,2015,1,['']
+Uruguay,20734981200,8726069400,2017,1,['']
+Uruguay,20734981200,56389512500,2018,1,"['Biomedical information', 'Clustering', 'Multiobjective']"
+Uruguay,20734981200,6508125036,2018,1,"['Biomedical information', 'Clustering', 'Multiobjective']"
+Colombia,50861099100,6503955598,2011,2,"['energy efficiency', 'Heterogeneous computing systems', 'optimization', 'scheduling', 'Energy conservation', 'Heterogenous computing systems', 'Performance of systems', 'Scalability', 'Scheduling']"
+Colombia,50861099100,36496723300,2011,2,"['energy efficiency', 'Heterogeneous computing systems', 'optimization', 'scheduling', 'Energy conservation', 'Heterogenous computing systems', 'Performance of systems', 'Scalability', 'Scheduling']"
+Colombia,50861099100,36496723300,2012,1,['']
+Colombia,50861099100,6508125036,2011,1,"['energy efficiency', 'Heterogeneous computing systems', 'optimization', 'scheduling']"
+Colombia,8726069400,56013709600,2013,3,"['Cluster computing', 'Energy efficiency', 'Power management', 'Survey', 'Resource allocation', 'Resource management', 'Scheduling', 'Cloud computing', 'communication awareness', 'resource allocation', 'scheduling']"
+Colombia,8726069400,56013709600,2014,1,"['Cloud computing', 'load balancing', 'power consumption', 'Voice over IP (VoIP)']"
+Colombia,8726069400,56013709600,2016,1,"['Cloud computing', 'Communication awareness', 'Resource allocation', 'Scheduling']"
+Colombia,57202960579,56013709600,2013,1,"['Bonnie++', 'Energy-efficiency', 'ESXi', 'HPCC', 'IOZone', 'KVM', 'Xen']"
+Colombia,57202960579,56013709600,2014,1,"['Energy efficiency', 'High-performance computing', 'Server modelling']"
+Colombia,57202960579,55654858200,2017,2,"['', 'Classification', 'HPC', 'Machine learning', 'RJMS']"
+Colombia,56013709600,35729032500,2013,3,"['Cluster computing', 'Energy efficiency', 'Power management', 'Survey', 'Energy-efficiency', 'Heuristic', 'Millicomputing', 'Sensitivity analysis', 'Task mapping', 'Resource allocation', 'Resource management', 'Scheduling']"
+Colombia,56013709600,36496723300,2012,1,['']
+Colombia,56013709600,36496723300,2013,1,"['Bonnie++', 'Energy-efficiency', 'ESXi', 'HPCC', 'IOZone', 'KVM', 'Xen']"
+Colombia,56013709600,36496723300,2014,2,"['Dynamic voltage scaling', 'Energy efficiency', 'Evolutionary algorithms', 'Multi-objective optimization', 'Scheduling', 'Energy efficiency', 'High-performance computing', 'Server modelling']"
+Colombia,56013709600,6508125036,2014,1,['']
+Colombia,56013709600,55888129500,2013,1,"['Bonnie++', 'Energy-efficiency', 'ESXi', 'HPCC', 'IOZone', 'KVM', 'Xen']"
+Colombia,56013709600,55888129500,2014,1,"['Energy efficiency', 'High-performance computing', 'Server modelling']"
+Colombia,36496723300,55654858200,2017,1,"['Classification', 'HPC', 'Machine learning', 'RJMS']"
+Pakistan,56565691000,8726069400,2013,1,"['Cluster computing', 'Energy efficiency', 'Power management', 'Survey']"
+Pakistan,56565691000,35729032500,2013,1,"['Cluster computing', 'Energy efficiency', 'Power management', 'Survey']"
+Thailand,55853916800,14009767400,2017,1,"['Bifurcation diagram', 'chaotic dynamics', 'graph traversal', 'random walk']"
+Thailand,6508125036,14009767400,2017,1,"['Bifurcation diagram', 'chaotic dynamics', 'graph traversal', 'random walk']"
+Lithuania,23489666700,57202636679,2017,2,"['Blockchain', 'Breach of contract', 'Contract law', 'Court injunction', 'Factor analysis', 'Smart contract', 'Stochastic modeling', 'Structural equation modeling', 'Unsupervised machine learning', 'Factor analysis', 'Misspecification of criteria', 'Multi-criteria decision analysis (MCDA)', 'Online broker', 'Quality of service (QoS)', 'Structural uncertainty', 'Unsupervised machine learning']"
+Lithuania,23489666700,57190845405,2017,2,"['Blockchain', 'Breach of contract', 'Contract law', 'Court injunction', 'Factor analysis', 'Smart contract', 'Stochastic modeling', 'Structural equation modeling', 'Unsupervised machine learning', 'Factor analysis', 'Misspecification of criteria', 'Multi-criteria decision analysis (MCDA)', 'Online broker', 'Quality of service (QoS)', 'Structural uncertainty', 'Unsupervised machine learning']"
+South Korea,8726069400,24725148500,2013,2,"['Cluster computing', 'Energy efficiency', 'Power management', 'Survey', 'Resource allocation', 'Resource management', 'Scheduling']"
+South Korea,35729032500,24725148500,2013,2,"['Cluster computing', 'Energy efficiency', 'Power management', 'Survey', 'Resource allocation', 'Resource management', 'Scheduling']"
+Portugal,55369226400,7103089597,2014,1,['']
+Portugal,6508125036,7103089597,2014,1,['']

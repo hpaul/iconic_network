@@ -1,0 +1,67 @@
+Source,Target,Year,Weight,Keywords
+6602540690,55556260600,2013,1,['']
+6602540690,55556260600,2014,1,['']
+6602540690,55556260600,2015,2,"['', '']"
+6602540690,55556260600,2017,3,"['Carbonic anhydrase', 'Inhibitor', 'Mercaptan', 'Thiophene-2-sulfonamide', 'Carbonic anhydrase', 'Inhibitor', 'Isoform selectivity', 'Saccharin', 'Secondary/tertiary sulfonamide', '1,3,4-oxadiazole', 'docking', 'hCA', 'human carbonic anhydrase', 'hybrids', 'N-acylbenzenesulfonamide']"
+6602540690,55556260600,2018,2,"['Anticancer', 'Carbonic anhydrases', 'Dental cells', 'Pyrazoline', 'Sulfonamide', 'Carbonic anhydrase', 'Conjugate', 'Dipeptide', 'Homosulfanilamide', 'Inhibitor']"
+6602540690,6504802560,2013,1,['']
+6602540690,6504802560,2015,2,"['', '']"
+6602540690,6504802560,2017,2,"['Carbonic anhydrase', 'Inhibitor', 'Mercaptan', 'Thiophene-2-sulfonamide', 'Carbonic anhydrase', 'Inhibitor', 'Isoform selectivity', 'Saccharin', 'Secondary/tertiary sulfonamide']"
+6602540690,35518184300,2009,1,"['assembly', 'calcium', 'RNA', 'structure', 'virus']"
+6602540690,35518184300,2010,1,"['2-Ketoglutarate', 'Carnitine', 'Dioxygenase', 'Gamma-buyrobetaine hydroxylase', 'Mildronate']"
+6602540690,35518184300,2011,2,"['Fermentation', 'Hepatitis B virus core protein', 'Phosphorylation', 'Pichia pastoris', 'Virus-like particles', 'Yeast', '']"
+6602540690,35518184300,2012,1,['']
+6602540690,35518184300,2013,4,"['', 'Homologous proteins', 'Ixodes ticks', 'Lyme borreliosis', 'Lyme disease therapy', 'Outer surface proteins', 'homologous proteins', 'Ixodes ticks', 'Lyme borreliosis', 'Lyme disease therapy', 'outer surface proteins', 'expression', 'plasmid dimers', 'plasmid monomers', 'recombinant hepatitis B virus core protein', 'virus-like particles']"
+6602540690,35518184300,2014,4,"['Homologous proteins', 'Ixodes ticks', 'Lyme borreliosis', 'Outer surface proteins', '', 'Nanomaterials', 'Packaging', 'Reassembly', 'Rna bacteriophages', 'Virus-like particles', 'Yeast', 'Carnitine Maltose-binding protein', 'Chaperonins GroES/EL', 'Trimethyllysine hydroxylase']"
+6602540690,35518184300,2015,4,"['Borrelia Ixodes', 'Complement', 'Lyme borreliosis', 'Lyme disease therapy', 'Outer surface proteins', 'Spirochetes', '', 'CAP domain', 'Ixodes ticks', 'Lyme disease', 'Outer surface proteins', '']"
+6602540690,35518184300,2016,2,"['', 'circular permutation', 'coat protein', 'Leviviridae', 'RNA bacteriophage', 'virus-like particle']"
+6602540690,35518184300,2017,5,"['Carbonic anhydrase', 'Inhibitor', 'Mercaptan', 'Thiophene-2-sulfonamide', 'Carbonic anhydrase', 'Inhibitor', 'Isoform selectivity', 'Saccharin', 'Secondary/tertiary sulfonamide', '1,3,4-oxadiazole', 'docking', 'hCA', 'human carbonic anhydrase', 'hybrids', 'N-acylbenzenesulfonamide', 'Influenza vaccine', 'Long alpha helix', 'Tandem-core', 'Virus-like particles', 'Yeast', '']"
+6602540690,35518184300,2018,4,"['Anticancer', 'Carbonic anhydrases', 'Dental cells', 'Pyrazoline', 'Sulfonamide', '', 'Carbonic anhydrase', 'Conjugate', 'Dipeptide', 'Homosulfanilamide', 'Inhibitor', '']"
+55556260600,6504802560,2013,2,"['', 'Carbonic anhydrase', 'Click chemistry', 'Enzyme inhibitor', 'Sulfonamide', 'Thiophene-2-sulfonamide', 'X-ray crystallography']"
+55556260600,6504802560,2015,2,"['', '']"
+55556260600,6504802560,2017,2,"['Carbonic anhydrase', 'Inhibitor', 'Mercaptan', 'Thiophene-2-sulfonamide', 'Carbonic anhydrase', 'Inhibitor', 'Isoform selectivity', 'Saccharin', 'Secondary/tertiary sulfonamide']"
+55556260600,35518184300,2013,2,"['', 'Carbonic anhydrase', 'Click chemistry', 'Enzyme inhibitor', 'Sulfonamide', 'Thiophene-2-sulfonamide', 'X-ray crystallography']"
+55556260600,35518184300,2014,1,['']
+55556260600,35518184300,2015,3,"['', 'hydroxyethylamine', 'inhibitor', 'malaria', 'plasmepsin', 'Plasmodium falciparum', '']"
+55556260600,35518184300,2017,3,"['Carbonic anhydrase', 'Inhibitor', 'Mercaptan', 'Thiophene-2-sulfonamide', 'Carbonic anhydrase', 'Inhibitor', 'Isoform selectivity', 'Saccharin', 'Secondary/tertiary sulfonamide', '1,3,4-oxadiazole', 'docking', 'hCA', 'human carbonic anhydrase', 'hybrids', 'N-acylbenzenesulfonamide']"
+55556260600,35518184300,2018,3,"['Anticancer', 'Carbonic anhydrases', 'Dental cells', 'Pyrazoline', 'Sulfonamide', 'Cancer', 'Carbonic anhydrase IX', 'Drug design', 'Hypoxia', 'Sulfonamide', 'Carbonic anhydrase', 'Conjugate', 'Dipeptide', 'Homosulfanilamide', 'Inhibitor']"
+6504802560,35518184300,2013,2,"['', 'Carbonic anhydrase', 'Click chemistry', 'Enzyme inhibitor', 'Sulfonamide', 'Thiophene-2-sulfonamide', 'X-ray crystallography']"
+6504802560,35518184300,2015,2,"['', '']"
+6504802560,35518184300,2017,2,"['Carbonic anhydrase', 'Inhibitor', 'Mercaptan', 'Thiophene-2-sulfonamide', 'Carbonic anhydrase', 'Inhibitor', 'Isoform selectivity', 'Saccharin', 'Secondary/tertiary sulfonamide']"
+55935859300,7004188422,2008,1,"['Defect migration', 'First-principles calculations', 'Frenkel defects', 'O impurity', 'Supercell model', 'Uranium mononitride (UN)']"
+55935859300,7004188422,2010,1,"['Actinide oxide', 'Correlation correction', 'DFT', 'Incorporation energy']"
+55935859300,7004188422,2011,2,"['(001) surface', 'Density functional theory calculations', 'Surface defects', 'Uranium mononitride', '']"
+55935859300,7004188422,2013,1,['']
+55935859300,7004188422,2016,1,"['corundum', 'defects', 'diffusion', 'first principles calculations', 'oxygen interstitial']"
+55935859300,7004188422,2017,2,"['', 'Charged oxygen interstitial diffusion', 'Hybrid DFT-LCAO calculations', 'α-Al O (corundum, sapphire) 2 3']"
+55935859300,8514048300,2008,1,"['Defect migration', 'First-principles calculations', 'Frenkel defects', 'O impurity', 'Supercell model', 'Uranium mononitride (UN)']"
+55935859300,7004154334,2016,1,"['corundum', 'defects', 'diffusion', 'first principles calculations', 'oxygen interstitial']"
+7402986699,7004188422,2007,2,"['', '']"
+7402986699,7005635365,2018,2,"['(0 0 1) surfaces', 'Ab initio calculations', 'ABO perovskites 3', 'B3LYP', 'B3PW', '(0\u202f0\u202f1) Surfaces', 'Ab initio calculations', 'B3LYP', 'Surface energies', 'YAlO 3']"
+7402986699,7004154334,2009,1,['']
+7402986699,7004154334,2018,2,"['Atomic structure', 'First-principle calculations', 'Mn-dopant', 'Point defects', 'YAlO perovskite 3', 'Density functional theory', 'Electronic structure', 'Mn-dopant', 'Substitutional point defects', 'YAlO 3']"
+7004188422,7005635365,2008,1,['']
+7004188422,7005635365,2016,1,"['(001) heterostructures', 'ab initio calculations', 'B3PW hybrid functional', 'band gap', 'PbTiO /SrTiO 3 3']"
+7004188422,7005635365,2017,1,"['Ab initio calculations', 'B3PW', 'BaO-terminated (001) surface', 'BaTiO 3', 'bulk F-center']"
+7004188422,8514048300,2007,1,['']
+7004188422,8514048300,2008,1,"['Defect migration', 'First-principles calculations', 'Frenkel defects', 'O impurity', 'Supercell model', 'Uranium mononitride (UN)']"
+7004188422,8514048300,2009,1,"['ABO perovskites 3', 'DFT calculations', 'F-center', 'Low index surfaces']"
+7004188422,8514048300,2016,1,"['defect migration', 'defects', 'density functional theory calculations', 'iron', 'oxygen', 'vacancies']"
+7004188422,8514048300,2018,1,"['ab initio calculations', 'ODS steel', 'Y O nanoparticles 2 3']"
+7004188422,7004154334,2007,2,"['', 'Atomic and electronic structure', 'Cubic and orthorhombic PbZrO phases 3', 'Hybrid DFT calculations', 'Single F-center']"
+7004188422,7004154334,2008,2,"['', '']"
+7004188422,7004154334,2009,4,"['', 'C. Ab initio calculations', 'D. Electronic structure', 'D. Lattice dynamics', 'A. ABO perovskites 3', 'C. Oxygen vacancies', 'D. Optical properties', 'E. ab initio calculations', 'ABO perovskites 3', 'DFT calculations', 'F-center', 'Low index surfaces']"
+7004188422,7004154334,2010,3,"['', '', '']"
+7004188422,7004154334,2011,1,['']
+7004188422,7004154334,2012,3,"['Adsorption and dissociation of CH  molecule 4', 'Association of C adatoms', 'DFT-LCAO CRYSTAL code', 'Formation of carbon semi-fullerenes', 'Growth of capped CNTs', 'Smooth and nanostructured Ni(111) substrates', 'Swelling of carbon nanoflakes', 'Ab Initio DFT-LCAO Method', 'Calculated Parameters of CNT Electronic Structure', 'Morphology of DW CNTs', 'Semi-Empirical SCC-DFTB Method', '']"
+7004188422,7004154334,2013,3,"['DFT calculations', 'Electronic structure', 'Inorganic nanotubes', 'Morphology', 'Point defects', 'Single-walled nanotubes', '', '']"
+7004188422,7004154334,2015,1,['']
+7004188422,7004154334,2016,5,"['Atomic structure', 'Electronic structure', 'Hybrid HF-DFT B3LYP calculations', 'TiO nanotube 2', 'doping', 'energy band gap', 'hybrid density functional theory', 'vacancies', 'wurtzite structure', 'ZnO', '', 'corundum', 'defects', 'diffusion', 'first principles calculations', 'oxygen interstitial', '(001) heterostructures', 'ab initio calculations', 'B3PW hybrid functional', 'band gap', 'PbTiO /SrTiO 3 3']"
+7004188422,7004154334,2017,8,"['anatase titania nanotubes', 'density functional calculations', 'doping', 'water splitting', 'wurtzite zinc oxide nanowires', 'Change of PZT atomic and electronic structure', 'Cubic Pb(Zr Ti )O  solid solution x 1−x 3', 'Hybrid B3PW calculations', 'density-functional-theory methods', 'quantum-chemical simulation', 'titanium dioxide nanotubes', 'Band-gap engineering', 'Fluorite-structured titania nanotubes', 'Linear combination of atom-centered gaussian-type orbitals', 'Linearized augmented cylindrical waves', 'Photocatalysis', '', 'Ab initio calculations', 'B3PW', 'BaO-terminated (001) surface', 'BaTiO 3', 'bulk F-center', '', 'Ab initio hybrid PBE0 calculations (CRYSTAL code)', 'Force field calculations using pairwise potentials (GULP code)', ""Nanowire Young's modulus YNW and its dependence on diameter d NW"", 'Wurtzite-structured ZnO (bulk and nanowires)']"
+7004188422,7004154334,2018,2,"['', '']"
+7005635365,7004154334,2008,1,['']
+7005635365,7004154334,2015,1,"['BaTiO /SrTiO (001) interface 3 3', 'Hybrid DFT calculations', 'Optical band gap', 'Ti-O bond covalency']"
+7005635365,7004154334,2016,3,"['(0 0 1) interfaces', 'ABO perovskites 3', 'Electronic structure', 'Hybrid HF-DFT B3PW calculations', '(001) surface F-Center', 'Ab initio calculations', 'Bulk F center', 'SrZrO 3', '(001) heterostructures', 'ab initio calculations', 'B3PW hybrid functional', 'band gap', 'PbTiO /SrTiO 3 3']"
+7005635365,7004154334,2017,1,"['Ab initio calculations', 'B3PW', 'BaO-terminated (001) surface', 'BaTiO 3', 'bulk F-center']"
+8514048300,7004154334,2009,1,"['ABO perovskites 3', 'DFT calculations', 'F-center', 'Low index surfaces']"
+6508140615,6506521858,2012,1,"['Biomonitoring', 'Bryophytes', 'EMEP', 'Heavy metals', 'Metal deposition']"
