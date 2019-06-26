@@ -12,3 +12,4 @@ config.json
 *.db-shm
 nohup.out
 *data/
+.ipynb_checkpoints

@@ -5,6 +5,8 @@ import pprint as pp
 import peewee as pw
 import logging
 import timeit
+import pandas as pd
+from colorama import Style
 # logger = logging.getLogger()
 # logger.setLevel(logging.DEBUG)
 # logger.addHandler(logging.StreamHandler())
@@ -23,10 +25,9 @@ con_file.close()
 # Initialize elsclient client
 client = ElsClient(config['apikey'])
 
-req = Session()
-req.get('https://www.scopus.com/author/highchart.uri')
-
-print(Colour.UNDERLINE + 'Initial request to SCOPUS ' + Colour.END)
+# req = Session()
+# req.get('https://www.scopus.com/author/highchart.uri')
+# print(Colour.UNDERLINE + 'Initial request to SCOPUS ' + Colour.END)
 
 
 def get_author_citations():
@@ -72,7 +73,7 @@ def fix_malformed_date():
 
 def get_article_data(id):
     payload = {
-        'field': 'authors,prism:coverDate,citedby-count,authkeywords,message'
+        'field': 'authors'
     }
     p = Request('GET', 'https://api.elsevier.com/content/abstract/scopus_id/' + str(id), params=payload).prepare()
     article = AbsDoc(uri=p.url)
@@ -80,7 +81,7 @@ def get_article_data(id):
     if article.read(client):
         return article.data
     else:
-        return None
+        return {}
 
 def fullfil_collaboration_authors():
     print('Find malformed collaboration in db...')
@@ -117,10 +118,150 @@ def update_category():
 
         print(Colour.OKGREEN + str(db_author.id) + " now has cat set to " + ','.join(db_author.cat) + Colour.END)
 
+def get_affiliation_current(data):
+    return {
+        "affiliation-url": "https://api.elsevier.com/content/affiliation/affiliation_id/60032724", 
+        "affiliation-id": "60032724", 
+        "affiliation-name": "University Medical Center Utrecht", 
+        "affiliation-city": "Utrecht", 
+        "affiliation-country": "Netherlands"
+    }
+
+def update_missing_authors():
+    missing = pd.read_csv('./missing_country_phys.csv', usecols=['auth_id'])
+    
+    for i,row in missing.iterrows():
+        try:
+            db_author, created = Author.get_or_create(id=row['auth_id'])
+            scopus_author = ElsAuthor(author_id=row['auth_id'])
+            if scopus_author.read_metrics(client):
+                
+                db_author.affiliation_current = scopus_author.data.get('affiliation-current')
+                db_author.document_count = scopus_author.data['coredata'].get('document-count')
+                db_author.cited_by_count = scopus_author.data['coredata'].get('cited-by-count')
+                db_author.coauthors_count = scopus_author.data.get('coauthors_count')
+                db_author.save()
+
+                print('.', end="")
+            else:
+                print('-', end="")
+        except Exception as e:
+            print(e)
+
+
+re_abs_id = re.compile('SCOPUS_ID:(.*)')
+
+def save_collaboration(raw, id):
+    collaboration, created = Collaboration.get_or_create(abs_id=id)
+    author_count = raw.get('author-count', {})
+    total_authors = int(author_count.get('@total', 0))
+
+    print('Doc retrived with ' +  str(len(raw.get('author'))) + ' authors, it has a total of ' + str(total_authors))
+
+    collaboration.cited_by = raw.get('citedby-count')
+    collaboration.published = raw.get('prism:coverDate')
+    collaboration.keywords = raw.get('authkeywords')
+    collaboration.message = raw.get('message')
+    collaboration.authors = raw.get('author')
+
+    # If there are less authors in `author` list of article do save it into db
+    # Else go back to Scopus and get the whole list of authors
+    if total_authors > len(raw.get('author')):
+        print("Getting the rest of them", end="")
+        data = get_article_data(id)
+        authors = data.get('authors', {})
+        authors = authors.get('author', [])
+
+        if len(authors) > 0:
+            collaboration.authors = authors
+            print(" - Done, got " + str(len(authors)))
+        else:
+            print(' - Something was not good, got ' + str(len(authors)))
+
+    collaboration.save()
+
+def get_network(author):
+    def save_colls(articles):
+        for article in articles:
+            abs_id = re_abs_id.findall(article.get('dc:identifier'))
+            abs_id = abs_id[0]
+            save_collaboration(article, abs_id)
+    
+    # get coauthors articles
+    def get_articles(ath):
+        print('Getting documents for: "' + str(ath.id) + '"')
+
+        payload = {
+            'query':    'AU-ID({0})'.format(ath.id),
+            'count':    '100',
+            'cursor':    '*',
+            'field':   'author-count,author,dc:identifier,prism:coverDate,citedby-count,authkeywords,message',
+            'date':     '2007-2019'
+        }
+        p = Request('GET', 'https://api.elsevier.com/content/search/scopus', params=payload).prepare()
+        search = ElsSearch(p.url)
+        search.execute(client)
+
+        print('Author has written: ' + str(search.tot_num_res) + ' documents')
+        # Save collaborations
+        if (search.tot_num_res > 0):
+            save_colls(search.results)
+        print(str(search.num_res) + " Documents saved")
+
+        total_saved = 0
+        total_saved += search.num_res
+
+        while total_saved < search.tot_num_res:
+            payload = {
+                'query':    'AU-ID({0})'.format(ath.id),
+                'count':    '100',
+                'cursor':   search.cursor['@next'],
+                'field':   'author-count,author,dc:identifier,prism:coverDate,citedby-count,authkeywords,message',
+                'date':     '2007-2019'
+            }
+            p = Request('GET', 'https://api.elsevier.com/content/search/scopus', params=payload).prepare()
+
+            search = ElsSearch(p.url)
+            search.execute(client)
+
+            # Save collaborations
+            save_colls(search.results)
+            
+            # Store latest fetched page index
+            last_page = Author.update(last_page=total_saved).where(Author.id == ath.id)
+            last_page.execute()
+
+            # Increment saved
+            total_saved += search.num_res
+            print(str(total_saved) + " Documents saved")
+
+        author_fetched = Author.update(docs_fetched=True, last_page=total_saved).where(Author.id == ath.id)
+        author_fetched.execute()
+        print(str(ath.id) + " - DONE" )
+
+    get_articles(author)
+
+
+def update_missing_articles():
+    missing = pd.read_csv('./missing_data_egos.csv', usecols=['ego_id'])
+    
+    for i,row in missing.iterrows():
+        try:
+            db_author, created = Author.get_or_create(id=row['ego_id'])
+            get_network(db_author)
+        except Exception as e:
+            print('-')
+            print(e)
+
+
 #get_author_citations()
 
 #fix_malformed_date()
 
 # update_category()
 
-fullfil_collaboration_authors()
+# fullfil_collaboration_authors()
+
+# update_missing_authors()
+
+update_missing_articles()

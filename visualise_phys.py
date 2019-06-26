@@ -39,5 +39,3 @@ nodes_2017 = nodes[nodes['Year'] == 2017]
 
 countries = pd.DataFrame(get_offline_data(nodes))
 countries.to_json('./country_data/countries.json', orient='records')
-
-

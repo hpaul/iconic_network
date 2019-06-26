@@ -75,7 +75,7 @@ ORDER BY
 LIMIT 1200
 """
 
-query = query.format('SOCI', ', '.join(["'{}'".format(c) for c in countries]))
+query = query.format('PHYS', ', '.join(["'{}'".format(c) for c in countries]))
 authors_list = db.execute_sql(query)
 
 
@@ -169,19 +169,34 @@ def get_coauthors(ath):
     return coauthors
 
 
-@db.atomic()
 def save_collaboration(raw, id):
     collaboration, created = Collaboration.get_or_create(abs_id=id)
-    if created:
-        collaboration.authors = raw.get('author')
-        collaboration.affiliation = raw.get('affiliation')
-        collaboration.cited_by = raw.get('citedby-count')
-        collaboration.published = raw.get('prism:coverDate')
-        collaboration.keywords = raw.get('authkeywords')
-        collaboration.message = raw.get('message')
-        collaboration.save()
-    print(".", end="")
+    author_count = raw.get('author-count', {})
+    total_authors = int(author_count.get('@total', 0))
 
+    print('Doc retrived with ' +  str(len(raw.get('author'))) + ' authors, it has a total of ' + str(total_authors))
+
+    collaboration.cited_by = raw.get('citedby-count')
+    collaboration.published = raw.get('prism:coverDate')
+    collaboration.keywords = raw.get('authkeywords')
+    collaboration.message = raw.get('message')
+    collaboration.authors = raw.get('author')
+
+    # If there are less authors in `author` list of article do save it into db
+    # Else go back to Scopus and get the whole list of authors
+    if total_authors > len(raw.get('author')):
+        print("Getting the rest of them", end="")
+        data = get_article_data(id)
+        authors = data.get('authors', {})
+        authors = authors.get('author', [])
+
+        if len(authors) > 0:
+            collaboration.authors = authors
+            print(" - Done, got " + str(len(authors)))
+        else:
+            print(' - Something was not good, got ' + str(len(authors)))
+
+    collaboration.save()
 
 re_abs_id = re.compile('SCOPUS_ID:(.*)')
 
@@ -224,7 +239,7 @@ def get_network(coauthortable_author):
         while total_saved < search.tot_num_res:
             payload = {
                 'query':    'AU-ID({0})'.format(ath.id),
-                'count':    '150',
+                'count':    '100',
                 'cursor':   search.cursor['@next'],
                 'field':   'author-count,author,dc:identifier,prism:coverDate,citedby-count,authkeywords,message',
                 'date':     '2007-2019'
