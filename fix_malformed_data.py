@@ -156,7 +156,7 @@ def save_collaboration(raw, id):
     author_count = raw.get('author-count', {})
     total_authors = int(author_count.get('@total', 0))
 
-    print('Doc retrived with ' +  str(len(raw.get('author'))) + ' authors, it has a total of ' + str(total_authors))
+    print(str(id) + ' Doc retrived with ' +  str(len(raw.get('author'))) + ' authors, it has a total of ' + str(total_authors))
 
     collaboration.cited_by = raw.get('citedby-count')
     collaboration.published = raw.get('prism:coverDate')
@@ -166,7 +166,7 @@ def save_collaboration(raw, id):
 
     # If there are less authors in `author` list of article do save it into db
     # Else go back to Scopus and get the whole list of authors
-    if total_authors > len(raw.get('author')):
+    if total_authors > len(raw.get('author')) and total_authors != len(collaboration.authors):
         print("Getting the rest of them", end="")
         data = get_article_data(id)
         authors = data.get('authors', {})
@@ -177,6 +177,8 @@ def save_collaboration(raw, id):
             print(" - Done, got " + str(len(authors)))
         else:
             print(' - Something was not good, got ' + str(len(authors)))
+    else:
+        print('Document alread saved with ' + str(len(collaboration.authors)))
 
     collaboration.save()
 
