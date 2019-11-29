@@ -342,8 +342,8 @@ if __name__=='__main__':
     export_country_network_data('United Kingdom')
 
 
-SELECT *, count(id) as weight FROM 
-(SELECT * FROM collaborations_expanded WHERE author_id = '2'
-INTERSECT
-SELECT * FROM collaborations_expanded WHERE author_id = '1')
-GROUP BY year
+# SELECT *, count(id) as weight FROM 
+# (SELECT * FROM collaborations_expanded WHERE author_id = '2'
+# INTERSECT
+# SELECT * FROM collaborations_expanded WHERE author_id = '1')
+# GROUP BY year

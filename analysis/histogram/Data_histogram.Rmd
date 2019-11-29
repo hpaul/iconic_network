@@ -1,0 +1,59 @@
+---
+title: "Scopus publications and authors historigrams"
+output: html_notebook
+---
+
+These plots show the distribuition of downloaded data from Scopus. Focus was on 2007 - 2017 period and authors from UE countries. From all subject areas (PHYSics, SOCIal science and MEDIcine)
+
+
+### Papers
+
+Read data and convert year column to R integers because Python saves number with .0 suffix and I still didn't found how fix this.
+
+Then order rows by year
+
+```{r}
+pubs = read.csv2('./publications_histogram.csv', header = TRUE, sep = ',')
+pubs$year = strtoi(sub("\\.0", "", pubs$year))
+pubs = pubs[order(pubs$year),]
+```
+  
+And plot years historigram
+```{r}
+par(las=1)
+barplot(pubs$total, names.arg = pubs$year)
+```
+
+Make it a little more readable
+
+```{r}
+par(las=1)
+pubs = pubs[pubs$year > 1999,]
+barplot(pubs$total, names.arg = pubs$year)
+```
+
+### Authors
+
+Read countries and order them by total number
+
+```{r}
+auths = read.csv2('./authors_country_histogram.csv', header = TRUE, sep = ',')
+auths = auths[order(auths$total, decreasing = TRUE),]
+```
+
+And plot countries
+```{r}
+par(las=1)
+barplot(auths$total, names.arg = auths$country)
+```
+
+Make it more interesting, we don't want to see Belize and Manilla physicists.
+
+And exclude missing authors.
+```{r}
+par(las=1, mar=c(3,7.5,2,2))
+auths$country[auths$country == ''] = NA
+auths = na.omit(auths)
+auths = auths[auths$total > 39000,]
+barplot(auths$total, names.arg = auths$country, horiz = TRUE)
+```

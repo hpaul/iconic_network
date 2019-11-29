@@ -41,7 +41,7 @@ def save_authors():
         "driver": 'org.sqlite.JDBC'
     }
 
-    df = sqlContext.read.jdbc(url='jdbc:sqlite:../cache/iconic.db', table='author', properties=connectionProperties)
+    df = sqlContext.read.jdbc(url='jdbc:sqlite:../iconic.db', table='author', properties=connectionProperties)
     full_name = F.concat_ws(' ', F.get_json_object(df.full_name, '$[*].surname'), F.get_json_object(df.full_name, '$[*].given-name'))
     country = F.get_json_object(df.affiliation_current, '$.affiliation-country')
     city = F.get_json_object(df.affiliation_current, '$.affiliation-city')
@@ -66,7 +66,7 @@ def save_collaborations():
         "driver": 'org.sqlite.JDBC'
     }
 
-    df = sqlContext.read.jdbc(url='jdbc:sqlite:../cache2/iconic.db', table='collaboration', properties=connectionProperties)
+    df = sqlContext.read.jdbc(url='jdbc:sqlite:../iconic.db', table='collaboration', properties=connectionProperties)
     
     df = df.withColumn('authors', F.get_json_object(df.authors, '$[*].authid'))
 
@@ -87,7 +87,7 @@ def save_coauthors():
         "driver": 'org.sqlite.JDBC'
     }
 
-    df = sqlContext.read.jdbc(url='jdbc:sqlite:../cache3/iconic.db', table='coauthors', properties=connectionProperties)
+    df = sqlContext.read.jdbc(url='jdbc:sqlite:../iconic.db', table='coauthors', properties=connectionProperties)
     
     map_auths = F.udf(lambda s: '{{"list": {}}}'.format(s), StringType())
     df = df.withColumn('auths', map_auths(df.co_list))
@@ -98,6 +98,6 @@ def save_coauthors():
     new_df.write.mode('overwrite').parquet(os.path.abspath('./data/coauthors'))
 
 
-save_authors()
-# save_collaborations()
+# save_authors()
+save_collaborations()
 # save_coauthors()

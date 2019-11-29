@@ -15,19 +15,18 @@ import {
 import {
   Motion, spring
 } from "react-motion"
-import { interpolateOranges } from "d3-scale-chromatic"
+import { interpolateOranges, interpolateOrRd } from "d3-scale-chromatic"
 import { scaleLinear, scaleSequential } from "d3-scale"
 import { geoAzimuthalEqualArea } from "d3-geo"
-import Papa from "papaparse"
+import { csv } from "d3-fetch"
 import world_50m from "./world-50m.json"
-import "./App.css";
+import "./App.css"
+import _ from "lodash"
 
-const countryScale = scaleLinear().domain([1, 3524]).range([0.5,5])
-const connScale = scaleLinear().domain([1, 8000])
-const opacityScale = scaleLinear().domain([0,164480]).range([0.02,1])
-const nodeColor = scaleSequential().domain([0,1]).interpolator(interpolateOranges)
-
-const countries = [{"country":"Austria","lat":47.585810005,"lng":14.137076948},{"country":"Belgium","lat":50.640682937,"lng":4.661070427},{"country":"Bulgaria","lat":42.755008391,"lng":25.23641224},{"country":"Croatia","lat":45.118679585,"lng":15.435623834},{"country":"Cyprus","lat":35.0501743,"lng":33.226229724},{"country":"Czech Republic","lat":49.738854028,"lng":15.331770138},{"country":"Denmark","lat":55.959300779,"lng":10.053934054},{"country":"Estonia","lat":58.672040787,"lng":25.477224001},{"country":"Finland","lat":64.522512801,"lng":26.158834376},{"country":"France","lat":46.559417044,"lng":2.550539953},{"country":"Germany","lat":51.110631049,"lng":10.392277932},{"country":"Greece","lat":39.0,"lng":22.0},{"country":"Hungary","lat":47.16708877,"lng":19.4245317},{"country":"Ireland","lat":53.175879846,"lng":-8.146006147},{"country":"Italy","lat":42.83333,"lng":12.83333},{"country":"Latvia","lat":56.85460987,"lng":24.926839006},{"country":"Lithuania","lat":55.336936081,"lng":23.900396649},{"country":"Luxembourg","lat":49.776828429,"lng":6.092325247},{"country":"Malta","lat":35.922548856,"lng":14.40007259},{"country":"Netherlands","lat":52.249375293,"lng":5.616126398},{"country":"Poland","lat":52.123790154,"lng":19.398768986},{"country":"Portugal","lat":39.593139046,"lng":-8.51981299},{"country":"Romania","lat":45.845854975,"lng":24.973472215},{"country":"Slovakia","lat":48.708702075,"lng":19.48774911},{"country":"Slovenia","lat":46.119554805,"lng":14.821760495},{"country":"Spain","lat":40.22794966,"lng":-3.646063105},{"country":"United Kingdom","lat":53.40838660500003,"lng":-1.9695595439999352}]
+const countries = require('./countries_details.json').map(item => ({
+  name: item.name,
+  latlng: item.latlng
+}));
 
 const wrapperStyles = {
   width: "100%",
@@ -35,15 +34,64 @@ const wrapperStyles = {
   margin: "0 auto",
 }
 
+const computeEdgeDetails = (edges, nodes) => {
+  return edges.filter(edge => {
+      const snode = nodes.filter(i => i['Id'] === edge['SourceId'])[0]
+      const tnode = nodes.filter(i => i['Id'] === edge['TargetId'])[0]
+
+      if (snode && tnode) return edge;
+      else return false
+    }).map(edge => {
+    const snode = nodes.filter(i => i['Id'] === edge['SourceId'])[0]
+    const tnode = nodes.filter(i => i['Id'] === edge['TargetId'])[0]
+
+    const totalNodes = parseInt(snode['Nodes']) + parseInt(tnode['Nodes'])
+    const totalEdges = parseInt(snode['Edges']) + parseInt(tnode['Edges'])
+    const connectivity = (totalEdges / ((totalNodes*totalNodes-1)/2))
+
+    return {
+      ...edge,
+      Year: parseInt(edge['Year']),
+      totalNodes,
+      totalEdges,
+      connectivity
+    }
+  });
+}
+
+const computeNodesDetails = (nodes, edges) => {
+  const countriesPerYear = _.groupBy(edges, 'Year');
+
+  return nodes.map(node => {
+    const countNodes = parseInt(node['Nodes'])
+    const countEdges = parseInt(node['Edges'])
+    const connectivity = (countEdges / ((countNodes*(countNodes-1))/2))
+
+    const sedges = _.filter(countriesPerYear[node['Year']], { Sname: node['Name']}).length
+    const tedges = _.filter(countriesPerYear[node['Year']], { Tname: node['Name']}).length
+
+    return {
+      ...node,
+      Year: parseInt(node['Year']),
+      Nodes: countNodes,
+      Edges: countEdges,
+      inConnectivity: connectivity,
+      outConnectivity: sedges+tedges
+    }
+  });
+}
+
 class App extends Component {
 
   state = {
+    subject: 'PHYS',
+    year: 2007,
     nodes: [],
-    markers: [],
     edges: [],
+    markers: [],
     conns: [],
     zoom: 7,
-    year: 2007
+    playYears: false
   }
 
   constructor() {
@@ -55,23 +103,45 @@ class App extends Component {
     this.handleYear = this.handleYear.bind(this)
     this.updateConns = this.updateConns.bind(this)
     this.buildCurves = this.buildCurves.bind(this)
+    this.startPlay = this.startPlay.bind(this)
+
+    this.playInterval = null;
+
+    this.loadData('PHYS');
+  }
+
+  changeSubject = (e) => {
+    this.loadData(e.target.value);
+  }
+
+  loadData = (subject) => {
+    const data = Promise.all([
+      csv(`/data/edgelist_tari_${subject}.csv`),
+      csv(`/data/nodelist_tari_${subject}.csv`)
+    ]).then(([edges, nodes]) => {
+      this.setState({
+        edges: computeEdgeDetails(edges, nodes),
+        nodes: computeNodesDetails(nodes, edges)
+      }, () => {
+        this.updateScales()
+      })
+    })
   }
 
   updateMarkers() {
-    const markers = this.state.nodes.filter(i => i['Year'] === this.state.year.toString()).map((item) => {
-      const coords = countries.filter(c => c['country'] === item['Name'])
-      if(coords[0]) {
-        const connectivity = ((item['Edges']*item['Connectivity'])/item['Nodes']) + 0.2
-        
-        return { 
-          markerOffset: -15,
-          name: item['Name'],
-          coordinates: [coords[0]['lng'],coords[0]['lat']],
-          width: countryScale(item['Nodes']),
-          color: nodeColor(connectivity)
-        }
-      } else {
-        return { markerOffset: 35, name: item['Name'], coordinates: [0,0], width: 0, color: '#fff' }
+    const { nodes, year } = this.state;
+    const markers = nodes.filter(i => i['Year'] === year).map((item) => {
+      const coords = countries.filter(c => c['name'] === item['Name'])[0];
+        // const connectivity = ((item['Edges']*item['Connectivity'])/item['Nodes']) + 0.2
+      if (item['Name'] == 'Germany')
+        console.log(this.countryScale(item['Nodes']))
+
+      return { 
+        markerOffset: -15,
+        name: item['Name'],
+        coordinates: [coords['latlng'][1],coords['latlng'][0]],
+        width: this.countryScale(item['Nodes']),
+        color: this.nodeColor(item['outConnectivity'])
       }
     });
 
@@ -81,34 +151,22 @@ class App extends Component {
   }
 
   updateConns() {
-    const conns = this.state.edges
-      .filter(i => i['Year'] === this.state.year.toString())
-      .filter(item => {
-        const source = item['Source'].split('-')[0], sourceCoords = countries.filter(c => c['country'] === source);
-        const target = item['Target'].split('-')[0], targetCoords = countries.filter(c => c['country'] === target);
-        if (sourceCoords[0] && targetCoords[0]) {
-          return true
-        } else {
-          return false
-        }
-      })
+    const { edges, year } = this.state;
+
+    const conns = edges.filter(i => i['Year'] === year)
       .map((item) => {
-        const source = item['Source'].split('-')[0], sourceCoords = countries.filter(c => c['country'] === source);
-        const target = item['Target'].split('-')[0], targetCoords = countries.filter(c => c['country'] === target);
+        const sourceCoords = countries.filter(c => c['name'] === item['Sname'])[0]
+        const targetCoords = countries.filter(c => c['name'] === item['Tname'])[0]
         const weight = parseInt(item['Edges'], 10);
-        
-        let connectivity = 0;
-        if(item['Percent']) {
-          connectivity = parseFloat(item['Percent'].replace('\r',''), 10);
-        }
+        const connectivity = item['connectivity'];
 
         return {
           coordinates: {
-            start: [sourceCoords[0]['lng'],sourceCoords[0]['lat']],
-            end: [targetCoords[0]['lng'],targetCoords[0]['lat']],
+            start: [sourceCoords['latlng'][1],sourceCoords['latlng'][0]],
+            end: [targetCoords['latlng'][1],targetCoords['latlng'][0]],
           },
-          width: connScale(weight),
-          opacity: opacityScale(connectivity*weight)
+          width: this.connScale(weight),
+          opacity: this.opacityScale(weight)
         }
       });
 
@@ -117,33 +175,21 @@ class App extends Component {
     })
   }
 
-  componentWillMount() {
-    Papa.parse('nodes.csv', {
-      header: true,
-      delimiter: ',',
-      download: true,
-      complete: (result) => {
-        this.setState({
-          nodes: result.data
-        });
+  updateScales = () => {
+    const { nodes, edges } = this.state;
+    const [{Nodes: minNodes}, {Nodes: maxNodes}] = [_.minBy(nodes, 'Nodes'), _.maxBy(nodes, 'Nodes')]
+    const [{Edges: minEdges}, {Edges: maxEdges}] = [_.minBy(edges, 'Edges'), _.maxBy(edges, 'Edges')]
+    const [{outConnectivity: minOutConn}, {outConnectivity:maxOutConn}] = [_.minBy(nodes, 'outConnectivity'), _.maxBy(nodes, 'outConnectivity')]
 
-        this.updateMarkers();
-      }
-    });
+    this.countryScale = scaleLinear().domain([minNodes, maxNodes]).range([0.5,6])
+    this.connScale = scaleLinear().domain([minEdges, maxEdges])
+    this.opacityScale = scaleLinear().domain([minEdges, maxEdges]).range([0.02,1])
+    this.nodeColor = scaleSequential().domain([minOutConn,maxOutConn]).interpolator(interpolateOranges)
 
-    Papa.parse('edges.csv', {
-      header: true,
-      delimiter: ',',
-      download: true,
-      complete: (result) => {
-        this.setState({
-          edges: result.data
-        });
-
-        this.updateConns();
-      }
-    });
+    this.updateMarkers()
+    this.updateConns()
   }
+
 
   handleZoomIn() {
     this.setState({
@@ -158,9 +204,28 @@ class App extends Component {
   }
 
   handleYear(e) {
-    this.setState({ year: e.target.value})
-    this.updateMarkers()
-    this.updateConns()
+    this.setState({ year: parseInt(e.target.value) }, () => {
+      this.updateMarkers()
+      this.updateConns()
+    });
+  }
+
+  startPlay() {
+    this.setState({ playYears: true });
+
+    this.playInterval = setInterval(() => {
+      const currentYear = this.state.year;
+      const nextYear = (currentYear >= 2017) ? 2007 : currentYear+1;
+
+      this.setState({ year: nextYear })
+      this.updateMarkers()
+      this.updateConns()
+    }, 1000);
+  }
+
+  stopPlay = () => {
+    this.setState({ playYears: false });
+    clearInterval(this.playInterval)
   }
 
   projection(width, height, config) {
@@ -177,17 +242,157 @@ class App extends Component {
       forceDown: `${x0} ${y1}`
     }[arc.curveStyle];
 
-
     return `M ${start.join(' ')} Q ${curve} ${end.join(' ')}`;
   }
 
+  generatePlot = (year) => {
+    const { nodes, edges } = this.state;
+    const markers = nodes.filter(i => i['Year'] === year).map((item) => {
+      console.log(item);
+      const coords = countries.filter(c => c['name'] === item['Name'])[0];
+      
+      if (item['Name'] == 'Germany')
+        console.log(this.countryScale(item['Nodes']))
+
+      return { 
+        markerOffset: -15,
+        name: item['Name'],
+        coordinates: [coords['latlng'][1],coords['latlng'][0]],
+        width: this.countryScale(item['Nodes']),
+        color: this.nodeColor(item['outConnectivity'])
+      }
+    });
+  
+    const conns = edges.filter(i => i['Year'] === year)
+      .map((item) => {
+        const sourceCoords = countries.filter(c => c['name'] === item['Sname'])[0]
+        const targetCoords = countries.filter(c => c['name'] === item['Tname'])[0]
+        const weight = parseInt(item['Edges'], 10);
+        const connectivity = item['connectivity'];
+
+        return {
+          coordinates: {
+            start: [sourceCoords['latlng'][1],sourceCoords['latlng'][0]],
+            end: [targetCoords['latlng'][1],targetCoords['latlng'][0]],
+          },
+          width: this.connScale(weight),
+          opacity: this.opacityScale(weight)
+        }
+      });
+    
+    return { markers, conns }
+  }
+
+  renderYear = (year) => {
+    if (!this.countryScale) return null
+    const { markers, conns } = this.generatePlot(year);
+
+    return (
+      <ComposableMap
+        projectionConfig={this.projection}
+        width={1000}
+        height={700}
+        style={{
+          width: "100%",
+          height: "auto",
+        }}
+        >
+        <ZoomableGroup center={[10.08, 52.57]} zoom={this.state.zoom}>
+          <Geographies geography={world_50m}>
+            {(geographies, projection) =>
+              geographies.map((geography, i) =>
+                  <Geography
+                    key={i}
+                    geography={geography}
+                    projection={projection}
+                    style={{
+                      default: {
+                        fill: "#ECEFF1",
+                        stroke: "#607D8B",
+                        strokeWidth: 0.1,
+                        outline: "none",
+                      },
+                      hover: {
+                        fill: "#ECEFF1",
+                        stroke: "#607D8B",
+                        strokeWidth: 0.1,
+                        outline: "none",
+                      },
+                      pressed: {
+                        fill: "#ECEFF1",
+                        stroke: "#607D8B",
+                        strokeWidth: 0.1,
+                        outline: "none",
+                      },
+                    }}
+                  />
+                
+              )
+            }
+          </Geographies>
+          
+          <Markers>
+            {markers.map((marker, i) => (
+              <Marker
+                key={i}
+                marker={marker}
+                preserveMarkerAspect={false}
+                >
+                  <circle
+                    cx={0}
+                    cy={0}
+                    r={marker.width}
+                    style={{
+                      stroke: "#FF5722",
+                      strokeWidth: 0,
+                      fill: marker.color,
+                    }}
+                  />
+              </Marker>
+            ))}
+          </Markers>
+          <Annotations>
+            
+          </Annotations>
+          <Lines>
+            {conns.map((item, i) => (
+              <Line
+                key={i}
+                line={{
+                  coordinates: item.coordinates
+                }}
+                strokeWidth={0.2}
+                preserveMarkerAspect={false}
+                style={{
+                  default: { stroke: "#666", opacity: item.opacity },
+                  hover:   { stroke: "#666", opacity: item.opacity  },
+                  pressed: { stroke: "#666", opacity: item.opacity  },
+                }}
+              />
+            ))}
+            
+          </Lines>
+        </ZoomableGroup>
+      </ComposableMap>
+    )
+  }
+
   render() {
-    const { markers, conns } = this.state;
+    const { markers, conns, playYears } = this.state;
 
     return (
       <div style={wrapperStyles}>
+        <select onChange={ this.changeSubject }>
+          <option value='PHYS' selected>PHYS</option>
+          <option value='SOCI'>SOCI</option>
+          <option value='MEDI'>MEDI</option>
+        </select>
         <button onClick={ this.handleZoomIn }>{ "Zoom in" }</button>
         <button onClick={ this.handleZoomOut }>{ "Zoom out" }</button>
+        {playYears 
+          ? <button onClick={ this.stopPlay }>Stop</button>
+          : <button onClick={ this.startPlay }>Start timeframe</button>
+        }
         
         Year: ({this.state.year}): <input
           type="range"
@@ -197,107 +402,10 @@ class App extends Component {
           step="1"
           onChange={this.handleYear}
         />
-        <ComposableMap
-          projectionConfig={this.projection}
-          width={1000}
-          height={700}
-          style={{
-            width: "100%",
-            height: "auto",
-          }}
-          >
-          <ZoomableGroup center={[10.08, 52.57]} zoom={this.state.zoom}>
-            <Geographies geography={world_50m}>
-              {(geographies, projection) =>
-                geographies.map((geography, i) =>
-                    <Geography
-                      key={i}
-                      geography={geography}
-                      projection={projection}
-                      style={{
-                        default: {
-                          fill: "#ECEFF1",
-                          stroke: "#607D8B",
-                          strokeWidth: 0.1,
-                          outline: "none",
-                        },
-                        hover: {
-                          fill: "#ECEFF1",
-                          stroke: "#607D8B",
-                          strokeWidth: 0.1,
-                          outline: "none",
-                        },
-                        pressed: {
-                          fill: "#ECEFF1",
-                          stroke: "#607D8B",
-                          strokeWidth: 0.1,
-                          outline: "none",
-                        },
-                      }}
-                    />
-                  
-                )
-              }
-            </Geographies>
-            
-            <Markers>
-              {markers.map((marker, i) => (
-                <Marker
-                  key={i}
-                  marker={marker}
-                  preserveMarkerAspect={false}
-                  >
-                    <circle
-                      cx={0}
-                      cy={0}
-                      r={marker.width}
-                      style={{
-                        stroke: "#FF5722",
-                        strokeWidth: 0,
-                        fill: marker.color,
-                      }}
-                    />
-                </Marker>
-              ))}
-            </Markers>
-            <Annotations>
-              <Annotation 
-                dx={ -150 } 
-                dy={ -15 } 
-                subject={  [2.550539953, 46.559417044] } 
-                preserveMarkerAspect={false}
-                strokeWidth={ 0.2 } 
-                stroke="#607D8B">
-                <text x={-0.5} y={0.5} style={{fontSize: 2.5}}>
-                  { "France" }
-                </text>
-              </Annotation>
-              <Annotation dx={ -10 } dy={ 55 } subject={  [12.83333,42.83333] } strokeWidth={ 0.2 } stroke="#607D8B">
-                <text x={2} y={2} style={{fontSize: 2.5}}>
-                  { "Italy" }
-                </text>
-              </Annotation>
-            </Annotations>
-            <Lines>
-              {conns.map((item, i) => (
-                <Line
-                  key={i}
-                  line={{
-                    coordinates: item.coordinates
-                  }}
-                  strokeWidth={0.2}
-                  preserveMarkerAspect={false}
-                  style={{
-                    default: { stroke: "#666", opacity: item.opacity },
-                    hover:   { stroke: "#666", opacity: item.opacity  },
-                    pressed: { stroke: "#666", opacity: item.opacity  },
-                  }}
-                />
-              ))}
-              
-            </Lines>
-          </ZoomableGroup>
-        </ComposableMap>
+        {_.range(2007, 2018).map((year) =>
+          this.renderYear(year)
+        )}
+
       </div>
     )
   }
